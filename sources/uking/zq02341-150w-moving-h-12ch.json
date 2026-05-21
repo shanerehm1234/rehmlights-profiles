@@ -1,0 +1,131 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "uking/zq02341-150w-moving-h-12ch",
+  "name": "ZQ02341 150W Moving H",
+  "manufacturer": "UKing",
+  "mode": "12Ch ",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 10,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 6,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 7,
+      "default": 0
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 8
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 9
+    },
+    {
+      "role": "PRISM",
+      "offset": 10
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "White"
+    },
+    {
+      "value": 8,
+      "name": "Red"
+    },
+    {
+      "value": 16,
+      "name": "Yellow"
+    },
+    {
+      "value": 24,
+      "name": "Green"
+    },
+    {
+      "value": 32,
+      "name": "Magenta"
+    },
+    {
+      "value": 40,
+      "name": "Blue"
+    },
+    {
+      "value": 48,
+      "name": "Orange"
+    },
+    {
+      "value": 56,
+      "name": "Cyan"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 8,
+      "name": "Spot"
+    },
+    {
+      "value": 16,
+      "name": "Tilde"
+    },
+    {
+      "value": 24,
+      "name": "Plus"
+    },
+    {
+      "value": 32,
+      "name": "Flower"
+    },
+    {
+      "value": 40,
+      "name": "Star"
+    },
+    {
+      "value": 48,
+      "name": "Spiral"
+    },
+    {
+      "value": 56,
+      "name": "Pebble Ring"
+    }
+  ],
+  "values": {
+    "strobe_slow": 4,
+    "strobe_fast": 255
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 180.0
+  }
+}

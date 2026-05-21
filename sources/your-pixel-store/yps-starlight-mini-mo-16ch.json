@@ -1,0 +1,201 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "your-pixel-store/yps-starlight-mini-mo-16ch",
+  "name": "YPS Starlight Mini Mo",
+  "manufacturer": "Your Pixel Store",
+  "mode": "16CH",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 15,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 3
+    },
+    {
+      "role": "TILT",
+      "offset": 2,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 8,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 7,
+      "default": 252
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 9
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 12
+    },
+    {
+      "role": "FOCUS",
+      "offset": 13
+    },
+    {
+      "role": "FROST",
+      "offset": 6
+    },
+    {
+      "role": "PRISM",
+      "offset": 14
+    },
+    {
+      "role": "PRISM_2",
+      "offset": 15
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "White"
+    },
+    {
+      "value": 4,
+      "name": "White/Color 1"
+    },
+    {
+      "value": 8,
+      "name": "Color 1 Red"
+    },
+    {
+      "value": 12,
+      "name": "Color 1/Color 2"
+    },
+    {
+      "value": 16,
+      "name": "Color 2 Yellow"
+    },
+    {
+      "value": 20,
+      "name": "Color 2/Color 3"
+    },
+    {
+      "value": 24,
+      "name": "Color 3 Pale Orange"
+    },
+    {
+      "value": 28,
+      "name": "Color 3/Color 4"
+    },
+    {
+      "value": 32,
+      "name": "Color 4 Blue"
+    },
+    {
+      "value": 36,
+      "name": "Color 4/Color 5"
+    },
+    {
+      "value": 40,
+      "name": "Color 5 Green"
+    },
+    {
+      "value": 44,
+      "name": "Color 5/Color 6"
+    },
+    {
+      "value": 48,
+      "name": "Color 6 Light Green"
+    },
+    {
+      "value": 52,
+      "name": "Color 6/Color 7"
+    },
+    {
+      "value": 56,
+      "name": "Color 7 White"
+    },
+    {
+      "value": 60,
+      "name": "Color 7/Color 8"
+    },
+    {
+      "value": 64,
+      "name": "Color 8 Orange"
+    },
+    {
+      "value": 68,
+      "name": "Color 8/Color 9"
+    },
+    {
+      "value": 72,
+      "name": "Color 9 Cyan"
+    },
+    {
+      "value": 76,
+      "name": "Color 9/Color 10"
+    },
+    {
+      "value": 80,
+      "name": "Color 10 Pink"
+    },
+    {
+      "value": 84,
+      "name": "Color 10/Color 11"
+    },
+    {
+      "value": 88,
+      "name": "Color 11 Yellow"
+    },
+    {
+      "value": 92,
+      "name": "Color 11/Color 12"
+    },
+    {
+      "value": 96,
+      "name": "Color 12 Magenta"
+    },
+    {
+      "value": 100,
+      "name": "Color 12/Color 13"
+    },
+    {
+      "value": 104,
+      "name": "Color 13 Blue"
+    },
+    {
+      "value": 108,
+      "name": "Color 13/White"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "No Shake"
+    },
+    {
+      "value": 192,
+      "name": "No Shake"
+    }
+  ],
+  "values": {
+    "shutter_open": 252,
+    "shutter_close": 252,
+    "strobe_slow": 4,
+    "strobe_fast": 251
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

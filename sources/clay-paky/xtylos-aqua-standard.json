@@ -1,0 +1,180 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "clay-paky/xtylos-aqua-standard",
+  "name": "Xtylos Aqua",
+  "manufacturer": "Clay Paky",
+  "mode": "Standard ",
+  "fixture_type": "FIXTURE_TYPE_RGBX",
+  "footprint": 28,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 23,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 24
+    },
+    {
+      "role": "TILT",
+      "offset": 25,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 26
+    },
+    {
+      "role": "DIMMER",
+      "offset": 9,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 10
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 11,
+      "default": 252
+    },
+    {
+      "role": "RED",
+      "offset": 1
+    },
+    {
+      "role": "GREEN",
+      "offset": 3
+    },
+    {
+      "role": "BLUE",
+      "offset": 5
+    },
+    {
+      "role": "CTO",
+      "offset": 7
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 12
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 13
+    },
+    {
+      "role": "FOCUS",
+      "offset": 21
+    },
+    {
+      "role": "PRISM",
+      "offset": 16
+    },
+    {
+      "role": "PRISM_2",
+      "offset": 18
+    },
+    {
+      "role": "PRISM_ROT_2",
+      "offset": 19
+    },
+    {
+      "role": "RESET",
+      "offset": 28
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open "
+    },
+    {
+      "value": 6,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 12,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 18,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 24,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 30,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 36,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 42,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 48,
+      "name": "Gobo 8"
+    },
+    {
+      "value": 54,
+      "name": "Gobo 9"
+    },
+    {
+      "value": 60,
+      "name": "Gobo 10"
+    },
+    {
+      "value": 66,
+      "name": "Gobo 11"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open "
+    },
+    {
+      "value": 17,
+      "name": "Gobo 2-1"
+    },
+    {
+      "value": 33,
+      "name": "Gobo 2-2"
+    },
+    {
+      "value": 49,
+      "name": "Gobo 2-3"
+    },
+    {
+      "value": 65,
+      "name": "Gobo 2-4"
+    },
+    {
+      "value": 82,
+      "name": "Gobo 2-5"
+    },
+    {
+      "value": 98,
+      "name": "Gobo 2-6"
+    },
+    {
+      "value": 114,
+      "name": "Gobo 2-7"
+    }
+  ],
+  "values": {
+    "shutter_open": 252,
+    "strobe_slow": 4,
+    "strobe_fast": 251
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 251.0
+  }
+}

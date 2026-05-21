@@ -1,0 +1,224 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "chauvet-dj/intimidator-spot-260x-14-channel",
+  "name": "Intimidator Spot 260x",
+  "manufacturer": "Chauvet DJ",
+  "mode": "14 channel",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 13,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 11,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 12,
+      "default": 4
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 6
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 7
+    },
+    {
+      "role": "GOBO_ROT",
+      "offset": 8
+    },
+    {
+      "role": "FOCUS",
+      "offset": 10
+    },
+    {
+      "role": "PRISM",
+      "offset": 9
+    },
+    {
+      "role": "RESET",
+      "offset": 13
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 7,
+      "name": "Red"
+    },
+    {
+      "value": 14,
+      "name": "Orange"
+    },
+    {
+      "value": 21,
+      "name": "Yellow"
+    },
+    {
+      "value": 28,
+      "name": "Green"
+    },
+    {
+      "value": 35,
+      "name": "Blue"
+    },
+    {
+      "value": 42,
+      "name": "CTO"
+    },
+    {
+      "value": 49,
+      "name": "Cyan"
+    },
+    {
+      "value": 56,
+      "name": "Magenta"
+    },
+    {
+      "value": 63,
+      "name": "Open"
+    },
+    {
+      "value": 65,
+      "name": "Open - indexing"
+    },
+    {
+      "value": 72,
+      "name": "Red - indexing"
+    },
+    {
+      "value": 86,
+      "name": "Orange - indexing"
+    },
+    {
+      "value": 100,
+      "name": "Yellow - indexing"
+    },
+    {
+      "value": 114,
+      "name": "Green - indexing"
+    },
+    {
+      "value": 128,
+      "name": "Blue - indexing"
+    },
+    {
+      "value": 141,
+      "name": "CTO - indexing"
+    },
+    {
+      "value": 155,
+      "name": "Cyan - indexing"
+    },
+    {
+      "value": 169,
+      "name": "Magenta - indexing"
+    },
+    {
+      "value": 183,
+      "name": "Open - indexing"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 8,
+      "name": "gobo 1"
+    },
+    {
+      "value": 16,
+      "name": "gobo 2"
+    },
+    {
+      "value": 24,
+      "name": "gobo 3"
+    },
+    {
+      "value": 32,
+      "name": "gobo 4"
+    },
+    {
+      "value": 40,
+      "name": "gobo 5"
+    },
+    {
+      "value": 48,
+      "name": "gobo 6"
+    },
+    {
+      "value": 56,
+      "name": "gobo 7"
+    },
+    {
+      "value": 64,
+      "name": "gobo 7 shake"
+    },
+    {
+      "value": 72,
+      "name": "gobo 6 shake"
+    },
+    {
+      "value": 80,
+      "name": "gobo 5 shake"
+    },
+    {
+      "value": 88,
+      "name": "gobo 4 shake"
+    },
+    {
+      "value": 96,
+      "name": "gobo 3 shake"
+    },
+    {
+      "value": 104,
+      "name": "gobo 2 shake"
+    },
+    {
+      "value": 112,
+      "name": "gobo 1 shake"
+    },
+    {
+      "value": 120,
+      "name": "Open"
+    }
+  ],
+  "values": {
+    "shutter_open": 4,
+    "strobe_slow": 8,
+    "strobe_fast": 255
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 234.0
+  }
+}

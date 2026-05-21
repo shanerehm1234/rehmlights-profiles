@@ -1,0 +1,176 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "vari-lite/vl800-eventpar-rgba-16-bit",
+  "name": "VL800 EventPAR RGBA",
+  "manufacturer": "Vari-Lite",
+  "mode": "16-Bit",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 14,
+  "channels": [
+    {
+      "role": "DIMMER",
+      "offset": 1,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 2
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 13,
+      "default": 0
+    },
+    {
+      "role": "RED",
+      "offset": 3
+    },
+    {
+      "role": "GREEN",
+      "offset": 5
+    },
+    {
+      "role": "BLUE",
+      "offset": 7
+    },
+    {
+      "role": "AMBER",
+      "offset": 9
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 11
+    },
+    {
+      "role": "RESET",
+      "offset": 14
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Channel Off - Custom"
+    },
+    {
+      "value": 69,
+      "name": "Color Off - Custom"
+    },
+    {
+      "value": 71,
+      "name": "White 10000K - CTC"
+    },
+    {
+      "value": 73,
+      "name": "White 8000K - CTC"
+    },
+    {
+      "value": 75,
+      "name": "White 6500K - CTC"
+    },
+    {
+      "value": 77,
+      "name": "White 5600K - CTC"
+    },
+    {
+      "value": 79,
+      "name": "White 5000K - CTC"
+    },
+    {
+      "value": 81,
+      "name": "White 4500K - CTC"
+    },
+    {
+      "value": 83,
+      "name": "White 4000K - CTC"
+    },
+    {
+      "value": 85,
+      "name": "White 3200K - CTC"
+    },
+    {
+      "value": 87,
+      "name": "White 3000K - CTC"
+    },
+    {
+      "value": 89,
+      "name": "White 2700K - CTC"
+    },
+    {
+      "value": 91,
+      "name": "Moroccan Pink - Color"
+    },
+    {
+      "value": 93,
+      "name": "Pink - Color"
+    },
+    {
+      "value": 95,
+      "name": "Flesh Pink - Color"
+    },
+    {
+      "value": 97,
+      "name": "Bright Rose - Color"
+    },
+    {
+      "value": 99,
+      "name": "Follies Pink - Color"
+    },
+    {
+      "value": 101,
+      "name": "Fuchsia Pink - Color"
+    },
+    {
+      "value": 103,
+      "name": "Surprise Pink - Color"
+    },
+    {
+      "value": 105,
+      "name": "Congo Blue - Color"
+    },
+    {
+      "value": 107,
+      "name": "Blue - Color"
+    },
+    {
+      "value": 109,
+      "name": "Virgin Blue - Color"
+    },
+    {
+      "value": 111,
+      "name": "Midnight Maya - Color"
+    },
+    {
+      "value": 113,
+      "name": "Double C T Blue - Col"
+    },
+    {
+      "value": 115,
+      "name": "Slate Blue - Color"
+    },
+    {
+      "value": 117,
+      "name": "Regal Blue - Color"
+    },
+    {
+      "value": 119,
+      "name": "Full C T Blue - Color"
+    },
+    {
+      "value": 121,
+      "name": "Steel Blue - Color"
+    },
+    {
+      "value": 123,
+      "name": "Lighter Blue - Color"
+    },
+    {
+      "value": 125,
+      "name": "Cyan - Color"
+    }
+  ],
+  "values": {
+    "shutter_close": 6,
+    "strobe_slow": 11,
+    "strobe_fast": 25
+  }
+}

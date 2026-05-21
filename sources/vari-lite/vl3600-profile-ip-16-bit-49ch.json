@@ -1,0 +1,313 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "vari-lite/vl3600-profile-ip-16-bit-49ch",
+  "name": "VL3600 Profile IP",
+  "manufacturer": "Vari-Lite",
+  "mode": "16-BIT (49ch)",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 45,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 4
+    },
+    {
+      "role": "TILT",
+      "offset": 5,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 6
+    },
+    {
+      "role": "DIMMER",
+      "offset": 1,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 2
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 45,
+      "default": 246
+    },
+    {
+      "role": "CTO",
+      "offset": 14
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 16
+    },
+    {
+      "role": "COLOR_WHEEL_2",
+      "offset": 15
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 18
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 20
+    },
+    {
+      "role": "FOCUS",
+      "offset": 7
+    },
+    {
+      "role": "FROST",
+      "offset": 44
+    },
+    {
+      "role": "ZOOM",
+      "offset": 9
+    },
+    {
+      "role": "IRIS",
+      "offset": 28
+    },
+    {
+      "role": "PRISM",
+      "offset": 38
+    },
+    {
+      "role": "PRISM_ROT",
+      "offset": 39
+    },
+    {
+      "role": "PRISM_2",
+      "offset": 41
+    },
+    {
+      "role": "PRISM_ROT_2",
+      "offset": 42
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 32,
+      "name": "Red"
+    },
+    {
+      "value": 64,
+      "name": "Dark Blue"
+    },
+    {
+      "value": 96,
+      "name": "Yellow"
+    },
+    {
+      "value": 128,
+      "name": "Kelly Green"
+    },
+    {
+      "value": 160,
+      "name": "Amber"
+    },
+    {
+      "value": 192,
+      "name": "Congo Blue"
+    },
+    {
+      "value": 224,
+      "name": "Open"
+    }
+  ],
+  "color_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 31,
+      "name": "CRI Booster"
+    },
+    {
+      "value": 61,
+      "name": "1/2 Minus Green"
+    },
+    {
+      "value": 91,
+      "name": "1/4 Minus Green"
+    },
+    {
+      "value": 121,
+      "name": "CTB"
+    },
+    {
+      "value": 181,
+      "name": "Reserved"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 21,
+      "name": "Gobo 1 - Leafy Breaku"
+    },
+    {
+      "value": 42,
+      "name": "Gobo 2 - Medium Circl"
+    },
+    {
+      "value": 63,
+      "name": "Gobo 3 - Square Pile"
+    },
+    {
+      "value": 84,
+      "name": "Gobo 4 - Confusion"
+    },
+    {
+      "value": 105,
+      "name": "Gobo 5 - Dust"
+    },
+    {
+      "value": 126,
+      "name": "Gobo 6 - Neurons"
+    },
+    {
+      "value": 147,
+      "name": "Gobo 7 - Radial Break"
+    },
+    {
+      "value": 168,
+      "name": "Gobo 8 - Stables"
+    },
+    {
+      "value": 189,
+      "name": "Gobo 9 - Blobs"
+    },
+    {
+      "value": 210,
+      "name": "Gobo 10 - Pipes Break"
+    },
+    {
+      "value": 231,
+      "name": "Open"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 6,
+      "name": "Night Sky"
+    },
+    {
+      "value": 11,
+      "name": "New Twirler"
+    },
+    {
+      "value": 16,
+      "name": "Bricked Out"
+    },
+    {
+      "value": 21,
+      "name": "Horizontal Slits"
+    },
+    {
+      "value": 26,
+      "name": "Super Alpha Ray"
+    },
+    {
+      "value": 31,
+      "name": "Honey Combe"
+    },
+    {
+      "value": 36,
+      "name": "On The Rock"
+    },
+    {
+      "value": 41,
+      "name": "Open G2<>"
+    },
+    {
+      "value": 46,
+      "name": "Night Sky<>"
+    },
+    {
+      "value": 51,
+      "name": "New Twirler<>"
+    },
+    {
+      "value": 56,
+      "name": "Bricked Out<>"
+    },
+    {
+      "value": 61,
+      "name": "Horizontal Slits<>"
+    },
+    {
+      "value": 66,
+      "name": "Super Alpha Ray<>"
+    },
+    {
+      "value": 71,
+      "name": "Honey Combe<>"
+    },
+    {
+      "value": 76,
+      "name": "On The Rock<>"
+    },
+    {
+      "value": 81,
+      "name": "Open G2"
+    },
+    {
+      "value": 86,
+      "name": "Night Sky "
+    },
+    {
+      "value": 91,
+      "name": "New Twirler "
+    },
+    {
+      "value": 96,
+      "name": "Bricked Out "
+    },
+    {
+      "value": 101,
+      "name": "Horizontal Slits "
+    },
+    {
+      "value": 106,
+      "name": "Super Alpha Rays "
+    },
+    {
+      "value": 111,
+      "name": "Honey Combe "
+    },
+    {
+      "value": 116,
+      "name": "On The Rock "
+    },
+    {
+      "value": 121,
+      "name": "Open G2"
+    }
+  ],
+  "values": {
+    "shutter_open": 246,
+    "shutter_close": 251,
+    "strobe_slow": 11,
+    "strobe_fast": 245
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

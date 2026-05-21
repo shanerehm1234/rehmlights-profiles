@@ -1,0 +1,223 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "shehds/230w-beam-moving-head-standard",
+  "name": "230W Beam Moving Head",
+  "manufacturer": "SHEHDS",
+  "mode": "Standard",
+  "fixture_type": "FIXTURE_TYPE_HID",
+  "footprint": 16,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 10,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 11
+    },
+    {
+      "role": "TILT",
+      "offset": 12,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 13
+    },
+    {
+      "role": "DIMMER",
+      "offset": 3,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 2,
+      "default": 252
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 1
+    },
+    {
+      "role": "COLOR_WHEEL_2",
+      "offset": 8
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 4
+    },
+    {
+      "role": "FOCUS",
+      "offset": 9
+    },
+    {
+      "role": "PRISM",
+      "offset": 5
+    },
+    {
+      "role": "PRISM_ROT",
+      "offset": 6
+    },
+    {
+      "role": "LAMP",
+      "offset": 16
+    },
+    {
+      "role": "RESET",
+      "offset": 15
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "White->White+Red"
+    },
+    {
+      "value": 9,
+      "name": "White+Red->Red"
+    },
+    {
+      "value": 18,
+      "name": "Red->Red+Orange"
+    },
+    {
+      "value": 27,
+      "name": "Red+Orange->Orange"
+    },
+    {
+      "value": 36,
+      "name": "Orange->Orange+Aquama"
+    },
+    {
+      "value": 45,
+      "name": "Deep Green+Light Gree"
+    },
+    {
+      "value": 54,
+      "name": "Light Green->Light Gr"
+    },
+    {
+      "value": 64,
+      "name": "Light Green+Lavender-"
+    },
+    {
+      "value": 73,
+      "name": "Pink+Yellow->Yellow"
+    },
+    {
+      "value": 82,
+      "name": "Cyan+CTO 260->CTO 260"
+    },
+    {
+      "value": 91,
+      "name": "CTO 260->CTO 260+CTO "
+    },
+    {
+      "value": 100,
+      "name": "CTO 260+CTO 190->CTO "
+    },
+    {
+      "value": 109,
+      "name": "CTO 190->CTO 190+CTB "
+    },
+    {
+      "value": 118,
+      "name": "CTO 190+CTB 8000->CTB"
+    }
+  ],
+  "color_wheel_2": [
+    {
+      "value": 0,
+      "name": "Excluded"
+    },
+    {
+      "value": 128,
+      "name": "Rainbow"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 6,
+      "name": "Beam 1"
+    },
+    {
+      "value": 10,
+      "name": "Beam 2"
+    },
+    {
+      "value": 16,
+      "name": "Beam 3"
+    },
+    {
+      "value": 20,
+      "name": "Beam 4"
+    },
+    {
+      "value": 26,
+      "name": "Beam 5"
+    },
+    {
+      "value": 30,
+      "name": "Beam 6"
+    },
+    {
+      "value": 36,
+      "name": "Sharpy G07"
+    },
+    {
+      "value": 40,
+      "name": "Sharpy G08"
+    },
+    {
+      "value": 46,
+      "name": "Sharpy G09"
+    },
+    {
+      "value": 50,
+      "name": "Sharpy G10"
+    },
+    {
+      "value": 56,
+      "name": "Sharpy G11"
+    },
+    {
+      "value": 60,
+      "name": "Sharpy G12"
+    },
+    {
+      "value": 66,
+      "name": "Sharpy G13"
+    },
+    {
+      "value": 70,
+      "name": "Sharpy G14"
+    },
+    {
+      "value": 76,
+      "name": "Sharpy G15"
+    },
+    {
+      "value": 80,
+      "name": "Sharpy G16"
+    },
+    {
+      "value": 86,
+      "name": "Sharpy G17"
+    }
+  ],
+  "values": {
+    "shutter_open": 252,
+    "shutter_close": 208,
+    "lamp_on": 101,
+    "lamp_off": 26
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 250.0
+  }
+}

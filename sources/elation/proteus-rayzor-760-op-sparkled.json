@@ -1,0 +1,16 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "elation/proteus-rayzor-760-op-sparkled",
+  "name": "Proteus Rayzor 760 OP",
+  "manufacturer": "Elation",
+  "mode": "SparkLED",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 1,
+  "channels": [
+    {
+      "role": "DIMMER",
+      "offset": 1,
+      "default": 255
+    }
+  ]
+}

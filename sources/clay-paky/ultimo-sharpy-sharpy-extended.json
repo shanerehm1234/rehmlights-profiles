@@ -1,0 +1,290 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "clay-paky/ultimo-sharpy-sharpy-extended",
+  "name": "Ultimo Sharpy",
+  "manufacturer": "Clay Paky",
+  "mode": "Sharpy Extended",
+  "fixture_type": "FIXTURE_TYPE_HID",
+  "footprint": 27,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 10,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 11
+    },
+    {
+      "role": "TILT",
+      "offset": 12,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 13
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 27
+    },
+    {
+      "role": "DIMMER",
+      "offset": 3,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 2,
+      "default": 252
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 1
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 4
+    },
+    {
+      "role": "FOCUS",
+      "offset": 9
+    },
+    {
+      "role": "FROST",
+      "offset": 8
+    },
+    {
+      "role": "PRISM",
+      "offset": 5
+    },
+    {
+      "role": "PRISM_ROT",
+      "offset": 6
+    },
+    {
+      "role": "PRISM_2",
+      "offset": 23
+    },
+    {
+      "role": "PRISM_ROT_2",
+      "offset": 24
+    },
+    {
+      "role": "LAMP",
+      "offset": 16
+    },
+    {
+      "role": "RESET",
+      "offset": 15
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "White->White+Red"
+    },
+    {
+      "value": 5,
+      "name": "White+Red->Red"
+    },
+    {
+      "value": 9,
+      "name": "Red->Red+Orange"
+    },
+    {
+      "value": 13,
+      "name": "Red+Orange->Orange"
+    },
+    {
+      "value": 18,
+      "name": "Orange->Orange+Aquama"
+    },
+    {
+      "value": 22,
+      "name": "Orange+Aquamarine->Aq"
+    },
+    {
+      "value": 26,
+      "name": "Aquamarine->Aquamarin"
+    },
+    {
+      "value": 30,
+      "name": "Aquamarine+Deep Green"
+    },
+    {
+      "value": 35,
+      "name": "Deep Green->Deep Gree"
+    },
+    {
+      "value": 39,
+      "name": "Deep Green+Light Gree"
+    },
+    {
+      "value": 43,
+      "name": "Light Green->Light Gr"
+    },
+    {
+      "value": 47,
+      "name": "Light Green+Lavender-"
+    },
+    {
+      "value": 52,
+      "name": "Lavender->Lavender+Pi"
+    },
+    {
+      "value": 56,
+      "name": "Lavender+Pink->Pink"
+    },
+    {
+      "value": 60,
+      "name": "Pink->Pink+Yellow"
+    },
+    {
+      "value": 64,
+      "name": "Pink+Yellow->Yellow"
+    },
+    {
+      "value": 69,
+      "name": "Yellow->Yellow+Magent"
+    },
+    {
+      "value": 73,
+      "name": "Yellow+Magenta->Magen"
+    },
+    {
+      "value": 77,
+      "name": "Magenta->Magenta+Cyan"
+    },
+    {
+      "value": 82,
+      "name": "Magenta+Cyan->Cyan"
+    },
+    {
+      "value": 86,
+      "name": "Cyan->Cyan+CTO 260"
+    },
+    {
+      "value": 90,
+      "name": "Cyan+CTO 260->CTO 260"
+    },
+    {
+      "value": 94,
+      "name": "CTO 260->CTO 260+CTO "
+    },
+    {
+      "value": 99,
+      "name": "CTO 260+CTO 190->CTO "
+    },
+    {
+      "value": 103,
+      "name": "CTO 190->CTO 190+CTB "
+    },
+    {
+      "value": 107,
+      "name": "CTO 190+CTB 8000->CTB"
+    },
+    {
+      "value": 111,
+      "name": "CTB 8000->CTB 8000 + "
+    },
+    {
+      "value": 116,
+      "name": "CTB 8000 + Blue->Blue"
+    },
+    {
+      "value": 120,
+      "name": "Blue->Blue+White"
+    },
+    {
+      "value": 124,
+      "name": "Blue+White->White"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 4,
+      "name": "Beam 1"
+    },
+    {
+      "value": 8,
+      "name": "Beam 2"
+    },
+    {
+      "value": 12,
+      "name": "Beam 3"
+    },
+    {
+      "value": 16,
+      "name": "Beam 4"
+    },
+    {
+      "value": 20,
+      "name": "Beam 5"
+    },
+    {
+      "value": 24,
+      "name": "Beam 6"
+    },
+    {
+      "value": 28,
+      "name": "Sharpy G07"
+    },
+    {
+      "value": 32,
+      "name": "Sharpy G08"
+    },
+    {
+      "value": 36,
+      "name": "Sharpy G09"
+    },
+    {
+      "value": 40,
+      "name": "Sharpy G10"
+    },
+    {
+      "value": 44,
+      "name": "Sharpy G11"
+    },
+    {
+      "value": 48,
+      "name": "Sharpy G12"
+    },
+    {
+      "value": 52,
+      "name": "Sharpy G13"
+    },
+    {
+      "value": 56,
+      "name": "Sharpy G14"
+    },
+    {
+      "value": 60,
+      "name": "Sharpy G15"
+    },
+    {
+      "value": 64,
+      "name": "Sharpy G16"
+    },
+    {
+      "value": 68,
+      "name": "Sharpy G17"
+    }
+  ],
+  "values": {
+    "shutter_open": 252,
+    "strobe_slow": 4,
+    "strobe_fast": 251,
+    "lamp_on": 101,
+    "lamp_off": 26
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 250.0
+  }
+}

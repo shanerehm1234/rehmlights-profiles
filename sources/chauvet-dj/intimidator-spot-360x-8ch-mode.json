@@ -1,0 +1,139 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "chauvet-dj/intimidator-spot-360x-8ch-mode",
+  "name": "Intimidator Spot 360X",
+  "manufacturer": "Chauvet DJ",
+  "mode": "8Ch Mode",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 8,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "TILT",
+      "offset": 2,
+      "default": 127
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 8,
+      "default": 216
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 3
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 4
+    },
+    {
+      "role": "GOBO_ROT",
+      "offset": 5
+    },
+    {
+      "role": "FOCUS",
+      "offset": 7
+    },
+    {
+      "role": "PRISM",
+      "offset": 6
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "White - Color"
+    },
+    {
+      "value": 7,
+      "name": "Red - Color"
+    },
+    {
+      "value": 14,
+      "name": "Orange - Color"
+    },
+    {
+      "value": 21,
+      "name": "Yellow - Color"
+    },
+    {
+      "value": 28,
+      "name": "Green - Color"
+    },
+    {
+      "value": 35,
+      "name": "Blue - Color"
+    },
+    {
+      "value": 42,
+      "name": "CTO - Color"
+    },
+    {
+      "value": 49,
+      "name": "Cyan - Color"
+    },
+    {
+      "value": 56,
+      "name": "Magenta - Color"
+    },
+    {
+      "value": 63,
+      "name": "White - Color"
+    },
+    {
+      "value": 65,
+      "name": "Indexing - Indexing"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open - Gobo Open"
+    },
+    {
+      "value": 8,
+      "name": "Gobo 1 - Gobo"
+    },
+    {
+      "value": 16,
+      "name": "Gobo 2 - Gobo"
+    },
+    {
+      "value": 24,
+      "name": "Gobo 3 - Gobo"
+    },
+    {
+      "value": 32,
+      "name": "Gobo 4 - Gobo"
+    },
+    {
+      "value": 40,
+      "name": "Gobo 5 - Gobo"
+    },
+    {
+      "value": 48,
+      "name": "Gobo 6 - Gobo"
+    },
+    {
+      "value": 56,
+      "name": "Gobo 7 - Gobo"
+    },
+    {
+      "value": 120,
+      "name": "Open - Gobo Open"
+    }
+  ],
+  "values": {
+    "shutter_open": 216,
+    "strobe_slow": 8,
+    "strobe_fast": 215
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

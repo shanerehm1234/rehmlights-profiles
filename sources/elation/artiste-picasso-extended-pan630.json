@@ -1,0 +1,195 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "elation/artiste-picasso-extended-pan630",
+  "name": "Artiste Picasso",
+  "manufacturer": "Elation",
+  "mode": "Extended Pan630",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 61,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 61
+    },
+    {
+      "role": "DIMMER",
+      "offset": 32,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 33
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 31,
+      "default": 224
+    },
+    {
+      "role": "CTO",
+      "offset": 11
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 13
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 15
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 18
+    },
+    {
+      "role": "FOCUS",
+      "offset": 25
+    },
+    {
+      "role": "FROST",
+      "offset": 37
+    },
+    {
+      "role": "ZOOM",
+      "offset": 27
+    },
+    {
+      "role": "IRIS",
+      "offset": 35
+    },
+    {
+      "role": "PRISM",
+      "offset": 20
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 38
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "OPEN / WHITE"
+    },
+    {
+      "value": 20,
+      "name": "RED"
+    },
+    {
+      "value": 38,
+      "name": "GREEN"
+    },
+    {
+      "value": 56,
+      "name": "HIGH CRI"
+    },
+    {
+      "value": 74,
+      "name": "ORANGE"
+    },
+    {
+      "value": 92,
+      "name": "MINUS GREEN"
+    },
+    {
+      "value": 110,
+      "name": "BLUE"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "OPEN"
+    },
+    {
+      "value": 10,
+      "name": "Rotating Gobo 1"
+    },
+    {
+      "value": 20,
+      "name": "Rotating Gobo 2"
+    },
+    {
+      "value": 30,
+      "name": "Rotating Gobo 3"
+    },
+    {
+      "value": 40,
+      "name": "Rotating Gobo 4"
+    },
+    {
+      "value": 50,
+      "name": "Rotating Gobo 5"
+    },
+    {
+      "value": 60,
+      "name": "Rotating Gobo 6"
+    },
+    {
+      "value": 70,
+      "name": "Rotating Gobo 7"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "OPEN"
+    },
+    {
+      "value": 10,
+      "name": "Static / Fixed Gobo 1"
+    },
+    {
+      "value": 20,
+      "name": "Static / Fixed Gobo 2"
+    },
+    {
+      "value": 30,
+      "name": "Static / Fixed Gobo 3"
+    },
+    {
+      "value": 40,
+      "name": "Static / Fixed Gobo 4"
+    },
+    {
+      "value": 50,
+      "name": "Static / Fixed Gobo 5"
+    },
+    {
+      "value": 60,
+      "name": "Static / Fixed Gobo 6"
+    },
+    {
+      "value": 70,
+      "name": "Static / Fixed Gobo 7"
+    }
+  ],
+  "values": {
+    "shutter_open": 224,
+    "shutter_close": 224,
+    "strobe_slow": 64,
+    "strobe_fast": 223
+  },
+  "meta": {
+    "pan_degrees": 630.0,
+    "tilt_degrees": 246.0
+  }
+}

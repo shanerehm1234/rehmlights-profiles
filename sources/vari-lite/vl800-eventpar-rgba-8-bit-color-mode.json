@@ -1,0 +1,27 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "vari-lite/vl800-eventpar-rgba-8-bit-color-mode",
+  "name": "VL800 EventPAR RGBA",
+  "manufacturer": "Vari-Lite",
+  "mode": "8-Bit Color Mode",
+  "fixture_type": "FIXTURE_TYPE_RGBX",
+  "footprint": 4,
+  "channels": [
+    {
+      "role": "RED",
+      "offset": 1
+    },
+    {
+      "role": "GREEN",
+      "offset": 2
+    },
+    {
+      "role": "BLUE",
+      "offset": 3
+    },
+    {
+      "role": "AMBER",
+      "offset": 4
+    }
+  ]
+}

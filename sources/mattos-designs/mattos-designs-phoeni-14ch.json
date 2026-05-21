@@ -1,0 +1,269 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "mattos-designs/mattos-designs-phoeni-14ch",
+  "name": "Mattos Designs Phoeni",
+  "manufacturer": "Mattos Designs",
+  "mode": "14CH",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 14,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 6,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 7,
+      "default": 250
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 8
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 9
+    },
+    {
+      "role": "FOCUS",
+      "offset": 13
+    },
+    {
+      "role": "PRISM",
+      "offset": 11
+    },
+    {
+      "role": "PRISM_ROT",
+      "offset": 12
+    },
+    {
+      "role": "EFFECTS",
+      "offset": 10
+    },
+    {
+      "role": "RESET",
+      "offset": 14
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "White"
+    },
+    {
+      "value": 7,
+      "name": "Red"
+    },
+    {
+      "value": 12,
+      "name": "Green"
+    },
+    {
+      "value": 17,
+      "name": "Blue"
+    },
+    {
+      "value": 22,
+      "name": "Yellow"
+    },
+    {
+      "value": 27,
+      "name": "Magenta"
+    },
+    {
+      "value": 32,
+      "name": "Light Green"
+    },
+    {
+      "value": 37,
+      "name": "Deep Blue"
+    },
+    {
+      "value": 42,
+      "name": "Rose Pink"
+    },
+    {
+      "value": 47,
+      "name": "Amber"
+    },
+    {
+      "value": 52,
+      "name": "Cyan"
+    },
+    {
+      "value": 57,
+      "name": "CTB"
+    },
+    {
+      "value": 62,
+      "name": "Light Violet"
+    },
+    {
+      "value": 67,
+      "name": "CTO 3600K"
+    },
+    {
+      "value": 72,
+      "name": "White/Red"
+    },
+    {
+      "value": 76,
+      "name": "Red/Green"
+    },
+    {
+      "value": 80,
+      "name": "Green/Blue"
+    },
+    {
+      "value": 84,
+      "name": "Blue/Yellow"
+    },
+    {
+      "value": 88,
+      "name": "Yellow/Magenta"
+    },
+    {
+      "value": 92,
+      "name": "Magenta/Light Green"
+    },
+    {
+      "value": 96,
+      "name": "Light Green/Deep Blue"
+    },
+    {
+      "value": 100,
+      "name": "Deep Blue/Rose Pink"
+    },
+    {
+      "value": 104,
+      "name": "Rose Pink/Amber"
+    },
+    {
+      "value": 108,
+      "name": "Amber/Cyan"
+    },
+    {
+      "value": 112,
+      "name": "Cyan/CTB"
+    },
+    {
+      "value": 116,
+      "name": "CTB/Light Violet"
+    },
+    {
+      "value": 120,
+      "name": "Light Violet/CTO"
+    },
+    {
+      "value": 124,
+      "name": "CTO/White"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 3,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 7,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 11,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 15,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 19,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 23,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 27,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 31,
+      "name": "Gobo 8"
+    },
+    {
+      "value": 35,
+      "name": "Gobo 9"
+    },
+    {
+      "value": 39,
+      "name": "Gobo 10"
+    },
+    {
+      "value": 43,
+      "name": "Gobo 11"
+    },
+    {
+      "value": 47,
+      "name": "Gobo 12"
+    },
+    {
+      "value": 51,
+      "name": "Gobo 13"
+    },
+    {
+      "value": 55,
+      "name": "Gobo 14"
+    },
+    {
+      "value": 59,
+      "name": "Gobo 15"
+    },
+    {
+      "value": 63,
+      "name": "Gobo 16"
+    },
+    {
+      "value": 67,
+      "name": "Gobo 17"
+    }
+  ],
+  "values": {
+    "shutter_open": 250,
+    "shutter_close": 250,
+    "strobe_slow": 4,
+    "strobe_fast": 249
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

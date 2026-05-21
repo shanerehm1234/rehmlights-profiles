@@ -1,0 +1,354 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "robe-lighting/robin-megapointe-mode-2---reduced-8",
+  "name": "Robin MegaPointe",
+  "manufacturer": "Robe Lighting",
+  "mode": "Mode 2 - Reduced 8 - ",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 34,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 34,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 33,
+      "default": 224
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 10
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 18
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 19
+    },
+    {
+      "role": "FOCUS",
+      "offset": 31
+    },
+    {
+      "role": "FROST",
+      "offset": 29
+    },
+    {
+      "role": "ZOOM",
+      "offset": 30
+    },
+    {
+      "role": "PRISM",
+      "offset": 21
+    },
+    {
+      "role": "PRISM_2",
+      "offset": 23
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 15
+    },
+    {
+      "role": "EFFECTS",
+      "offset": 26
+    },
+    {
+      "role": "RESET",
+      "offset": 6
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open/White - Position"
+    },
+    {
+      "value": 9,
+      "name": "Deep Red - Positionin"
+    },
+    {
+      "value": 19,
+      "name": "Deep Blue - Positioni"
+    },
+    {
+      "value": 27,
+      "name": "Yellow - Positioning"
+    },
+    {
+      "value": 37,
+      "name": "Light green - Positio"
+    },
+    {
+      "value": 47,
+      "name": "Magenta - Positioning"
+    },
+    {
+      "value": 55,
+      "name": "Lavender - Positionin"
+    },
+    {
+      "value": 64,
+      "name": "Pink - Positioning"
+    },
+    {
+      "value": 73,
+      "name": "Dark green - Position"
+    },
+    {
+      "value": 82,
+      "name": "CTO 2700K - Positioni"
+    },
+    {
+      "value": 91,
+      "name": "Blue - Positioning"
+    },
+    {
+      "value": 101,
+      "name": "Orange - Positioning"
+    },
+    {
+      "value": 110,
+      "name": "CTO 3200K - Positioni"
+    },
+    {
+      "value": 119,
+      "name": "UV (Kongo blue) - Pos"
+    },
+    {
+      "value": 128,
+      "name": "Open/White (1) - Posi"
+    },
+    {
+      "value": 130,
+      "name": "Deep Red - Indexing"
+    },
+    {
+      "value": 135,
+      "name": "Deep Blue - Indexing"
+    },
+    {
+      "value": 139,
+      "name": "Yellow - Indexing"
+    },
+    {
+      "value": 144,
+      "name": "Light green - Indexin"
+    },
+    {
+      "value": 148,
+      "name": "Magenta - Indexing"
+    },
+    {
+      "value": 153,
+      "name": "Lavender - Indexing"
+    },
+    {
+      "value": 158,
+      "name": "Pink - Indexing"
+    },
+    {
+      "value": 162,
+      "name": "Dark green - Indexing"
+    },
+    {
+      "value": 167,
+      "name": "CTO 2700K - Indexing"
+    },
+    {
+      "value": 172,
+      "name": "Blue - Indexing"
+    },
+    {
+      "value": 177,
+      "name": "Orange - Indexing"
+    },
+    {
+      "value": 181,
+      "name": "CTO 3200K - Indexing"
+    },
+    {
+      "value": 186,
+      "name": "UV (Kongo blue) - Ind"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open/Hole"
+    },
+    {
+      "value": 4,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 10,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 16,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 22,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 28,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 34,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 40,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 46,
+      "name": "Gobo 8"
+    },
+    {
+      "value": 52,
+      "name": "Gobo 9"
+    },
+    {
+      "value": 58,
+      "name": "Gobo 10"
+    },
+    {
+      "value": 64,
+      "name": "Beam reducer 1"
+    },
+    {
+      "value": 70,
+      "name": "Beam reducer 2"
+    },
+    {
+      "value": 76,
+      "name": "Beam reducer 3"
+    },
+    {
+      "value": 82,
+      "name": "Beam reducer 4"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open/Hole"
+    },
+    {
+      "value": 1,
+      "name": "Hole (flat field)"
+    },
+    {
+      "value": 5,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 8,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 11,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 14,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 17,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 20,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 23,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 26,
+      "name": "Gobo 8"
+    },
+    {
+      "value": 29,
+      "name": "Gobo 9"
+    },
+    {
+      "value": 32,
+      "name": "Gobo 1 - Rotation"
+    },
+    {
+      "value": 35,
+      "name": "Gobo 2 - Rotation"
+    },
+    {
+      "value": 38,
+      "name": "Gobo 3 - Rotation"
+    },
+    {
+      "value": 41,
+      "name": "Gobo 4 - Rotation"
+    },
+    {
+      "value": 44,
+      "name": "Gobo 5 - Rotation"
+    },
+    {
+      "value": 47,
+      "name": "Gobo 6 - Rotation"
+    },
+    {
+      "value": 50,
+      "name": "Gobo 7 - Rotation"
+    },
+    {
+      "value": 53,
+      "name": "Gobo 8 - Rotation"
+    },
+    {
+      "value": 56,
+      "name": "Gobo 9 - Rotation"
+    }
+  ],
+  "values": {
+    "shutter_open": 224,
+    "strobe_slow": 64,
+    "strobe_fast": 223
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 263.6
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "adj/focus-spot-2x-18-ch",
+  "name": "Focus Spot 2X",
+  "manufacturer": "ADJ",
+  "mode": "18 CH",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 17,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 17
+    },
+    {
+      "role": "DIMMER",
+      "offset": 12,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 11,
+      "default": 248
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 5
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 6
+    },
+    {
+      "role": "FOCUS",
+      "offset": 13
+    },
+    {
+      "role": "PRISM",
+      "offset": 8
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 15,
+      "name": "Red"
+    },
+    {
+      "value": 29,
+      "name": "Blue"
+    },
+    {
+      "value": 43,
+      "name": "Green"
+    },
+    {
+      "value": 57,
+      "name": "Yellow"
+    },
+    {
+      "value": 71,
+      "name": "Pink"
+    },
+    {
+      "value": 85,
+      "name": "Light Blue"
+    },
+    {
+      "value": 99,
+      "name": "Light Green"
+    },
+    {
+      "value": 113,
+      "name": "Light Yellow"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 10,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 19,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 28,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 37,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 47,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 56,
+      "name": "Gobo 6"
+    }
+  ],
+  "values": {
+    "shutter_open": 248,
+    "shutter_close": 248,
+    "strobe_slow": 16,
+    "strobe_fast": 247
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

@@ -1,23 +1,39 @@
 {
-  "schema": "rehmlights-profile/legacy-v1.2",
+  "schema": "vibe-profile/1",
   "id": "glp/jdc1-progress-0512-mode-3-spix",
   "name": "JDC1 progress 0512",
   "manufacturer": "GLP",
   "mode": "Mode 3 (SPix)",
   "fixture_type": "FIXTURE_TYPE_RGBX",
-  "channels": {
-    "tilt": 1,
-    "tilt_fine": 2,
-    "dimmer": 68
-  },
-  "rgb": {
-    "red": 54,
-    "green": 55,
-    "blue": 56
-  },
-  "values": {
-    "dimmer_default": 255
-  },
+  "footprint": 68,
+  "channels": [
+    {
+      "role": "TILT",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 2
+    },
+    {
+      "role": "DIMMER",
+      "offset": 68,
+      "default": 255
+    },
+    {
+      "role": "RED",
+      "offset": 54
+    },
+    {
+      "role": "GREEN",
+      "offset": 55
+    },
+    {
+      "role": "BLUE",
+      "offset": 56
+    }
+  ],
   "meta": {
     "tilt_degrees": 185.0
   }

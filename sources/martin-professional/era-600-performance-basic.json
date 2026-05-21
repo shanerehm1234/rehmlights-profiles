@@ -1,0 +1,242 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "martin-professional/era-600-performance-basic",
+  "name": "ERA 600 Performance",
+  "manufacturer": "Martin Professional",
+  "mode": "Basic",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 41,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 37,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 38
+    },
+    {
+      "role": "TILT",
+      "offset": 39,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 40
+    },
+    {
+      "role": "DIMMER",
+      "offset": 2,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 3
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 1,
+      "default": 145
+    },
+    {
+      "role": "CTO",
+      "offset": 10
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 12
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 13
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 16
+    },
+    {
+      "role": "FOCUS",
+      "offset": 26
+    },
+    {
+      "role": "FROST",
+      "offset": 18
+    },
+    {
+      "role": "ZOOM",
+      "offset": 24
+    },
+    {
+      "role": "IRIS",
+      "offset": 23
+    },
+    {
+      "role": "PRISM",
+      "offset": 19
+    },
+    {
+      "role": "PRISM_2",
+      "offset": 21
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 17
+    },
+    {
+      "role": "RESET",
+      "offset": 41
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 6,
+      "name": "Red"
+    },
+    {
+      "value": 12,
+      "name": "Deep Blue"
+    },
+    {
+      "value": 18,
+      "name": "Deep Green"
+    },
+    {
+      "value": 24,
+      "name": "Lavender"
+    },
+    {
+      "value": 30,
+      "name": "Deep Orange"
+    },
+    {
+      "value": 36,
+      "name": "CTO"
+    },
+    {
+      "value": 42,
+      "name": "Congo Blue"
+    },
+    {
+      "value": 48,
+      "name": "Open"
+    },
+    {
+      "value": 53,
+      "name": "Red"
+    },
+    {
+      "value": 63,
+      "name": "Deep Blue"
+    },
+    {
+      "value": 73,
+      "name": "Deep Green"
+    },
+    {
+      "value": 83,
+      "name": "Lavender"
+    },
+    {
+      "value": 93,
+      "name": "Deep Orange"
+    },
+    {
+      "value": 103,
+      "name": "CTO"
+    },
+    {
+      "value": 113,
+      "name": "Congo Blue"
+    },
+    {
+      "value": 123,
+      "name": "Open"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 7,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 14,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 21,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 28,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 35,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 42,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 49,
+      "name": "Gobo 7"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 7,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 14,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 21,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 28,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 35,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 42,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 49,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 56,
+      "name": "Gobo 8"
+    }
+  ],
+  "values": {
+    "shutter_open": 145,
+    "strobe_slow": 25,
+    "strobe_fast": 144
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 258.0
+  }
+}

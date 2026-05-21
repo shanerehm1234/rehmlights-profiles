@@ -1,0 +1,206 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "chauvet-dj/intimidator-wash-zoom-mode1-29ch",
+  "name": "Intimidator Wash Zoom",
+  "manufacturer": "Chauvet DJ",
+  "mode": "Mode1 29Ch",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 28,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 25,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 26,
+      "default": 245
+    },
+    {
+      "role": "RED",
+      "offset": 18
+    },
+    {
+      "role": "GREEN",
+      "offset": 19
+    },
+    {
+      "role": "BLUE",
+      "offset": 20
+    },
+    {
+      "role": "WHITE",
+      "offset": 21
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 22
+    },
+    {
+      "role": "ZOOM",
+      "offset": 27
+    },
+    {
+      "role": "EFFECTS",
+      "offset": 23
+    },
+    {
+      "role": "RESET",
+      "offset": 28
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "No Func - Custom"
+    },
+    {
+      "value": 5,
+      "name": "Color 1 - Color"
+    },
+    {
+      "value": 10,
+      "name": "Color 2 - Color"
+    },
+    {
+      "value": 15,
+      "name": "Color 3 - Color"
+    },
+    {
+      "value": 20,
+      "name": "Color 4 - Color"
+    },
+    {
+      "value": 25,
+      "name": "Color 5 - Color"
+    },
+    {
+      "value": 30,
+      "name": "Color 6 - Color"
+    },
+    {
+      "value": 35,
+      "name": "Color 7 - Color"
+    },
+    {
+      "value": 40,
+      "name": "Color 8 - Color"
+    },
+    {
+      "value": 45,
+      "name": "Color 9 - Color"
+    },
+    {
+      "value": 50,
+      "name": "Color 10 - Color"
+    },
+    {
+      "value": 55,
+      "name": "Color 11 - Color"
+    },
+    {
+      "value": 60,
+      "name": "Color 12 - Color"
+    },
+    {
+      "value": 65,
+      "name": "Color 13 - Color"
+    },
+    {
+      "value": 70,
+      "name": "Color 14 - Color"
+    },
+    {
+      "value": 75,
+      "name": "Color 15 - Color"
+    },
+    {
+      "value": 80,
+      "name": "Color 16 - Color"
+    },
+    {
+      "value": 85,
+      "name": "Color 17 - Color"
+    },
+    {
+      "value": 90,
+      "name": "Color 18 - Color"
+    },
+    {
+      "value": 95,
+      "name": "Color 19 - Color"
+    },
+    {
+      "value": 100,
+      "name": "Color 20 - Color"
+    },
+    {
+      "value": 105,
+      "name": "Color 21 - Color"
+    },
+    {
+      "value": 110,
+      "name": "Color 22 - Color"
+    },
+    {
+      "value": 115,
+      "name": "Color 23 - Color"
+    },
+    {
+      "value": 120,
+      "name": "Color 24 - Color"
+    },
+    {
+      "value": 125,
+      "name": "Color 25 - Color"
+    },
+    {
+      "value": 130,
+      "name": "Color 26 - Color"
+    },
+    {
+      "value": 135,
+      "name": "Color 27 - Color"
+    },
+    {
+      "value": 140,
+      "name": "Color 28 - Color"
+    },
+    {
+      "value": 145,
+      "name": "Color 29 - Color"
+    }
+  ],
+  "values": {
+    "shutter_open": 245,
+    "strobe_slow": 25,
+    "strobe_fast": 244
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

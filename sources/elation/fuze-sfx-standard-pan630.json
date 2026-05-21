@@ -1,0 +1,295 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "elation/fuze-sfx-standard-pan630",
+  "name": "Fuze SFX",
+  "manufacturer": "Elation",
+  "mode": "Standard Pan630",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 30,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 30
+    },
+    {
+      "role": "DIMMER",
+      "offset": 25,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 26
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 24,
+      "default": 224
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 12
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 13
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 16
+    },
+    {
+      "role": "FOCUS",
+      "offset": 20
+    },
+    {
+      "role": "FROST",
+      "offset": 29
+    },
+    {
+      "role": "ZOOM",
+      "offset": 22
+    },
+    {
+      "role": "IRIS",
+      "offset": 28
+    },
+    {
+      "role": "PRISM",
+      "offset": 17
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 6,
+      "name": "White/Red Split"
+    },
+    {
+      "value": 11,
+      "name": "Red"
+    },
+    {
+      "value": 16,
+      "name": "Red/Yellow Split"
+    },
+    {
+      "value": 21,
+      "name": "Yellow"
+    },
+    {
+      "value": 26,
+      "name": "Yellow/Green Split"
+    },
+    {
+      "value": 31,
+      "name": "Green"
+    },
+    {
+      "value": 36,
+      "name": "Green/Orange Split"
+    },
+    {
+      "value": 41,
+      "name": "Orange"
+    },
+    {
+      "value": 46,
+      "name": "Orange/Pink Split"
+    },
+    {
+      "value": 51,
+      "name": "Pink"
+    },
+    {
+      "value": 56,
+      "name": "Pink/CTO Split"
+    },
+    {
+      "value": 61,
+      "name": "CTO"
+    },
+    {
+      "value": 66,
+      "name": "CTO/High CRI Split"
+    },
+    {
+      "value": 71,
+      "name": "High CRI"
+    },
+    {
+      "value": 76,
+      "name": "CTO/Blue Split"
+    },
+    {
+      "value": 81,
+      "name": "Blue"
+    },
+    {
+      "value": 86,
+      "name": "Blue/White Split"
+    },
+    {
+      "value": 91,
+      "name": "Open"
+    },
+    {
+      "value": 101,
+      "name": "Combo 1"
+    },
+    {
+      "value": 102,
+      "name": "Combo 2"
+    },
+    {
+      "value": 103,
+      "name": "Combo 3"
+    },
+    {
+      "value": 104,
+      "name": "Combo 4"
+    },
+    {
+      "value": 105,
+      "name": "Combo 5"
+    },
+    {
+      "value": 106,
+      "name": "Combo 6"
+    },
+    {
+      "value": 107,
+      "name": "Combo 7"
+    },
+    {
+      "value": 108,
+      "name": "Combo 8"
+    },
+    {
+      "value": 109,
+      "name": "Combo 9"
+    },
+    {
+      "value": 110,
+      "name": "Combo 10"
+    },
+    {
+      "value": 111,
+      "name": "Reserved"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 6,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 13,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 20,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 27,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 34,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 41,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 48,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 55,
+      "name": "Gobo 8"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 6,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 15,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 24,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 33,
+      "name": "Gobo  4"
+    },
+    {
+      "value": 42,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 51,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 60,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 69,
+      "name": "Gobo 8"
+    },
+    {
+      "value": 78,
+      "name": "Gobo 9"
+    },
+    {
+      "value": 87,
+      "name": "Gobo 10"
+    }
+  ],
+  "values": {
+    "shutter_open": 224,
+    "shutter_close": 224,
+    "strobe_slow": 64,
+    "strobe_fast": 223
+  },
+  "meta": {
+    "pan_degrees": 630.0,
+    "tilt_degrees": 270.0
+  }
+}

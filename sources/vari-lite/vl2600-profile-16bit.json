@@ -1,0 +1,214 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "vari-lite/vl2600-profile-16bit",
+  "name": "VL2600 Profile",
+  "manufacturer": "Vari-Lite",
+  "mode": "16Bit",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 38,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 4
+    },
+    {
+      "role": "TILT",
+      "offset": 5,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 6
+    },
+    {
+      "role": "DIMMER",
+      "offset": 1,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 2
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 38,
+      "default": 0
+    },
+    {
+      "role": "CTO",
+      "offset": 14
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 15
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 17
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 21
+    },
+    {
+      "role": "GOBO_ROT",
+      "offset": 18
+    },
+    {
+      "role": "FOCUS",
+      "offset": 7
+    },
+    {
+      "role": "FROST",
+      "offset": 36
+    },
+    {
+      "role": "ZOOM",
+      "offset": 9
+    },
+    {
+      "role": "IRIS",
+      "offset": 23
+    },
+    {
+      "role": "PRISM",
+      "offset": 33
+    },
+    {
+      "role": "PRISM_ROT",
+      "offset": 34
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open - Color"
+    },
+    {
+      "value": 16,
+      "name": "Red - Color"
+    },
+    {
+      "value": 48,
+      "name": "Dark Blue - Color"
+    },
+    {
+      "value": 80,
+      "name": "Yellow - Color"
+    },
+    {
+      "value": 112,
+      "name": "Kelly Green - Color"
+    },
+    {
+      "value": 144,
+      "name": "Amber - Color"
+    },
+    {
+      "value": 176,
+      "name": "Congo Blue - Color"
+    },
+    {
+      "value": 208,
+      "name": "CTB - Color"
+    },
+    {
+      "value": 241,
+      "name": "Open - Color"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open - Gobo Open"
+    },
+    {
+      "value": 6,
+      "name": "Gobo 1 Index - Gobo"
+    },
+    {
+      "value": 11,
+      "name": "Gobo 2 Index - Gobo"
+    },
+    {
+      "value": 16,
+      "name": "Gobo 3 Index - Gobo"
+    },
+    {
+      "value": 21,
+      "name": "Gobo 4 Index - Gobo"
+    },
+    {
+      "value": 26,
+      "name": "Gobo 5 Index - Gobo"
+    },
+    {
+      "value": 31,
+      "name": "Gobo 6 Index - Gobo"
+    },
+    {
+      "value": 36,
+      "name": "Gobo 7 Index - Gobo"
+    },
+    {
+      "value": 121,
+      "name": "Reserved - Custom"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open - Gobo Open"
+    },
+    {
+      "value": 6,
+      "name": "Gobo 1 - Gobo"
+    },
+    {
+      "value": 11,
+      "name": "Gobo 2 - Gobo"
+    },
+    {
+      "value": 16,
+      "name": "Gobo 3 - Gobo"
+    },
+    {
+      "value": 21,
+      "name": "Gobo 4 - Gobo"
+    },
+    {
+      "value": 26,
+      "name": "Gobo 5 - Gobo"
+    },
+    {
+      "value": 31,
+      "name": "Gobo 6 - Gobo"
+    },
+    {
+      "value": 36,
+      "name": "Gobo 7 - Gobo"
+    },
+    {
+      "value": 41,
+      "name": "Gobo 8 - Gobo"
+    },
+    {
+      "value": 46,
+      "name": "Reserved - Custom"
+    }
+  ],
+  "values": {
+    "shutter_close": 6,
+    "strobe_slow": 11,
+    "strobe_fast": 25
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

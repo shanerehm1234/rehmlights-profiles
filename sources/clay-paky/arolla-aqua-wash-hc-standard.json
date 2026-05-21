@@ -1,0 +1,151 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "clay-paky/arolla-aqua-wash-hc-standard",
+  "name": "Arolla Aqua Wash HC",
+  "manufacturer": "Clay Paky",
+  "mode": "Standard",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 29,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 25,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 26
+    },
+    {
+      "role": "TILT",
+      "offset": 27,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 28
+    },
+    {
+      "role": "DIMMER",
+      "offset": 7,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 8
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 6,
+      "default": 252
+    },
+    {
+      "role": "CTO",
+      "offset": 4
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 5
+    },
+    {
+      "role": "FOCUS",
+      "offset": 14
+    },
+    {
+      "role": "ZOOM",
+      "offset": 16
+    },
+    {
+      "role": "IRIS",
+      "offset": 12
+    },
+    {
+      "role": "RESET",
+      "offset": 29
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open "
+    },
+    {
+      "value": 5,
+      "name": "Open/DkRed"
+    },
+    {
+      "value": 9,
+      "name": "Dark Red"
+    },
+    {
+      "value": 14,
+      "name": "DkRed/NvBlue"
+    },
+    {
+      "value": 18,
+      "name": "Navy Blue"
+    },
+    {
+      "value": 22,
+      "name": "NvBlue/DpGreen "
+    },
+    {
+      "value": 27,
+      "name": "Deep Green "
+    },
+    {
+      "value": 31,
+      "name": "DpGreen/GdAmber"
+    },
+    {
+      "value": 35,
+      "name": "Golden Amber"
+    },
+    {
+      "value": 40,
+      "name": "GdAmber/BrBlue"
+    },
+    {
+      "value": 44,
+      "name": "Brilliant Blue"
+    },
+    {
+      "value": 49,
+      "name": "BrBlue/DkOrange"
+    },
+    {
+      "value": 53,
+      "name": "Dark Orange"
+    },
+    {
+      "value": 57,
+      "name": "DkOrange/CTB"
+    },
+    {
+      "value": 62,
+      "name": "CTB"
+    },
+    {
+      "value": 66,
+      "name": "CTB/Open"
+    },
+    {
+      "value": 128,
+      "name": "0 deg"
+    },
+    {
+      "value": 255,
+      "name": "360 deg"
+    }
+  ],
+  "values": {
+    "shutter_open": 252,
+    "shutter_close": 208,
+    "strobe_slow": 4,
+    "strobe_fast": 251
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 250.0
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "chauvet-professional/maverick-mk3-wash-dual-mode-movement-b",
+  "name": "Maverick MK3 Wash",
+  "manufacturer": "Chauvet Professional",
+  "mode": "Dual Mode-Movement: B",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 9,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 6,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 7,
+      "default": 245
+    },
+    {
+      "role": "ZOOM",
+      "offset": 8
+    },
+    {
+      "role": "RESET",
+      "offset": 9
+    }
+  ],
+  "values": {
+    "shutter_open": 245,
+    "strobe_slow": 25,
+    "strobe_fast": 244
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

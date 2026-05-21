@@ -1,0 +1,185 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "chauvet-dj/intimidator-spot-475z-10ch-mode",
+  "name": "Intimidator Spot 475Z",
+  "manufacturer": "Chauvet DJ",
+  "mode": "10Ch Mode",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 10,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "TILT",
+      "offset": 2,
+      "default": 127
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 10,
+      "default": 216
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 3
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 4
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 6
+    },
+    {
+      "role": "GOBO_ROT",
+      "offset": 5
+    },
+    {
+      "role": "FOCUS",
+      "offset": 8
+    },
+    {
+      "role": "ZOOM",
+      "offset": 9
+    },
+    {
+      "role": "PRISM",
+      "offset": 7
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "White - Color"
+    },
+    {
+      "value": 8,
+      "name": "Red - Color"
+    },
+    {
+      "value": 16,
+      "name": "Yellow - Color"
+    },
+    {
+      "value": 24,
+      "name": "Green - Color"
+    },
+    {
+      "value": 32,
+      "name": "Blue - Color"
+    },
+    {
+      "value": 40,
+      "name": "CTO - Color"
+    },
+    {
+      "value": 48,
+      "name": "Cyan - Color"
+    },
+    {
+      "value": 56,
+      "name": "Magentra - Color"
+    },
+    {
+      "value": 64,
+      "name": "White - Color"
+    },
+    {
+      "value": 69,
+      "name": "Indexing - Indexing"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open - Gobo Open"
+    },
+    {
+      "value": 8,
+      "name": "Gobo 1 - Gobo"
+    },
+    {
+      "value": 16,
+      "name": "Gobo 2 - Gobo"
+    },
+    {
+      "value": 24,
+      "name": "Gobo 3 - Gobo"
+    },
+    {
+      "value": 32,
+      "name": "Gobo 4 - Gobo"
+    },
+    {
+      "value": 40,
+      "name": "Gobo 5 - Gobo"
+    },
+    {
+      "value": 48,
+      "name": "Gobo 6 - Gobo"
+    },
+    {
+      "value": 56,
+      "name": "Gobo 7 - Gobo"
+    },
+    {
+      "value": 120,
+      "name": "Open - Gobo Open"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open - Gobo Open"
+    },
+    {
+      "value": 7,
+      "name": "Gobo 1 - Gobo"
+    },
+    {
+      "value": 14,
+      "name": "Gobo 2 - Gobo"
+    },
+    {
+      "value": 21,
+      "name": "Gobo 3 - Gobo"
+    },
+    {
+      "value": 28,
+      "name": "Gobo 4 - Gobo"
+    },
+    {
+      "value": 35,
+      "name": "Gobo 5 - Gobo"
+    },
+    {
+      "value": 42,
+      "name": "Gobo 6 - Gobo"
+    },
+    {
+      "value": 49,
+      "name": "Gobo 7 - Gobo"
+    },
+    {
+      "value": 56,
+      "name": "Gobo 8 - Gobo"
+    },
+    {
+      "value": 121,
+      "name": "Open - Gobo Open"
+    }
+  ],
+  "values": {
+    "shutter_open": 216,
+    "strobe_slow": 8,
+    "strobe_fast": 215
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

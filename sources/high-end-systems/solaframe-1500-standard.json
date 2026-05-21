@@ -1,0 +1,322 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "high-end-systems/solaframe-1500-standard",
+  "name": "SolaFrame 1500",
+  "manufacturer": "High End Systems",
+  "mode": "Standard",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 48,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "DIMMER",
+      "offset": 48,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 44
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 42,
+      "default": 230
+    },
+    {
+      "role": "CTO",
+      "offset": 9
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 11
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 14
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 18
+    },
+    {
+      "role": "FOCUS",
+      "offset": 34
+    },
+    {
+      "role": "FROST",
+      "offset": 33
+    },
+    {
+      "role": "ZOOM",
+      "offset": 36
+    },
+    {
+      "role": "IRIS",
+      "offset": 40
+    },
+    {
+      "role": "PRISM",
+      "offset": 30
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 29
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 17,
+      "name": "Open/Red"
+    },
+    {
+      "value": 33,
+      "name": "Red"
+    },
+    {
+      "value": 49,
+      "name": "Red/Blue"
+    },
+    {
+      "value": 65,
+      "name": "Blue"
+    },
+    {
+      "value": 81,
+      "name": "Blue/Green"
+    },
+    {
+      "value": 97,
+      "name": "Green"
+    },
+    {
+      "value": 113,
+      "name": "Green/Orange"
+    },
+    {
+      "value": 129,
+      "name": "Orange"
+    },
+    {
+      "value": 145,
+      "name": "Orange/Magenta"
+    },
+    {
+      "value": 161,
+      "name": "Magenta"
+    },
+    {
+      "value": 177,
+      "name": "Magenta/Congo Blue"
+    },
+    {
+      "value": 193,
+      "name": "Congo Blue"
+    },
+    {
+      "value": 209,
+      "name": "Congo Blue/Open"
+    },
+    {
+      "value": 225,
+      "name": "Open"
+    },
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 40,
+      "name": "Red"
+    },
+    {
+      "value": 72,
+      "name": "Blue"
+    },
+    {
+      "value": 110,
+      "name": "Green"
+    },
+    {
+      "value": 144,
+      "name": "Orange"
+    },
+    {
+      "value": 184,
+      "name": "Magenta"
+    },
+    {
+      "value": 219,
+      "name": "Congo Blue"
+    },
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 17,
+      "name": "Open/Red"
+    },
+    {
+      "value": 33,
+      "name": "Red"
+    },
+    {
+      "value": 49,
+      "name": "Red/Blue"
+    },
+    {
+      "value": 65,
+      "name": "Blue"
+    },
+    {
+      "value": 81,
+      "name": "Blue/Green"
+    },
+    {
+      "value": 97,
+      "name": "Green"
+    },
+    {
+      "value": 113,
+      "name": "Green/Orange"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 16,
+      "name": "Tunnel"
+    },
+    {
+      "value": 48,
+      "name": "Bars"
+    },
+    {
+      "value": 80,
+      "name": "Fan"
+    },
+    {
+      "value": 112,
+      "name": "Breakup"
+    },
+    {
+      "value": 144,
+      "name": "Burst"
+    },
+    {
+      "value": 176,
+      "name": "Fracture"
+    },
+    {
+      "value": 208,
+      "name": "Crosshatch"
+    },
+    {
+      "value": 240,
+      "name": "Open"
+    },
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 16,
+      "name": "Tunnel"
+    },
+    {
+      "value": 48,
+      "name": "Bars"
+    },
+    {
+      "value": 80,
+      "name": "Fan"
+    },
+    {
+      "value": 112,
+      "name": "Breakup"
+    },
+    {
+      "value": 144,
+      "name": "Burst"
+    },
+    {
+      "value": 176,
+      "name": "Fracture"
+    },
+    {
+      "value": 208,
+      "name": "Crosshatch"
+    },
+    {
+      "value": 240,
+      "name": "Open"
+    },
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 16,
+      "name": "Tunnel"
+    },
+    {
+      "value": 48,
+      "name": "Bars"
+    },
+    {
+      "value": 80,
+      "name": "Fan"
+    },
+    {
+      "value": 112,
+      "name": "Breakup"
+    },
+    {
+      "value": 144,
+      "name": "Burst"
+    },
+    {
+      "value": 176,
+      "name": "Fracture"
+    },
+    {
+      "value": 208,
+      "name": "Crosshatch"
+    },
+    {
+      "value": 240,
+      "name": "Open"
+    }
+  ],
+  "values": {
+    "shutter_open": 230
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 252.0
+  }
+}

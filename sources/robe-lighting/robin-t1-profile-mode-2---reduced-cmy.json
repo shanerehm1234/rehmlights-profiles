@@ -1,0 +1,150 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "robe-lighting/robin-t1-profile-mode-2---reduced-cmy",
+  "name": "Robin T1 Profile",
+  "manufacturer": "Robe Lighting",
+  "mode": "Mode 2 - Reduced CMY",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 33,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 33,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 32,
+      "default": 224
+    },
+    {
+      "role": "CTO",
+      "offset": 12
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 15
+    },
+    {
+      "role": "FOCUS",
+      "offset": 22
+    },
+    {
+      "role": "FROST",
+      "offset": 19
+    },
+    {
+      "role": "ZOOM",
+      "offset": 21
+    },
+    {
+      "role": "IRIS",
+      "offset": 20
+    },
+    {
+      "role": "PRISM",
+      "offset": 17
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 13
+    },
+    {
+      "role": "RESET",
+      "offset": 6
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open/hole"
+    },
+    {
+      "value": 4,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 8,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 12,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 16,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 20,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 24,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 28,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 32,
+      "name": "Gobo 1 - Rotation"
+    },
+    {
+      "value": 36,
+      "name": "Gobo 2 - Rotation"
+    },
+    {
+      "value": 40,
+      "name": "Gobo 3 - Rotation"
+    },
+    {
+      "value": 44,
+      "name": "Gobo 4 - Rotation"
+    },
+    {
+      "value": 48,
+      "name": "Gobo 5 - Rotation"
+    },
+    {
+      "value": 52,
+      "name": "Gobo 6 - Rotation"
+    },
+    {
+      "value": 56,
+      "name": "Gobo 7 - Rotation"
+    }
+  ],
+  "values": {
+    "shutter_open": 224,
+    "strobe_slow": 64,
+    "strobe_fast": 223
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 263.6
+  }
+}

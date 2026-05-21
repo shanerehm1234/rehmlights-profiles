@@ -1,0 +1,114 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "elation/artiste-rembrandt-extended-pan630",
+  "name": "Artiste Rembrandt",
+  "manufacturer": "Elation",
+  "mode": "Extended Pan630",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 58,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 58
+    },
+    {
+      "role": "DIMMER",
+      "offset": 26,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 27
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 25,
+      "default": 224
+    },
+    {
+      "role": "CTO",
+      "offset": 11
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 19
+    },
+    {
+      "role": "FOCUS",
+      "offset": 21
+    },
+    {
+      "role": "FROST",
+      "offset": 31
+    },
+    {
+      "role": "ZOOM",
+      "offset": 23
+    },
+    {
+      "role": "IRIS",
+      "offset": 29
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 32
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "OPEN "
+    },
+    {
+      "value": 20,
+      "name": "RED"
+    },
+    {
+      "value": 38,
+      "name": "GREEN"
+    },
+    {
+      "value": 56,
+      "name": "UV"
+    },
+    {
+      "value": 74,
+      "name": "High CRI"
+    },
+    {
+      "value": 92,
+      "name": "Amber"
+    },
+    {
+      "value": 110,
+      "name": "BLUE"
+    }
+  ],
+  "values": {
+    "shutter_open": 224,
+    "strobe_slow": 64,
+    "strobe_fast": 223
+  },
+  "meta": {
+    "pan_degrees": 630.0,
+    "tilt_degrees": 250.0
+  }
+}

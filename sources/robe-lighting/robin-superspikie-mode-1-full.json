@@ -1,0 +1,252 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "robe-lighting/robin-superspikie-mode-1-full",
+  "name": "Robin SuperSpikie",
+  "manufacturer": "Robe Lighting",
+  "mode": "Mode 1 Full",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 31,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 7
+    },
+    {
+      "role": "DIMMER",
+      "offset": 30,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 31
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 29,
+      "default": 224
+    },
+    {
+      "role": "RED",
+      "offset": 10
+    },
+    {
+      "role": "GREEN",
+      "offset": 12
+    },
+    {
+      "role": "BLUE",
+      "offset": 14
+    },
+    {
+      "role": "WHITE",
+      "offset": 16
+    },
+    {
+      "role": "CTO",
+      "offset": 18
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 9
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 20
+    },
+    {
+      "role": "FROST",
+      "offset": 26
+    },
+    {
+      "role": "ZOOM",
+      "offset": 27
+    },
+    {
+      "role": "PRISM",
+      "offset": 23
+    },
+    {
+      "role": "EFFECTS",
+      "offset": 25
+    },
+    {
+      "role": "RESET",
+      "offset": 8
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "No function"
+    },
+    {
+      "value": 1,
+      "name": "Filter 4 (Medium Bast"
+    },
+    {
+      "value": 3,
+      "name": "Filter 25 (Sunset Red"
+    },
+    {
+      "value": 5,
+      "name": "Filter 19 (Fire)"
+    },
+    {
+      "value": 7,
+      "name": "Filter 26 (Bright Red"
+    },
+    {
+      "value": 9,
+      "name": "Filter 58 (Lavender)"
+    },
+    {
+      "value": 11,
+      "name": "Filter 68 (Sky Blue)"
+    },
+    {
+      "value": 13,
+      "name": "Filter 36 (Medium Pin"
+    },
+    {
+      "value": 15,
+      "name": "Filter 89 (Moss Green"
+    },
+    {
+      "value": 17,
+      "name": "Filter 88 (Lime Green"
+    },
+    {
+      "value": 19,
+      "name": "Filter 90 (Dark Yello"
+    },
+    {
+      "value": 21,
+      "name": "Filter 49 (Medium Pur"
+    },
+    {
+      "value": 23,
+      "name": "Filter 52 (Light Lave"
+    },
+    {
+      "value": 25,
+      "name": "Filter 102 (Light Amb"
+    },
+    {
+      "value": 27,
+      "name": "Filter 103 (Straw)"
+    },
+    {
+      "value": 29,
+      "name": "Filter 140 (Summer Bl"
+    },
+    {
+      "value": 31,
+      "name": "Filter 124 (Dark Gree"
+    },
+    {
+      "value": 33,
+      "name": "Filter 106 (Primary R"
+    },
+    {
+      "value": 35,
+      "name": "Filter 111 (Dark Pink"
+    },
+    {
+      "value": 37,
+      "name": "Filter 115 (Peacock B"
+    },
+    {
+      "value": 39,
+      "name": "Filter 126 (Mauve)"
+    },
+    {
+      "value": 41,
+      "name": "Filter 117 (Steel Blu"
+    },
+    {
+      "value": 43,
+      "name": "Filter 118 (Light Blu"
+    },
+    {
+      "value": 45,
+      "name": "Filter 122 (Fern Gree"
+    },
+    {
+      "value": 47,
+      "name": "Filter 182 (Light Red"
+    },
+    {
+      "value": 49,
+      "name": "Filter 121 (Filter Gr"
+    },
+    {
+      "value": 51,
+      "name": "Filter 128 (Bright Pi"
+    },
+    {
+      "value": 53,
+      "name": "Filter 131 (Marine Bl"
+    },
+    {
+      "value": 55,
+      "name": "Filter 132 (Medium Bl"
+    },
+    {
+      "value": 57,
+      "name": "Filter 134 (Golden Am"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open/hole"
+    },
+    {
+      "value": 5,
+      "name": "Gobo 1 Index"
+    },
+    {
+      "value": 10,
+      "name": "Gobo 2 Index"
+    },
+    {
+      "value": 15,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 20,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 25,
+      "name": "Open/hole"
+    }
+  ],
+  "values": {
+    "shutter_open": 224,
+    "strobe_slow": 64,
+    "strobe_fast": 223
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 360.0
+  }
+}

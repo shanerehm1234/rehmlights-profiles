@@ -1,0 +1,186 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "martin-professional/mac-aura-raven-xip-compact",
+  "name": "MAC Aura Raven XIP",
+  "manufacturer": "Martin Professional",
+  "mode": "Compact",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 21,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 17,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 18
+    },
+    {
+      "role": "TILT",
+      "offset": 19,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 20
+    },
+    {
+      "role": "DIMMER",
+      "offset": 2,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 3
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 1,
+      "default": 201
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 12
+    },
+    {
+      "role": "ZOOM",
+      "offset": 13
+    },
+    {
+      "role": "RESET",
+      "offset": 21
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 11,
+      "name": "Moroccan Pink"
+    },
+    {
+      "value": 13,
+      "name": "Pink"
+    },
+    {
+      "value": 15,
+      "name": "Special Rose Pink"
+    },
+    {
+      "value": 17,
+      "name": "Follies Pink"
+    },
+    {
+      "value": 19,
+      "name": "Fuchsia Pink"
+    },
+    {
+      "value": 21,
+      "name": "Surprise Pink"
+    },
+    {
+      "value": 23,
+      "name": "Congo Blue"
+    },
+    {
+      "value": 25,
+      "name": "Tokyo Blue"
+    },
+    {
+      "value": 27,
+      "name": "Deep Blue"
+    },
+    {
+      "value": 29,
+      "name": "Just Blue"
+    },
+    {
+      "value": 31,
+      "name": "Medium Blue"
+    },
+    {
+      "value": 33,
+      "name": "Double CT Blue"
+    },
+    {
+      "value": 35,
+      "name": "Slate Blue"
+    },
+    {
+      "value": 37,
+      "name": "Full CT Blue"
+    },
+    {
+      "value": 39,
+      "name": "Half CT Blue"
+    },
+    {
+      "value": 41,
+      "name": "Steel Blue"
+    },
+    {
+      "value": 43,
+      "name": "Lighter Blue"
+    },
+    {
+      "value": 45,
+      "name": "Light Blue"
+    },
+    {
+      "value": 47,
+      "name": "Medium Blue Green"
+    },
+    {
+      "value": 49,
+      "name": "Dark Green"
+    },
+    {
+      "value": 51,
+      "name": "Primary Green"
+    },
+    {
+      "value": 53,
+      "name": "Moss Green"
+    },
+    {
+      "value": 55,
+      "name": "Fern Green"
+    },
+    {
+      "value": 57,
+      "name": "Jas Green"
+    },
+    {
+      "value": 59,
+      "name": "Lime Green"
+    },
+    {
+      "value": 61,
+      "name": "Spring Yellow"
+    },
+    {
+      "value": 63,
+      "name": "Deep Amber"
+    },
+    {
+      "value": 65,
+      "name": "Chrome Orange"
+    },
+    {
+      "value": 67,
+      "name": "Orange"
+    }
+  ],
+  "values": {
+    "shutter_open": 201,
+    "strobe_slow": 50,
+    "strobe_fast": 255
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 250.0
+  }
+}

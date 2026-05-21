@@ -1,0 +1,321 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "elation/fuze-wash-250-rgb",
+  "name": "Fuze Wash 250",
+  "manufacturer": "Elation",
+  "mode": "RGB",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 13,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "DIMMER",
+      "offset": 12,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 13
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 11,
+      "default": 224
+    },
+    {
+      "role": "RED",
+      "offset": 5
+    },
+    {
+      "role": "GREEN",
+      "offset": 6
+    },
+    {
+      "role": "BLUE",
+      "offset": 7
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 9
+    },
+    {
+      "role": "COLOR_WHEEL_2",
+      "offset": 8
+    },
+    {
+      "role": "ZOOM",
+      "offset": 10
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 1,
+      "name": "Pale Yellow"
+    },
+    {
+      "value": 2,
+      "name": "Straw"
+    },
+    {
+      "value": 3,
+      "name": "Gold Tint"
+    },
+    {
+      "value": 4,
+      "name": "Spring Yellow"
+    },
+    {
+      "value": 5,
+      "name": "Medium Yellow"
+    },
+    {
+      "value": 6,
+      "name": "Yellow"
+    },
+    {
+      "value": 7,
+      "name": "Deep Amber"
+    },
+    {
+      "value": 8,
+      "name": "Deep Straw"
+    },
+    {
+      "value": 9,
+      "name": "Loving Amber"
+    },
+    {
+      "value": 10,
+      "name": "Gold Amber"
+    },
+    {
+      "value": 11,
+      "name": "Orange"
+    },
+    {
+      "value": 12,
+      "name": "Deep Orange"
+    },
+    {
+      "value": 13,
+      "name": "Dark Amber"
+    },
+    {
+      "value": 14,
+      "name": "Millennium Gold"
+    },
+    {
+      "value": 15,
+      "name": "Deep Golden Amber"
+    },
+    {
+      "value": 16,
+      "name": "Scarlet"
+    },
+    {
+      "value": 17,
+      "name": "Primary Red"
+    },
+    {
+      "value": 18,
+      "name": "Bright Red"
+    },
+    {
+      "value": 19,
+      "name": "Medium Red"
+    },
+    {
+      "value": 20,
+      "name": "Fire"
+    },
+    {
+      "value": 21,
+      "name": "Pink"
+    },
+    {
+      "value": 22,
+      "name": "Medium Pink"
+    },
+    {
+      "value": 23,
+      "name": "Dark Pink"
+    },
+    {
+      "value": 24,
+      "name": "Bright Pink"
+    },
+    {
+      "value": 25,
+      "name": "Bright Rose"
+    },
+    {
+      "value": 26,
+      "name": "Special Rose Pink"
+    },
+    {
+      "value": 27,
+      "name": "Vanity Fair"
+    },
+    {
+      "value": 28,
+      "name": "Magenta"
+    },
+    {
+      "value": 29,
+      "name": "Dark Magenta"
+    }
+  ],
+  "color_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 24,
+      "name": "2400 K"
+    },
+    {
+      "value": 25,
+      "name": "2500 K"
+    },
+    {
+      "value": 26,
+      "name": "2600 K"
+    },
+    {
+      "value": 27,
+      "name": "2700 K"
+    },
+    {
+      "value": 28,
+      "name": "2800 K"
+    },
+    {
+      "value": 29,
+      "name": "2900 K"
+    },
+    {
+      "value": 30,
+      "name": "3000 K"
+    },
+    {
+      "value": 31,
+      "name": "3100 K"
+    },
+    {
+      "value": 32,
+      "name": "3200 K"
+    },
+    {
+      "value": 33,
+      "name": "3300 K"
+    },
+    {
+      "value": 34,
+      "name": "3400 K"
+    },
+    {
+      "value": 35,
+      "name": "3500 K"
+    },
+    {
+      "value": 36,
+      "name": "3600 K"
+    },
+    {
+      "value": 37,
+      "name": "3700 K"
+    },
+    {
+      "value": 38,
+      "name": "3800 K"
+    },
+    {
+      "value": 39,
+      "name": "3900 K"
+    },
+    {
+      "value": 40,
+      "name": "4000 K"
+    },
+    {
+      "value": 41,
+      "name": "4100 K"
+    },
+    {
+      "value": 42,
+      "name": "4200 K"
+    },
+    {
+      "value": 43,
+      "name": "4300 K"
+    },
+    {
+      "value": 44,
+      "name": "4400 K"
+    },
+    {
+      "value": 45,
+      "name": "4500 K"
+    },
+    {
+      "value": 46,
+      "name": "4600 K"
+    },
+    {
+      "value": 47,
+      "name": "4700 K"
+    },
+    {
+      "value": 48,
+      "name": "4800 K"
+    },
+    {
+      "value": 49,
+      "name": "4900 K"
+    },
+    {
+      "value": 50,
+      "name": "5000 K"
+    },
+    {
+      "value": 51,
+      "name": "5100 K"
+    },
+    {
+      "value": 52,
+      "name": "5200 K"
+    }
+  ],
+  "values": {
+    "shutter_open": 224,
+    "shutter_close": 224,
+    "strobe_slow": 64,
+    "strobe_fast": 223
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 250.0
+  }
+}

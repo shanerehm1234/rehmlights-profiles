@@ -1,0 +1,365 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "adj/focus-spot-7z-extended-45-pan540",
+  "name": "Focus Spot 7Z",
+  "manufacturer": "ADJ",
+  "mode": "Extended (45) Pan540",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 45,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 44
+    },
+    {
+      "role": "DIMMER",
+      "offset": 23,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 24
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 22,
+      "default": 224
+    },
+    {
+      "role": "CTO",
+      "offset": 11
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 13
+    },
+    {
+      "role": "COLOR_WHEEL_2",
+      "offset": 14
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 16
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 19
+    },
+    {
+      "role": "FOCUS",
+      "offset": 32
+    },
+    {
+      "role": "FROST",
+      "offset": 38
+    },
+    {
+      "role": "ZOOM",
+      "offset": 34
+    },
+    {
+      "role": "IRIS",
+      "offset": 36
+    },
+    {
+      "role": "PRISM",
+      "offset": 25
+    },
+    {
+      "role": "PRISM_2",
+      "offset": 28
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 40
+    },
+    {
+      "role": "RESET",
+      "offset": 45
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 24,
+      "name": "2400"
+    },
+    {
+      "value": 25,
+      "name": "2500"
+    },
+    {
+      "value": 26,
+      "name": "2600"
+    },
+    {
+      "value": 27,
+      "name": "2700"
+    },
+    {
+      "value": 28,
+      "name": "2800"
+    },
+    {
+      "value": 29,
+      "name": "2900"
+    },
+    {
+      "value": 30,
+      "name": "3000"
+    },
+    {
+      "value": 31,
+      "name": "3100"
+    },
+    {
+      "value": 32,
+      "name": "3200"
+    },
+    {
+      "value": 33,
+      "name": "3300"
+    },
+    {
+      "value": 34,
+      "name": "3400"
+    },
+    {
+      "value": 35,
+      "name": "3500"
+    },
+    {
+      "value": 36,
+      "name": "3600"
+    },
+    {
+      "value": 37,
+      "name": "3700"
+    },
+    {
+      "value": 38,
+      "name": "3800"
+    },
+    {
+      "value": 39,
+      "name": "3900"
+    },
+    {
+      "value": 40,
+      "name": "4000"
+    },
+    {
+      "value": 41,
+      "name": "4100"
+    },
+    {
+      "value": 42,
+      "name": "4200"
+    },
+    {
+      "value": 43,
+      "name": "4300"
+    },
+    {
+      "value": 44,
+      "name": "4400"
+    },
+    {
+      "value": 45,
+      "name": "4500"
+    },
+    {
+      "value": 46,
+      "name": "4600"
+    },
+    {
+      "value": 47,
+      "name": "4700"
+    },
+    {
+      "value": 48,
+      "name": "4800"
+    },
+    {
+      "value": 49,
+      "name": "4900"
+    },
+    {
+      "value": 50,
+      "name": "5000"
+    },
+    {
+      "value": 51,
+      "name": "5100"
+    },
+    {
+      "value": 52,
+      "name": "5200"
+    }
+  ],
+  "color_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open "
+    },
+    {
+      "value": 5,
+      "name": "Open / Red"
+    },
+    {
+      "value": 18,
+      "name": "Red"
+    },
+    {
+      "value": 31,
+      "name": "Red / Blue"
+    },
+    {
+      "value": 44,
+      "name": "Blue"
+    },
+    {
+      "value": 57,
+      "name": "Blue / Green"
+    },
+    {
+      "value": 70,
+      "name": "Green"
+    },
+    {
+      "value": 83,
+      "name": "Green / Orange"
+    },
+    {
+      "value": 96,
+      "name": "Orange"
+    },
+    {
+      "value": 109,
+      "name": "Orange / Midnight Blu"
+    },
+    {
+      "value": 122,
+      "name": "Midnight Blue"
+    },
+    {
+      "value": 135,
+      "name": "Midnight Blue / High "
+    },
+    {
+      "value": 148,
+      "name": "High CRI Filter"
+    },
+    {
+      "value": 161,
+      "name": "High CRI Filter / CTB"
+    },
+    {
+      "value": 174,
+      "name": "CTB"
+    },
+    {
+      "value": 187,
+      "name": "CTB (5600K) / Open"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 10,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 20,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 30,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 40,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 50,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 60,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 70,
+      "name": "Gobo 7"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 10,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 20,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 30,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 40,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 50,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 60,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 70,
+      "name": "Gobo 7"
+    }
+  ],
+  "values": {
+    "shutter_open": 224,
+    "shutter_close": 224,
+    "strobe_slow": 64,
+    "strobe_fast": 223
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

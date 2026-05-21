@@ -1,0 +1,178 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "shehds/100w-moving-head-gobo-14ch",
+  "name": "100W Moving Head Gobo",
+  "manufacturer": "SHEHDS",
+  "mode": "14ch",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 14,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 12
+    },
+    {
+      "role": "TILT",
+      "offset": 4,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 13
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 1,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 2,
+      "default": 255
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 6
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 7
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 8
+    },
+    {
+      "role": "GOBO_ROT",
+      "offset": 9
+    },
+    {
+      "role": "FOCUS",
+      "offset": 11
+    },
+    {
+      "role": "PRISM",
+      "offset": 10
+    },
+    {
+      "role": "RESET",
+      "offset": 14
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 5,
+      "name": "Red"
+    },
+    {
+      "value": 10,
+      "name": "Green 1"
+    },
+    {
+      "value": 15,
+      "name": "Blue"
+    },
+    {
+      "value": 20,
+      "name": "Yellow"
+    },
+    {
+      "value": 25,
+      "name": "Magenta"
+    },
+    {
+      "value": 30,
+      "name": "Cyan"
+    },
+    {
+      "value": 35,
+      "name": "Green 2"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 10,
+      "name": "Diamonds"
+    },
+    {
+      "value": 20,
+      "name": "Sun"
+    },
+    {
+      "value": 30,
+      "name": "Small Grid"
+    },
+    {
+      "value": 40,
+      "name": "Checkers"
+    },
+    {
+      "value": 50,
+      "name": "Flowers"
+    },
+    {
+      "value": 60,
+      "name": "Large Grid"
+    },
+    {
+      "value": 70,
+      "name": "Blocks"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 10,
+      "name": "Purple Snow"
+    },
+    {
+      "value": 20,
+      "name": "Blue Curve"
+    },
+    {
+      "value": 30,
+      "name": "Four Circles"
+    },
+    {
+      "value": 40,
+      "name": "Triangle"
+    },
+    {
+      "value": 50,
+      "name": "Swirl"
+    },
+    {
+      "value": 60,
+      "name": "Dots"
+    }
+  ],
+  "values": {
+    "shutter_open": 255,
+    "strobe_slow": 4,
+    "strobe_fast": 250
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 210.0
+  }
+}

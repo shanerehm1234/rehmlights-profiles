@@ -1,0 +1,261 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "adj/vizi-beam-5rx-19-ch",
+  "name": "Vizi Beam 5RX",
+  "manufacturer": "ADJ",
+  "mode": "19 CH",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 18,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 18
+    },
+    {
+      "role": "DIMMER",
+      "offset": 12,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 11,
+      "default": 224
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 5
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 6
+    },
+    {
+      "role": "FOCUS",
+      "offset": 9
+    },
+    {
+      "role": "FROST",
+      "offset": 10
+    },
+    {
+      "role": "PRISM",
+      "offset": 7
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open "
+    },
+    {
+      "value": 4,
+      "name": "Red"
+    },
+    {
+      "value": 8,
+      "name": "Blue"
+    },
+    {
+      "value": 12,
+      "name": "Green"
+    },
+    {
+      "value": 16,
+      "name": "Lime"
+    },
+    {
+      "value": 20,
+      "name": "Orange"
+    },
+    {
+      "value": 24,
+      "name": "Pink"
+    },
+    {
+      "value": 28,
+      "name": "Lavender"
+    },
+    {
+      "value": 32,
+      "name": "Medium Red"
+    },
+    {
+      "value": 36,
+      "name": "Aqua"
+    },
+    {
+      "value": 40,
+      "name": "Amber"
+    },
+    {
+      "value": 44,
+      "name": "CTB 9000K"
+    },
+    {
+      "value": 48,
+      "name": "4500K"
+    },
+    {
+      "value": 52,
+      "name": "3200K"
+    },
+    {
+      "value": 56,
+      "name": "UV"
+    },
+    {
+      "value": 60,
+      "name": "Open "
+    },
+    {
+      "value": 62,
+      "name": "White to Red"
+    },
+    {
+      "value": 64,
+      "name": "Red"
+    },
+    {
+      "value": 66,
+      "name": "Red to Blue"
+    },
+    {
+      "value": 68,
+      "name": "Blue"
+    },
+    {
+      "value": 70,
+      "name": "Blue to Green"
+    },
+    {
+      "value": 72,
+      "name": "Green"
+    },
+    {
+      "value": 74,
+      "name": "Green to Lime"
+    },
+    {
+      "value": 76,
+      "name": "Lime"
+    },
+    {
+      "value": 78,
+      "name": "Lime to Orange"
+    },
+    {
+      "value": 80,
+      "name": "Orange"
+    },
+    {
+      "value": 82,
+      "name": "Orange to Pink"
+    },
+    {
+      "value": 84,
+      "name": "Pink"
+    },
+    {
+      "value": 86,
+      "name": "Pink to Lavender"
+    },
+    {
+      "value": 88,
+      "name": "Lavender"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 15,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 18,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 21,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 24,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 27,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 30,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 33,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 36,
+      "name": "Gobo 8"
+    },
+    {
+      "value": 39,
+      "name": "Gobo 9"
+    },
+    {
+      "value": 42,
+      "name": "Gobo 10"
+    },
+    {
+      "value": 45,
+      "name": "Gobo 11"
+    },
+    {
+      "value": 48,
+      "name": "Gobo 12"
+    },
+    {
+      "value": 51,
+      "name": "Gobo 13"
+    },
+    {
+      "value": 54,
+      "name": "Gobo 14"
+    },
+    {
+      "value": 57,
+      "name": "Gobo 15"
+    }
+  ],
+  "values": {
+    "shutter_open": 224,
+    "shutter_close": 224,
+    "strobe_slow": 64,
+    "strobe_fast": 223
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

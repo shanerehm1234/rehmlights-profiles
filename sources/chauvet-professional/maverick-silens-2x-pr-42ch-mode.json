@@ -1,0 +1,269 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "chauvet-professional/maverick-silens-2x-pr-42ch-mode",
+  "name": "Maverick Silens 2X Pr",
+  "manufacturer": "Chauvet Professional",
+  "mode": "42Ch Mode ",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 42,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 6,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 7
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 8,
+      "default": 0
+    },
+    {
+      "role": "CTO",
+      "offset": 13
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 14
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 17
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 20
+    },
+    {
+      "role": "GOBO_ROT",
+      "offset": 18
+    },
+    {
+      "role": "FOCUS",
+      "offset": 32
+    },
+    {
+      "role": "FROST",
+      "offset": 40
+    },
+    {
+      "role": "ZOOM",
+      "offset": 35
+    },
+    {
+      "role": "IRIS",
+      "offset": 39
+    },
+    {
+      "role": "PRISM",
+      "offset": 37
+    },
+    {
+      "role": "PRISM_ROT",
+      "offset": 38
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 21
+    },
+    {
+      "role": "RESET",
+      "offset": 42
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 5,
+      "name": "Red"
+    },
+    {
+      "value": 10,
+      "name": "Orange"
+    },
+    {
+      "value": 14,
+      "name": "Dark Green"
+    },
+    {
+      "value": 19,
+      "name": "Cyan"
+    },
+    {
+      "value": 23,
+      "name": "Congo Blue"
+    },
+    {
+      "value": 28,
+      "name": "UV"
+    },
+    {
+      "value": 32,
+      "name": "Open"
+    },
+    {
+      "value": 33,
+      "name": "Open/Red"
+    },
+    {
+      "value": 52,
+      "name": "Red"
+    },
+    {
+      "value": 57,
+      "name": "Red/Orange"
+    },
+    {
+      "value": 74,
+      "name": "Orange"
+    },
+    {
+      "value": 79,
+      "name": "Orange/Dark Green"
+    },
+    {
+      "value": 96,
+      "name": "Dark Green"
+    },
+    {
+      "value": 101,
+      "name": "Dark Green/Cyan"
+    },
+    {
+      "value": 118,
+      "name": "Cyan"
+    },
+    {
+      "value": 124,
+      "name": "Cyan/Congo Blue"
+    },
+    {
+      "value": 140,
+      "name": "Congo Blue"
+    },
+    {
+      "value": 145,
+      "name": "Congo Blue/UV"
+    },
+    {
+      "value": 162,
+      "name": "UV"
+    },
+    {
+      "value": 167,
+      "name": "UV/Open"
+    },
+    {
+      "value": 185,
+      "name": "Open"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 6,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 11,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 16,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 21,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 26,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 31,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 36,
+      "name": "Gobo 7"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 6,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 11,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 16,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 21,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 26,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 31,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 36,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 41,
+      "name": "Gobo 8"
+    }
+  ],
+  "values": {
+    "strobe_slow": 11,
+    "strobe_fast": 244
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

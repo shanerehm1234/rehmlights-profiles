@@ -1,0 +1,390 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "clay-paky/sharpy-plus-standard",
+  "name": "Sharpy Plus",
+  "manufacturer": "Clay Paky",
+  "mode": "Standard ",
+  "fixture_type": "FIXTURE_TYPE_HID",
+  "footprint": 31,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 25,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 26
+    },
+    {
+      "role": "TILT",
+      "offset": 27,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 28
+    },
+    {
+      "role": "DIMMER",
+      "offset": 8,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 9
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 7,
+      "default": 252
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 4
+    },
+    {
+      "role": "COLOR_WHEEL_2",
+      "offset": 5
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 10
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 13
+    },
+    {
+      "role": "FOCUS",
+      "offset": 22
+    },
+    {
+      "role": "FROST",
+      "offset": 20
+    },
+    {
+      "role": "ZOOM",
+      "offset": 21
+    },
+    {
+      "role": "PRISM",
+      "offset": 16
+    },
+    {
+      "role": "PRISM_ROT",
+      "offset": 17
+    },
+    {
+      "role": "PRISM_2",
+      "offset": 18
+    },
+    {
+      "role": "PRISM_ROT_2",
+      "offset": 19
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 11
+    },
+    {
+      "role": "LAMP",
+      "offset": 31
+    },
+    {
+      "role": "RESET",
+      "offset": 30
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 24,
+      "name": "White/UV "
+    },
+    {
+      "value": 47,
+      "name": "UV "
+    },
+    {
+      "value": 70,
+      "name": "UV/Lavander"
+    },
+    {
+      "value": 93,
+      "name": "Lavander"
+    },
+    {
+      "value": 116,
+      "name": "Lavander/CTO 3200"
+    },
+    {
+      "value": 140,
+      "name": "CTO 3200 K"
+    },
+    {
+      "value": 163,
+      "name": "CTO 3200K/ CTO 2500K"
+    },
+    {
+      "value": 186,
+      "name": "CTO 2500"
+    },
+    {
+      "value": 209,
+      "name": "CTO 2500K/ Blue Wood "
+    },
+    {
+      "value": 232,
+      "name": "Blue Wood "
+    }
+  ],
+  "color_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open "
+    },
+    {
+      "value": 24,
+      "name": "Open / Dark Green "
+    },
+    {
+      "value": 47,
+      "name": "Dark Green "
+    },
+    {
+      "value": 70,
+      "name": "Dark Green / CTB"
+    },
+    {
+      "value": 93,
+      "name": "CTB"
+    },
+    {
+      "value": 116,
+      "name": "CTB / Dark Blue "
+    },
+    {
+      "value": 140,
+      "name": "Dark Blue "
+    },
+    {
+      "value": 163,
+      "name": "Dark Blue / H M Green"
+    },
+    {
+      "value": 186,
+      "name": "H M Green "
+    },
+    {
+      "value": 209,
+      "name": "H M Green /  Dark Red"
+    },
+    {
+      "value": 232,
+      "name": "Dark Red "
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "OPEN"
+    },
+    {
+      "value": 4,
+      "name": "GOBO 1"
+    },
+    {
+      "value": 8,
+      "name": "GOBO 2"
+    },
+    {
+      "value": 12,
+      "name": "GOBO 3"
+    },
+    {
+      "value": 15,
+      "name": "GOBO 4"
+    },
+    {
+      "value": 19,
+      "name": "GOBO 5"
+    },
+    {
+      "value": 23,
+      "name": "GOBO 6"
+    },
+    {
+      "value": 27,
+      "name": "GOBO 7"
+    },
+    {
+      "value": 30,
+      "name": "Gobo 8 "
+    },
+    {
+      "value": 34,
+      "name": "Gobo 9 "
+    },
+    {
+      "value": 38,
+      "name": "Gobo 10 "
+    },
+    {
+      "value": 42,
+      "name": "Gobo 11"
+    },
+    {
+      "value": 45,
+      "name": "Gobo 12 "
+    },
+    {
+      "value": 49,
+      "name": "Gobo 13 "
+    },
+    {
+      "value": 53,
+      "name": "Gobo 14 "
+    },
+    {
+      "value": 57,
+      "name": "Gobo 15 "
+    },
+    {
+      "value": 60,
+      "name": "Gobo 16"
+    },
+    {
+      "value": 64,
+      "name": "Gobo 17 "
+    },
+    {
+      "value": 68,
+      "name": "Gobo 18"
+    },
+    {
+      "value": 160,
+      "name": "GOBO 1"
+    },
+    {
+      "value": 166,
+      "name": "GOBO 2"
+    },
+    {
+      "value": 171,
+      "name": "GOBO 3"
+    },
+    {
+      "value": 176,
+      "name": "GOBO 4"
+    },
+    {
+      "value": 182,
+      "name": "GOBO 5"
+    },
+    {
+      "value": 187,
+      "name": "GOBO 6"
+    },
+    {
+      "value": 192,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 197,
+      "name": "Gobo 8 "
+    },
+    {
+      "value": 203,
+      "name": "Gobo 9 "
+    },
+    {
+      "value": 208,
+      "name": "Gobo 10 "
+    },
+    {
+      "value": 213,
+      "name": "Gobo 11"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open "
+    },
+    {
+      "value": 8,
+      "name": "GOBO 1"
+    },
+    {
+      "value": 16,
+      "name": "GOBO 2"
+    },
+    {
+      "value": 24,
+      "name": "GOBO 3"
+    },
+    {
+      "value": 32,
+      "name": "GOBO  4"
+    },
+    {
+      "value": 40,
+      "name": "GOBO 5"
+    },
+    {
+      "value": 48,
+      "name": "GOBO 6"
+    },
+    {
+      "value": 56,
+      "name": "GOBO 7"
+    },
+    {
+      "value": 64,
+      "name": "Gobo 8 "
+    },
+    {
+      "value": 160,
+      "name": "Wheel Slot 2"
+    },
+    {
+      "value": 174,
+      "name": "Wheel Slot 3"
+    },
+    {
+      "value": 188,
+      "name": "Wheel Slot 4"
+    },
+    {
+      "value": 201,
+      "name": "Wheel Slot 5"
+    },
+    {
+      "value": 215,
+      "name": "Wheel Slot 6"
+    },
+    {
+      "value": 228,
+      "name": "Wheel Slot 7"
+    },
+    {
+      "value": 242,
+      "name": "Wheel Slot 1"
+    }
+  ],
+  "values": {
+    "shutter_open": 252,
+    "strobe_slow": 4,
+    "strobe_fast": 251,
+    "lamp_on": 101,
+    "lamp_off": 26
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

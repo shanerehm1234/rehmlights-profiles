@@ -1,0 +1,69 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "flash/led-moving-bar-10x40w-24ch",
+  "name": "LED MOVING BAR 10x40W",
+  "manufacturer": "FLASH",
+  "mode": "24ch",
+  "fixture_type": "FIXTURE_TYPE_RGBX",
+  "footprint": 24,
+  "channels": [
+    {
+      "role": "TILT",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 2
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 3
+    },
+    {
+      "role": "DIMMER",
+      "offset": 7,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 8,
+      "default": 0
+    },
+    {
+      "role": "RED",
+      "offset": 19
+    },
+    {
+      "role": "GREEN",
+      "offset": 20
+    },
+    {
+      "role": "BLUE",
+      "offset": 21
+    },
+    {
+      "role": "WHITE",
+      "offset": 22
+    },
+    {
+      "role": "ZOOM",
+      "offset": 6
+    },
+    {
+      "role": "EFFECTS",
+      "offset": 18
+    },
+    {
+      "role": "RESET",
+      "offset": 24
+    }
+  ],
+  "values": {
+    "strobe_slow": 10,
+    "strobe_fast": 255
+  },
+  "meta": {
+    "tilt_degrees": 270.0
+  }
+}

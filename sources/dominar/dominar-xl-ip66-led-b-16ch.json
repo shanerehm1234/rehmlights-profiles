@@ -1,0 +1,249 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "dominar/dominar-xl-ip66-led-b-16ch",
+  "name": "Dominar XL IP66 LED B",
+  "manufacturer": "Dominar",
+  "mode": "16CH",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 16,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 7,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 6,
+      "default": 11
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 9
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 10
+    },
+    {
+      "role": "FOCUS",
+      "offset": 8
+    },
+    {
+      "role": "RESET",
+      "offset": 16
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 20,
+      "name": "Open/Red"
+    },
+    {
+      "value": 24,
+      "name": "Red"
+    },
+    {
+      "value": 28,
+      "name": "Red/Orange"
+    },
+    {
+      "value": 32,
+      "name": "Orange"
+    },
+    {
+      "value": 36,
+      "name": "Orange/Cyan"
+    },
+    {
+      "value": 40,
+      "name": "Cyan"
+    },
+    {
+      "value": 44,
+      "name": "Cyan/Green"
+    },
+    {
+      "value": 48,
+      "name": "Green"
+    },
+    {
+      "value": 52,
+      "name": "Green/Amber"
+    },
+    {
+      "value": 56,
+      "name": "Amber"
+    },
+    {
+      "value": 60,
+      "name": "Amber/Yellow"
+    },
+    {
+      "value": 64,
+      "name": "Yellow"
+    },
+    {
+      "value": 68,
+      "name": "Yellow/Blue"
+    },
+    {
+      "value": 72,
+      "name": "Blue"
+    },
+    {
+      "value": 76,
+      "name": "Blue/Pink"
+    },
+    {
+      "value": 80,
+      "name": "Pink"
+    },
+    {
+      "value": 84,
+      "name": "Pink/Lavender"
+    },
+    {
+      "value": 88,
+      "name": "Lavender"
+    },
+    {
+      "value": 92,
+      "name": "Lavender/Neon Yellow"
+    },
+    {
+      "value": 96,
+      "name": "Neon Yellow"
+    },
+    {
+      "value": 100,
+      "name": "Neon Yellow/Magenta"
+    },
+    {
+      "value": 104,
+      "name": "Magenta"
+    },
+    {
+      "value": 108,
+      "name": "Magenta/CTB"
+    },
+    {
+      "value": 112,
+      "name": "CTB"
+    },
+    {
+      "value": 116,
+      "name": "CTB/CTO 3500K"
+    },
+    {
+      "value": 120,
+      "name": "CTO 3500K"
+    },
+    {
+      "value": 124,
+      "name": "CTO 3500K/Open"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 10,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 14,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 18,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 22,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 26,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 30,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 34,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 38,
+      "name": "Gobo 8"
+    },
+    {
+      "value": 42,
+      "name": "Gobo 9"
+    },
+    {
+      "value": 46,
+      "name": "Gobo 10"
+    },
+    {
+      "value": 50,
+      "name": "Gobo 11"
+    },
+    {
+      "value": 54,
+      "name": "Gobo 12"
+    },
+    {
+      "value": 58,
+      "name": "Gobo 13"
+    },
+    {
+      "value": 62,
+      "name": "Gobo 14"
+    },
+    {
+      "value": 66,
+      "name": "Gobo 15"
+    }
+  ],
+  "values": {
+    "shutter_open": 11,
+    "shutter_close": 11,
+    "strobe_slow": 22,
+    "strobe_fast": 255
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

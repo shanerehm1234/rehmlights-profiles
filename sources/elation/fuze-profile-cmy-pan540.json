@@ -1,0 +1,279 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "elation/fuze-profile-cmy-pan540",
+  "name": "Fuze Profile",
+  "manufacturer": "Elation",
+  "mode": "CMY Pan540",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 36,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "DIMMER",
+      "offset": 21,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 22
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 20,
+      "default": 224
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 9
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 10
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 13
+    },
+    {
+      "role": "FOCUS",
+      "offset": 16
+    },
+    {
+      "role": "FROST",
+      "offset": 24
+    },
+    {
+      "role": "ZOOM",
+      "offset": 18
+    },
+    {
+      "role": "IRIS",
+      "offset": 23
+    },
+    {
+      "role": "PRISM",
+      "offset": 14
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 25
+    },
+    {
+      "role": "RESET",
+      "offset": 36
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 1,
+      "name": "Pale Yellow"
+    },
+    {
+      "value": 2,
+      "name": "Straw"
+    },
+    {
+      "value": 3,
+      "name": "Gold Tint"
+    },
+    {
+      "value": 4,
+      "name": "Spring Yellow"
+    },
+    {
+      "value": 5,
+      "name": "Medium Yellow"
+    },
+    {
+      "value": 6,
+      "name": "Yellow"
+    },
+    {
+      "value": 7,
+      "name": "Deep Amber"
+    },
+    {
+      "value": 8,
+      "name": "Deep Straw"
+    },
+    {
+      "value": 9,
+      "name": "Loving Amber"
+    },
+    {
+      "value": 10,
+      "name": "Gold Amber"
+    },
+    {
+      "value": 11,
+      "name": "Orange"
+    },
+    {
+      "value": 12,
+      "name": "Deep Orange"
+    },
+    {
+      "value": 13,
+      "name": "Dark Amber"
+    },
+    {
+      "value": 14,
+      "name": "Millennium Gold"
+    },
+    {
+      "value": 15,
+      "name": "Deep Golden Amber"
+    },
+    {
+      "value": 16,
+      "name": "Scarlet"
+    },
+    {
+      "value": 17,
+      "name": "Primary Red"
+    },
+    {
+      "value": 18,
+      "name": "Bright Red"
+    },
+    {
+      "value": 19,
+      "name": "Medium Red"
+    },
+    {
+      "value": 20,
+      "name": "Fire"
+    },
+    {
+      "value": 21,
+      "name": "Pink"
+    },
+    {
+      "value": 22,
+      "name": "Medium Pink"
+    },
+    {
+      "value": 23,
+      "name": "Dark Pink"
+    },
+    {
+      "value": 24,
+      "name": "Bright Pink"
+    },
+    {
+      "value": 25,
+      "name": "Bright Rose"
+    },
+    {
+      "value": 26,
+      "name": "Special Rose Pink"
+    },
+    {
+      "value": 27,
+      "name": "Vanity Fair"
+    },
+    {
+      "value": 28,
+      "name": "Magenta"
+    },
+    {
+      "value": 29,
+      "name": "Dark Magenta"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 10,
+      "name": "Tear me Up"
+    },
+    {
+      "value": 20,
+      "name": "Super Sic"
+    },
+    {
+      "value": 30,
+      "name": "Track Attack"
+    },
+    {
+      "value": 40,
+      "name": "Leaf Breakup"
+    },
+    {
+      "value": 50,
+      "name": "Bubble Trouble"
+    },
+    {
+      "value": 60,
+      "name": "Texture Glass"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 10,
+      "name": "Puddles"
+    },
+    {
+      "value": 20,
+      "name": "Broken Dreams"
+    },
+    {
+      "value": 30,
+      "name": "Sunset City"
+    },
+    {
+      "value": 40,
+      "name": "Highway Math"
+    },
+    {
+      "value": 50,
+      "name": "Starburst"
+    },
+    {
+      "value": 60,
+      "name": "Beams"
+    },
+    {
+      "value": 70,
+      "name": "Fuze Profile GW02 07"
+    }
+  ],
+  "values": {
+    "shutter_open": 224,
+    "shutter_close": 224,
+    "strobe_slow": 64,
+    "strobe_fast": 223
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

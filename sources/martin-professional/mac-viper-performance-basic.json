@@ -1,0 +1,204 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "martin-professional/mac-viper-performance-basic",
+  "name": "MAC Viper Performance",
+  "manufacturer": "Martin Professional",
+  "mode": "Basic",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 32,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 28,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 29
+    },
+    {
+      "role": "TILT",
+      "offset": 30,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 31
+    },
+    {
+      "role": "DIMMER",
+      "offset": 2,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 1,
+      "default": 201
+    },
+    {
+      "role": "CTO",
+      "offset": 6
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 7
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 8
+    },
+    {
+      "role": "FOCUS",
+      "offset": 27
+    },
+    {
+      "role": "FROST",
+      "offset": 22
+    },
+    {
+      "role": "ZOOM",
+      "offset": 26
+    },
+    {
+      "role": "IRIS",
+      "offset": 25
+    },
+    {
+      "role": "PRISM",
+      "offset": 23
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 11
+    },
+    {
+      "role": "RESET",
+      "offset": 32
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 8,
+      "name": "Blue"
+    },
+    {
+      "value": 23,
+      "name": "Green"
+    },
+    {
+      "value": 38,
+      "name": "Orange"
+    },
+    {
+      "value": 53,
+      "name": "Minus Green"
+    },
+    {
+      "value": 68,
+      "name": "Deep Magenta"
+    },
+    {
+      "value": 83,
+      "name": "Deep Blue"
+    },
+    {
+      "value": 98,
+      "name": "Red"
+    },
+    {
+      "value": 113,
+      "name": "Open"
+    },
+    {
+      "value": 161,
+      "name": "Blue"
+    },
+    {
+      "value": 164,
+      "name": "Green"
+    },
+    {
+      "value": 167,
+      "name": "Orange"
+    },
+    {
+      "value": 170,
+      "name": "Minus Green"
+    },
+    {
+      "value": 173,
+      "name": "Deep Magenta"
+    },
+    {
+      "value": 176,
+      "name": "Deep Blue"
+    },
+    {
+      "value": 179,
+      "name": "Red"
+    },
+    {
+      "value": 182,
+      "name": "Open"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 10,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 15,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 20,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 25,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 30,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 35,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 40,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 45,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 50,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 55,
+      "name": "Gobo 5"
+    }
+  ],
+  "values": {
+    "shutter_open": 201,
+    "strobe_slow": 50,
+    "strobe_fast": 255
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 268.0
+  }
+}

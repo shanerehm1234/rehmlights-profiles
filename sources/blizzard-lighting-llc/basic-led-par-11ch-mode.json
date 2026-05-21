@@ -1,0 +1,48 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "blizzard-lighting-llc/basic-led-par-11ch-mode",
+  "name": "Basic LED PAR",
+  "manufacturer": "Blizzard Lighting LLC",
+  "mode": "11ch mode",
+  "fixture_type": "FIXTURE_TYPE_RGBX",
+  "footprint": 8,
+  "channels": [
+    {
+      "role": "DIMMER",
+      "offset": 1,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 8,
+      "default": 0
+    },
+    {
+      "role": "RED",
+      "offset": 2
+    },
+    {
+      "role": "GREEN",
+      "offset": 3
+    },
+    {
+      "role": "BLUE",
+      "offset": 4
+    },
+    {
+      "role": "WHITE",
+      "offset": 6
+    },
+    {
+      "role": "AMBER",
+      "offset": 5
+    },
+    {
+      "role": "UV",
+      "offset": 7
+    }
+  ],
+  "values": {
+    "strobe_fast": 255
+  }
+}

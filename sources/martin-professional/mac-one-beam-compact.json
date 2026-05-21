@@ -1,0 +1,182 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "martin-professional/mac-one-beam-compact",
+  "name": "MAC One Beam",
+  "manufacturer": "Martin Professional",
+  "mode": "Compact",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 17,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 13,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 14
+    },
+    {
+      "role": "TILT",
+      "offset": 15,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 16
+    },
+    {
+      "role": "DIMMER",
+      "offset": 2,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 3
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 1,
+      "default": 201
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 12
+    },
+    {
+      "role": "RESET",
+      "offset": 17
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "White 1"
+    },
+    {
+      "value": 1,
+      "name": "Red 1"
+    },
+    {
+      "value": 2,
+      "name": "Yellow 1"
+    },
+    {
+      "value": 3,
+      "name": "Lime"
+    },
+    {
+      "value": 4,
+      "name": "Light Cyan"
+    },
+    {
+      "value": 5,
+      "name": "Purple"
+    },
+    {
+      "value": 6,
+      "name": "Blue 2"
+    },
+    {
+      "value": 7,
+      "name": "Cyan 2"
+    },
+    {
+      "value": 8,
+      "name": "White 2"
+    },
+    {
+      "value": 9,
+      "name": "Green 1"
+    },
+    {
+      "value": 10,
+      "name": "Cyan 1"
+    },
+    {
+      "value": 11,
+      "name": "Azure"
+    },
+    {
+      "value": 12,
+      "name": "Light Magenta"
+    },
+    {
+      "value": 13,
+      "name": "Orange"
+    },
+    {
+      "value": 14,
+      "name": "Red 2"
+    },
+    {
+      "value": 15,
+      "name": "Magenta 2"
+    },
+    {
+      "value": 16,
+      "name": "White 3"
+    },
+    {
+      "value": 17,
+      "name": "Blue 1"
+    },
+    {
+      "value": 18,
+      "name": "Magenta 1"
+    },
+    {
+      "value": 19,
+      "name": "Pink"
+    },
+    {
+      "value": 20,
+      "name": "Light Yellow"
+    },
+    {
+      "value": 21,
+      "name": "Spring Green"
+    },
+    {
+      "value": 22,
+      "name": "Green 2"
+    },
+    {
+      "value": 23,
+      "name": "Yellow 2"
+    },
+    {
+      "value": 24,
+      "name": "White 1"
+    },
+    {
+      "value": 25,
+      "name": "Split 1"
+    },
+    {
+      "value": 28,
+      "name": "Red 1"
+    },
+    {
+      "value": 29,
+      "name": "Split 2"
+    },
+    {
+      "value": 32,
+      "name": "Yellow 1"
+    },
+    {
+      "value": 33,
+      "name": "Lime"
+    }
+  ],
+  "values": {
+    "shutter_open": 201,
+    "strobe_slow": 50,
+    "strobe_fast": 255
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 225.0
+  }
+}

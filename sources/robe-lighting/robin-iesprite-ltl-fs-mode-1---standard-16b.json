@@ -1,0 +1,380 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "robe-lighting/robin-iesprite-ltl-fs-mode-1---standard-16b",
+  "name": "Robin iESPRITE LTL FS",
+  "manufacturer": "Robe Lighting",
+  "mode": "Mode 1 - Standard 16b",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 53,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 52,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 53
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 51,
+      "default": 224
+    },
+    {
+      "role": "CTO",
+      "offset": 17
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 10
+    },
+    {
+      "role": "COLOR_WHEEL_2",
+      "offset": 12
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 26
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 27
+    },
+    {
+      "role": "FOCUS",
+      "offset": 40
+    },
+    {
+      "role": "FROST",
+      "offset": 35
+    },
+    {
+      "role": "ZOOM",
+      "offset": 38
+    },
+    {
+      "role": "IRIS",
+      "offset": 36
+    },
+    {
+      "role": "PRISM",
+      "offset": 31
+    },
+    {
+      "role": "PRISM_2",
+      "offset": 33
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 23
+    },
+    {
+      "role": "RESET",
+      "offset": 6
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open/white"
+    },
+    {
+      "value": 11,
+      "name": "Deep red"
+    },
+    {
+      "value": 32,
+      "name": "Deep blue"
+    },
+    {
+      "value": 54,
+      "name": "Orange"
+    },
+    {
+      "value": 76,
+      "name": "Green"
+    },
+    {
+      "value": 97,
+      "name": "Congo Blue"
+    },
+    {
+      "value": 118,
+      "name": "Open/white"
+    },
+    {
+      "value": 128,
+      "name": "Open/white step"
+    },
+    {
+      "value": 130,
+      "name": "Deep red step"
+    },
+    {
+      "value": 142,
+      "name": "Deep blue step"
+    },
+    {
+      "value": 154,
+      "name": "Orange step"
+    },
+    {
+      "value": 166,
+      "name": "Green step"
+    },
+    {
+      "value": 178,
+      "name": "Congo blue step"
+    }
+  ],
+  "color_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open/white"
+    },
+    {
+      "value": 11,
+      "name": "Multicolor"
+    },
+    {
+      "value": 32,
+      "name": "Laser green"
+    },
+    {
+      "value": 54,
+      "name": "Lavander"
+    },
+    {
+      "value": 76,
+      "name": "CRI 80"
+    },
+    {
+      "value": 97,
+      "name": "CRI 90"
+    },
+    {
+      "value": 118,
+      "name": "Open/white"
+    },
+    {
+      "value": 128,
+      "name": "Open/white"
+    },
+    {
+      "value": 130,
+      "name": "Multicolor"
+    },
+    {
+      "value": 142,
+      "name": "Laser green"
+    },
+    {
+      "value": 154,
+      "name": "Lavander"
+    },
+    {
+      "value": 166,
+      "name": "CRI 80"
+    },
+    {
+      "value": 178,
+      "name": "CRI 90"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open/hole"
+    },
+    {
+      "value": 9,
+      "name": "Gobo1"
+    },
+    {
+      "value": 18,
+      "name": "Gobo2"
+    },
+    {
+      "value": 27,
+      "name": "Gobo3"
+    },
+    {
+      "value": 36,
+      "name": "Gobo4"
+    },
+    {
+      "value": 45,
+      "name": "Gobo5"
+    },
+    {
+      "value": 54,
+      "name": "Gobo6"
+    },
+    {
+      "value": 63,
+      "name": "Gobo7"
+    },
+    {
+      "value": 72,
+      "name": "Gobo8"
+    },
+    {
+      "value": 81,
+      "name": "Gobo9"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 14,
+      "name": "LT Follow Spot mode"
+    },
+    {
+      "value": 17,
+      "name": "Gobo1 index"
+    },
+    {
+      "value": 20,
+      "name": "Gobo2 index"
+    },
+    {
+      "value": 23,
+      "name": "Gobo3 index"
+    },
+    {
+      "value": 26,
+      "name": "Gobo4 index"
+    },
+    {
+      "value": 29,
+      "name": "Gobo5 index"
+    },
+    {
+      "value": 32,
+      "name": "Gobo6 index"
+    },
+    {
+      "value": 35,
+      "name": "Gobo7 index"
+    },
+    {
+      "value": 38,
+      "name": "LT Follow spot mode"
+    },
+    {
+      "value": 41,
+      "name": "Gobo2 rotate"
+    },
+    {
+      "value": 44,
+      "name": "Gobo3 rotate"
+    },
+    {
+      "value": 47,
+      "name": "Gobo4 rotate"
+    },
+    {
+      "value": 50,
+      "name": "Gobo5  rotate"
+    },
+    {
+      "value": 53,
+      "name": "Gobo6  rotate"
+    },
+    {
+      "value": 56,
+      "name": "Gobo7  rotate"
+    },
+    {
+      "value": 59,
+      "name": "G07"
+    },
+    {
+      "value": 62,
+      "name": "Open prop index"
+    },
+    {
+      "value": 69,
+      "name": "G01 Prop Index"
+    },
+    {
+      "value": 76,
+      "name": "G02 Prop Index"
+    },
+    {
+      "value": 83,
+      "name": "G03 Prop Index"
+    },
+    {
+      "value": 90,
+      "name": "G04 Prop Index"
+    },
+    {
+      "value": 97,
+      "name": "G05 Prop Index"
+    },
+    {
+      "value": 104,
+      "name": "G06 Prop Index"
+    },
+    {
+      "value": 111,
+      "name": "G07 Prop Index"
+    },
+    {
+      "value": 118,
+      "name": "Beam reducer prop ind"
+    },
+    {
+      "value": 124,
+      "name": "Open prop index"
+    },
+    {
+      "value": 126,
+      "name": "Open Prop Rot"
+    },
+    {
+      "value": 133,
+      "name": "G01 Prop Rot"
+    },
+    {
+      "value": 140,
+      "name": "G02 Prop Rot"
+    }
+  ],
+  "values": {
+    "shutter_open": 224,
+    "strobe_slow": 64,
+    "strobe_fast": 223
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 260.0
+  }
+}

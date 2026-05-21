@@ -1,0 +1,80 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "robe-lighting/robin-ibeam-250-mode-2---reduced-8",
+  "name": "Robin iBeam 250",
+  "manufacturer": "Robe Lighting",
+  "mode": "Mode 2 - Reduced 8 - ",
+  "fixture_type": "FIXTURE_TYPE_RGBX",
+  "footprint": 16,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 16,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 15,
+      "default": 224
+    },
+    {
+      "role": "RED",
+      "offset": 8
+    },
+    {
+      "role": "GREEN",
+      "offset": 9
+    },
+    {
+      "role": "BLUE",
+      "offset": 10
+    },
+    {
+      "role": "WHITE",
+      "offset": 11
+    },
+    {
+      "role": "CTO",
+      "offset": 12
+    },
+    {
+      "role": "ZOOM",
+      "offset": 14
+    },
+    {
+      "role": "RESET",
+      "offset": 6
+    }
+  ],
+  "values": {
+    "shutter_open": 224,
+    "strobe_slow": 64,
+    "strobe_fast": 223
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 228.0
+  }
+}

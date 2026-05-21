@@ -1,0 +1,184 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "shehds/ledspot90w-gdtf-default",
+  "name": "LEDSpot90W_GDTF",
+  "manufacturer": "SHEHDS",
+  "mode": "Default",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 16,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 14
+    },
+    {
+      "role": "TILT",
+      "offset": 2,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 15
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 13
+    },
+    {
+      "role": "DIMMER",
+      "offset": 3,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 4,
+      "default": 7
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 5
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 10
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 9
+    },
+    {
+      "role": "GOBO_ROT",
+      "offset": 7
+    },
+    {
+      "role": "FOCUS",
+      "offset": 11
+    },
+    {
+      "role": "PRISM",
+      "offset": 12
+    },
+    {
+      "role": "RESET",
+      "offset": 16
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "white"
+    },
+    {
+      "value": 10,
+      "name": "red"
+    },
+    {
+      "value": 20,
+      "name": "orange"
+    },
+    {
+      "value": 30,
+      "name": "yellow"
+    },
+    {
+      "value": 40,
+      "name": "green"
+    },
+    {
+      "value": 50,
+      "name": "blue"
+    },
+    {
+      "value": 60,
+      "name": "pink"
+    },
+    {
+      "value": 70,
+      "name": "magenta"
+    },
+    {
+      "value": 80,
+      "name": "white-pink"
+    },
+    {
+      "value": 90,
+      "name": "pink-magenta"
+    },
+    {
+      "value": 100,
+      "name": "magenta-blue"
+    },
+    {
+      "value": 110,
+      "name": "blue-green"
+    },
+    {
+      "value": 120,
+      "name": "green-yellow"
+    },
+    {
+      "value": 130,
+      "name": "yellow-orange"
+    },
+    {
+      "value": 140,
+      "name": "orange-red"
+    },
+    {
+      "value": 150,
+      "name": "red-white"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "open"
+    },
+    {
+      "value": 27,
+      "name": "swirl"
+    },
+    {
+      "value": 54,
+      "name": "flower"
+    },
+    {
+      "value": 81,
+      "name": "atom"
+    },
+    {
+      "value": 108,
+      "name": "leaf"
+    },
+    {
+      "value": 135,
+      "name": "stripe"
+    },
+    {
+      "value": 162,
+      "name": "rose"
+    },
+    {
+      "value": 189,
+      "name": "crossed"
+    },
+    {
+      "value": 216,
+      "name": "bubble"
+    }
+  ],
+  "values": {
+    "shutter_open": 7,
+    "strobe_slow": 10,
+    "strobe_fast": 255
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 180.0
+  }
+}

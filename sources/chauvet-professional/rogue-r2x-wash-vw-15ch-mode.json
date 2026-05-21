@@ -1,0 +1,68 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "chauvet-professional/rogue-r2x-wash-vw-15ch-mode",
+  "name": "Rogue R2X Wash VW",
+  "manufacturer": "Chauvet Professional",
+  "mode": "15Ch Mode",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 15,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 6,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 7,
+      "default": 245
+    },
+    {
+      "role": "WHITE",
+      "offset": 9
+    },
+    {
+      "role": "ZOOM",
+      "offset": 14
+    },
+    {
+      "role": "EFFECTS",
+      "offset": 12
+    },
+    {
+      "role": "RESET",
+      "offset": 15
+    }
+  ],
+  "values": {
+    "shutter_open": 245,
+    "strobe_slow": 25,
+    "strobe_fast": 244
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 230.0
+  }
+}

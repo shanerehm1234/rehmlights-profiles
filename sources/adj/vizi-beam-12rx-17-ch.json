@@ -1,0 +1,273 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "adj/vizi-beam-12rx-17-ch",
+  "name": "Vizi Beam 12RX",
+  "manufacturer": "ADJ",
+  "mode": "17 CH",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 16,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 16
+    },
+    {
+      "role": "DIMMER",
+      "offset": 11,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 12
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 10,
+      "default": 224
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 5
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 6
+    },
+    {
+      "role": "FOCUS",
+      "offset": 13
+    },
+    {
+      "role": "FROST",
+      "offset": 15
+    },
+    {
+      "role": "PRISM",
+      "offset": 7
+    },
+    {
+      "role": "PRISM_2",
+      "offset": 8
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "White "
+    },
+    {
+      "value": 4,
+      "name": "Red"
+    },
+    {
+      "value": 8,
+      "name": "Orange"
+    },
+    {
+      "value": 12,
+      "name": "Aquamarine"
+    },
+    {
+      "value": 16,
+      "name": "Green"
+    },
+    {
+      "value": 20,
+      "name": "Light Green"
+    },
+    {
+      "value": 24,
+      "name": "Lavender"
+    },
+    {
+      "value": 28,
+      "name": "Pink"
+    },
+    {
+      "value": 32,
+      "name": "Yellow"
+    },
+    {
+      "value": 36,
+      "name": "Magenta"
+    },
+    {
+      "value": 40,
+      "name": "Cyan"
+    },
+    {
+      "value": 44,
+      "name": "Light Yellow"
+    },
+    {
+      "value": 48,
+      "name": "3200k"
+    },
+    {
+      "value": 52,
+      "name": "6000k"
+    },
+    {
+      "value": 56,
+      "name": "UV"
+    },
+    {
+      "value": 60,
+      "name": "White"
+    },
+    {
+      "value": 62,
+      "name": "White to Red "
+    },
+    {
+      "value": 64,
+      "name": "Red"
+    },
+    {
+      "value": 66,
+      "name": "Red to Orange"
+    },
+    {
+      "value": 68,
+      "name": "Orange"
+    },
+    {
+      "value": 70,
+      "name": "Orange to Aquamarine"
+    },
+    {
+      "value": 72,
+      "name": "Aquamarine"
+    },
+    {
+      "value": 74,
+      "name": "Aquamarine to Green"
+    },
+    {
+      "value": 76,
+      "name": "Green"
+    },
+    {
+      "value": 78,
+      "name": "Green to Ltgreen"
+    },
+    {
+      "value": 80,
+      "name": "Light Green"
+    },
+    {
+      "value": 82,
+      "name": "Light Green to Lavend"
+    },
+    {
+      "value": 84,
+      "name": "Lavender"
+    },
+    {
+      "value": 86,
+      "name": "Lavender to PInk"
+    },
+    {
+      "value": 88,
+      "name": "Pink"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 8,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 11,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 14,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 17,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 20,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 23,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 26,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 29,
+      "name": "Gobo 8"
+    },
+    {
+      "value": 32,
+      "name": "Gobo 9"
+    },
+    {
+      "value": 35,
+      "name": "Gobo 10"
+    },
+    {
+      "value": 38,
+      "name": "Gobo 11"
+    },
+    {
+      "value": 41,
+      "name": "Gobo 12"
+    },
+    {
+      "value": 44,
+      "name": "Gobo 13"
+    },
+    {
+      "value": 47,
+      "name": "Gobo 14"
+    },
+    {
+      "value": 50,
+      "name": "Gobo 15"
+    },
+    {
+      "value": 53,
+      "name": "Gobo 16"
+    }
+  ],
+  "values": {
+    "shutter_open": 224,
+    "shutter_close": 224,
+    "strobe_slow": 64,
+    "strobe_fast": 223
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "high-end-systems/hyperstar-trifusion",
+  "name": "Hyperstar",
+  "manufacturer": "High End Systems",
+  "mode": "Trifusion",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 36,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "DIMMER",
+      "offset": 35,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 36
+    },
+    {
+      "role": "CTO",
+      "offset": 9
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 11
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 13
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 18
+    },
+    {
+      "role": "FOCUS",
+      "offset": 29
+    },
+    {
+      "role": "FROST",
+      "offset": 25
+    },
+    {
+      "role": "ZOOM",
+      "offset": 31
+    },
+    {
+      "role": "PRISM",
+      "offset": 22
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 20
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 11,
+      "name": "Open/Red"
+    },
+    {
+      "value": 22,
+      "name": "Red"
+    },
+    {
+      "value": 33,
+      "name": "Red/Blue"
+    },
+    {
+      "value": 44,
+      "name": "Blue"
+    },
+    {
+      "value": 55,
+      "name": "Blue/Green"
+    },
+    {
+      "value": 66,
+      "name": "Green"
+    },
+    {
+      "value": 77,
+      "name": "Green/Yellow"
+    },
+    {
+      "value": 88,
+      "name": "Yellow"
+    },
+    {
+      "value": 99,
+      "name": "Yellow/Purple"
+    },
+    {
+      "value": 110,
+      "name": "Purple"
+    },
+    {
+      "value": 121,
+      "name": "Purple/TM-30"
+    },
+    {
+      "value": 132,
+      "name": "TM-30"
+    },
+    {
+      "value": 143,
+      "name": "TM-30/Lavender"
+    },
+    {
+      "value": 154,
+      "name": "Lavender"
+    },
+    {
+      "value": 165,
+      "name": "Lavender/Half CTO"
+    },
+    {
+      "value": 176,
+      "name": "Half CTO"
+    },
+    {
+      "value": 187,
+      "name": "Half CTO/Full CTO"
+    },
+    {
+      "value": 198,
+      "name": "Full CTO"
+    },
+    {
+      "value": 209,
+      "name": "Full CTO/Dark Blue"
+    },
+    {
+      "value": 220,
+      "name": "Dark Blue"
+    },
+    {
+      "value": 231,
+      "name": "Dark Blue/Open"
+    },
+    {
+      "value": 242,
+      "name": "Open"
+    },
+    {
+      "value": 0,
+      "name": "Open/Red"
+    },
+    {
+      "value": 22,
+      "name": "Red/Blue"
+    },
+    {
+      "value": 44,
+      "name": "Blue/Green"
+    },
+    {
+      "value": 66,
+      "name": "Green/Yellow"
+    },
+    {
+      "value": 88,
+      "name": "Yellow/Purple"
+    },
+    {
+      "value": 110,
+      "name": "Purple/TM-30"
+    },
+    {
+      "value": 132,
+      "name": "TM-30/Lavender"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 16,
+      "name": "Bar"
+    },
+    {
+      "value": 32,
+      "name": "Starvolver"
+    },
+    {
+      "value": 48,
+      "name": "Fracked"
+    },
+    {
+      "value": 64,
+      "name": "Broken Tunnel"
+    },
+    {
+      "value": 80,
+      "name": "Seashell"
+    },
+    {
+      "value": 96,
+      "name": "Glacial"
+    },
+    {
+      "value": 112,
+      "name": "Shower"
+    },
+    {
+      "value": 128,
+      "name": "Ice"
+    },
+    {
+      "value": 144,
+      "name": "Branch Out"
+    },
+    {
+      "value": 0,
+      "name": "Open/Bar"
+    },
+    {
+      "value": 16,
+      "name": "Bar/Starvolver"
+    },
+    {
+      "value": 32,
+      "name": "Starvolver/Fracked"
+    },
+    {
+      "value": 48,
+      "name": "Fracked/Broken Tunnel"
+    },
+    {
+      "value": 64,
+      "name": "Broken Tunnel/Seashel"
+    },
+    {
+      "value": 80,
+      "name": "Seashell/Glacial"
+    },
+    {
+      "value": 96,
+      "name": "Glacial/Shower"
+    },
+    {
+      "value": 112,
+      "name": "Shower/Ice"
+    },
+    {
+      "value": 128,
+      "name": "Ice/Branch Out"
+    },
+    {
+      "value": 144,
+      "name": "Branch Out/Open"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 20,
+      "name": "Shattered"
+    },
+    {
+      "value": 40,
+      "name": "MiscSpots"
+    },
+    {
+      "value": 60,
+      "name": "Light Organic"
+    },
+    {
+      "value": 80,
+      "name": "Thatch"
+    },
+    {
+      "value": 100,
+      "name": "Across"
+    },
+    {
+      "value": 120,
+      "name": "Triangles"
+    },
+    {
+      "value": 140,
+      "name": "Daisey"
+    },
+    {
+      "value": 160,
+      "name": "Small Aperture"
+    },
+    {
+      "value": 180,
+      "name": "25% Aperture"
+    },
+    {
+      "value": 200,
+      "name": "50% Aperture"
+    },
+    {
+      "value": 220,
+      "name": "75% Aperture"
+    },
+    {
+      "value": 240,
+      "name": "Open"
+    },
+    {
+      "value": 0,
+      "name": "Open/Shattered"
+    },
+    {
+      "value": 22,
+      "name": "Shattered/MiscSpots"
+    },
+    {
+      "value": 44,
+      "name": "MiscSpots/Light Organ"
+    },
+    {
+      "value": 66,
+      "name": "Light Organic/Thatch"
+    },
+    {
+      "value": 88,
+      "name": "Thatch/Across"
+    },
+    {
+      "value": 110,
+      "name": "Across/Triangles"
+    },
+    {
+      "value": 132,
+      "name": "Triangles/Daisey"
+    },
+    {
+      "value": 154,
+      "name": "Daisey/Small Aperture"
+    },
+    {
+      "value": 176,
+      "name": "Small Aperture/25% Ap"
+    },
+    {
+      "value": 198,
+      "name": "25% Aperture/50% Aper"
+    },
+    {
+      "value": 220,
+      "name": "50% Aperture/75% Aper"
+    },
+    {
+      "value": 242,
+      "name": "75% Aperture/Open"
+    },
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 20,
+      "name": "Shattered"
+    },
+    {
+      "value": 40,
+      "name": "MiscSpots"
+    },
+    {
+      "value": 60,
+      "name": "Light Organic"
+    },
+    {
+      "value": 80,
+      "name": "Thatch"
+    }
+  ],
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 220.0
+  }
+}

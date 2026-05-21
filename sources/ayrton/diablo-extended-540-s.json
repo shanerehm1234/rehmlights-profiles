@@ -1,0 +1,204 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "ayrton/diablo-extended-540-s",
+  "name": "Diablo",
+  "manufacturer": "Ayrton",
+  "mode": "Extended_540_S",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 56,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 7,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 8
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 6,
+      "default": 246
+    },
+    {
+      "role": "CTO",
+      "offset": 26
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 18
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 28
+    },
+    {
+      "role": "FOCUS",
+      "offset": 14
+    },
+    {
+      "role": "FROST",
+      "offset": 37
+    },
+    {
+      "role": "ZOOM",
+      "offset": 12
+    },
+    {
+      "role": "IRIS",
+      "offset": 32
+    },
+    {
+      "role": "PRISM",
+      "offset": 34
+    },
+    {
+      "role": "PRISM_ROT",
+      "offset": 35
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 31
+    },
+    {
+      "role": "RESET",
+      "offset": 56
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 4,
+      "name": "Quarter CTB"
+    },
+    {
+      "value": 8,
+      "name": "Magenta"
+    },
+    {
+      "value": 12,
+      "name": "Congo Blue"
+    },
+    {
+      "value": 16,
+      "name": "Green"
+    },
+    {
+      "value": 20,
+      "name": "Orange"
+    },
+    {
+      "value": 24,
+      "name": "Blue"
+    },
+    {
+      "value": 28,
+      "name": "Red"
+    },
+    {
+      "value": 32,
+      "name": "Open"
+    },
+    {
+      "value": 42,
+      "name": "Quarter CTB"
+    },
+    {
+      "value": 53,
+      "name": "Magenta"
+    },
+    {
+      "value": 64,
+      "name": "Congo Blue"
+    },
+    {
+      "value": 74,
+      "name": "Green"
+    },
+    {
+      "value": 85,
+      "name": "Orange"
+    },
+    {
+      "value": 96,
+      "name": "Blue"
+    },
+    {
+      "value": 106,
+      "name": "Red"
+    },
+    {
+      "value": 117,
+      "name": "Open"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 10,
+      "name": "DotLine11"
+    },
+    {
+      "value": 20,
+      "name": "Stardust"
+    },
+    {
+      "value": 30,
+      "name": "NestedTriangle"
+    },
+    {
+      "value": 40,
+      "name": "InfiniteStairs"
+    },
+    {
+      "value": 50,
+      "name": "Vortex"
+    },
+    {
+      "value": 60,
+      "name": "BlackAndWhiteTarget"
+    },
+    {
+      "value": 70,
+      "name": "NestedRingYellow"
+    }
+  ],
+  "values": {
+    "shutter_open": 246,
+    "strobe_slow": 21,
+    "strobe_fast": 245
+  },
+  "meta": {
+    "pan_degrees": 542.1,
+    "tilt_degrees": 264.0
+  }
+}

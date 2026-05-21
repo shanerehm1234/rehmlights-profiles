@@ -1,0 +1,159 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "your-pixel-store/yps-150w-moving-head-mode-1",
+  "name": "YPS 150W Moving Head ",
+  "manufacturer": "Your Pixel Store",
+  "mode": "Mode 1",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 12,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 6,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 7,
+      "default": 0
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 8
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 9
+    },
+    {
+      "role": "PRISM",
+      "offset": 10
+    },
+    {
+      "role": "RESET",
+      "offset": 12
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "White"
+    },
+    {
+      "value": 10,
+      "name": "Red"
+    },
+    {
+      "value": 20,
+      "name": "Yellow"
+    },
+    {
+      "value": 30,
+      "name": "Blue"
+    },
+    {
+      "value": 40,
+      "name": "Green"
+    },
+    {
+      "value": 50,
+      "name": "Orange"
+    },
+    {
+      "value": 60,
+      "name": "Purple"
+    },
+    {
+      "value": 70,
+      "name": "Cyan"
+    },
+    {
+      "value": 80,
+      "name": "Cyan/Purple"
+    },
+    {
+      "value": 90,
+      "name": "Purple/Orange"
+    },
+    {
+      "value": 100,
+      "name": "Orange/Green"
+    },
+    {
+      "value": 110,
+      "name": "Green/Blue"
+    },
+    {
+      "value": 120,
+      "name": "Blue/Yellow"
+    },
+    {
+      "value": 130,
+      "name": "Yellow/Red"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 10,
+      "name": "Circle"
+    },
+    {
+      "value": 20,
+      "name": "Boxes"
+    },
+    {
+      "value": 30,
+      "name": "Star"
+    },
+    {
+      "value": 40,
+      "name": "Flower"
+    },
+    {
+      "value": 50,
+      "name": "Plus"
+    },
+    {
+      "value": 60,
+      "name": "Tri-circle"
+    },
+    {
+      "value": 70,
+      "name": "Big flower"
+    }
+  ],
+  "values": {
+    "strobe_slow": 16,
+    "strobe_fast": 255
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 180.0
+  }
+}

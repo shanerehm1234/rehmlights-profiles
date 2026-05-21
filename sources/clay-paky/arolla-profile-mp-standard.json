@@ -1,0 +1,224 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "clay-paky/arolla-profile-mp-standard",
+  "name": "Arolla Profile MP",
+  "manufacturer": "Clay Paky",
+  "mode": "Standard ",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 36,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 32,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 33
+    },
+    {
+      "role": "TILT",
+      "offset": 34,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 35
+    },
+    {
+      "role": "DIMMER",
+      "offset": 8,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 9
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 7,
+      "default": 252
+    },
+    {
+      "role": "CTO",
+      "offset": 4
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 6
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 11
+    },
+    {
+      "role": "FOCUS",
+      "offset": 19
+    },
+    {
+      "role": "FROST",
+      "offset": 18
+    },
+    {
+      "role": "ZOOM",
+      "offset": 20
+    },
+    {
+      "role": "IRIS",
+      "offset": 10
+    },
+    {
+      "role": "PRISM",
+      "offset": 14
+    },
+    {
+      "role": "PRISM_ROT",
+      "offset": 15
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 16
+    },
+    {
+      "role": "RESET",
+      "offset": 36
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open "
+    },
+    {
+      "value": 5,
+      "name": "Open/Dark Red"
+    },
+    {
+      "value": 10,
+      "name": "Dark Red"
+    },
+    {
+      "value": 15,
+      "name": "Dark Red/Brillant Blu"
+    },
+    {
+      "value": 20,
+      "name": "Brillant Blue "
+    },
+    {
+      "value": 25,
+      "name": "Brillant Blue/Deep Gr"
+    },
+    {
+      "value": 30,
+      "name": "Deep Green "
+    },
+    {
+      "value": 35,
+      "name": "Deep Green/Golden Amb"
+    },
+    {
+      "value": 40,
+      "name": "Golden Amber"
+    },
+    {
+      "value": 45,
+      "name": "Golden Amber/CRI-4"
+    },
+    {
+      "value": 50,
+      "name": "CRI-4"
+    },
+    {
+      "value": 55,
+      "name": "CRI-4/Dark Orange "
+    },
+    {
+      "value": 60,
+      "name": "Dark Orange "
+    },
+    {
+      "value": 65,
+      "name": "Dark Orange/Navy Blue"
+    },
+    {
+      "value": 70,
+      "name": "Navy Blue "
+    },
+    {
+      "value": 75,
+      "name": "Navy Blue /Open "
+    },
+    {
+      "value": 128,
+      "name": "Linera Color "
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "OPEN"
+    },
+    {
+      "value": 9,
+      "name": "GOBO 1"
+    },
+    {
+      "value": 18,
+      "name": "GOBO 2"
+    },
+    {
+      "value": 27,
+      "name": "GOBO 3"
+    },
+    {
+      "value": 36,
+      "name": "GOBO 4"
+    },
+    {
+      "value": 45,
+      "name": "GOBO 5"
+    },
+    {
+      "value": 54,
+      "name": "GOBO 6"
+    },
+    {
+      "value": 63,
+      "name": "GOBO 7"
+    },
+    {
+      "value": 160,
+      "name": "GOBO 2-1 Shake"
+    },
+    {
+      "value": 176,
+      "name": "GOBO 2-2 Shake"
+    },
+    {
+      "value": 192,
+      "name": "GOBO 2-3 Shake"
+    },
+    {
+      "value": 208,
+      "name": "GOBO 2-4 Shake"
+    },
+    {
+      "value": 224,
+      "name": "GOBO 2-5 Shake"
+    },
+    {
+      "value": 240,
+      "name": "GOBO 2-6 Shake"
+    }
+  ],
+  "values": {
+    "shutter_open": 252,
+    "strobe_slow": 4,
+    "strobe_fast": 251
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

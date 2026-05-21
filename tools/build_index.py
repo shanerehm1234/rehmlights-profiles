@@ -34,8 +34,9 @@ def main():
             print(f"  SKIP {p} — invalid JSON: {e}")
             continue
 
-        # Footprint = max DMX offset referenced anywhere in the profile.
-        footprint = _footprint(obj)
+        # Profile carries footprint at top level (cooked schema). Fall back
+        # to scanning channels[] for the max offset on older sources.
+        footprint = obj.get("footprint") or _footprint(obj)
 
         rel = os.path.relpath(p, REPO_ROOT).replace(os.sep, "/")
         entries.append({
@@ -68,22 +69,13 @@ def main():
 
 
 def _footprint(profile):
-    """Largest DMX offset referenced anywhere in the profile, 0 if unknown."""
+    """Fallback: largest 'offset' in the channels[] array. Returns 0 if none."""
     largest = 0
-    def walk(node):
-        nonlocal largest
-        if isinstance(node, dict):
-            for k, v in node.items():
-                if isinstance(v, int) and v > largest and "value" not in k.lower():
-                    largest = v
-                else:
-                    walk(v)
-        elif isinstance(node, list):
-            for item in node:
-                walk(item)
-    # Only scan channel sections (skip wheel slot DMX values which aren't offsets).
-    for k in ("channels", "optics", "rgb", "lamp"):
-        walk(profile.get(k))
+    for entry in profile.get("channels", []) or []:
+        if isinstance(entry, dict):
+            off = entry.get("offset", 0)
+            if isinstance(off, int) and off > largest:
+                largest = off
     return largest
 
 

@@ -1,0 +1,177 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "elation/fuze-wash-z350-16-hsi-pan540",
+  "name": "Fuze Wash Z350",
+  "manufacturer": "Elation",
+  "mode": "16 HSI Pan540",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 11,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 5,
+      "default": 224
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 9
+    },
+    {
+      "role": "ZOOM",
+      "offset": 10
+    },
+    {
+      "role": "EFFECTS",
+      "offset": 11
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Off"
+    },
+    {
+      "value": 1,
+      "name": "Color Preset 1"
+    },
+    {
+      "value": 5,
+      "name": "Color Preset 2"
+    },
+    {
+      "value": 9,
+      "name": "Color Preset 3"
+    },
+    {
+      "value": 13,
+      "name": "Color Preset 4"
+    },
+    {
+      "value": 17,
+      "name": "Color Preset 5"
+    },
+    {
+      "value": 21,
+      "name": "Color Preset 6"
+    },
+    {
+      "value": 25,
+      "name": "Color Preset 7"
+    },
+    {
+      "value": 29,
+      "name": "Color Preset 8"
+    },
+    {
+      "value": 33,
+      "name": "Color Preset 9"
+    },
+    {
+      "value": 37,
+      "name": "Color Preset 10"
+    },
+    {
+      "value": 41,
+      "name": "Color Preset 11"
+    },
+    {
+      "value": 45,
+      "name": "Color Preset 12"
+    },
+    {
+      "value": 49,
+      "name": "Color Preset 13"
+    },
+    {
+      "value": 53,
+      "name": "Color Preset 14"
+    },
+    {
+      "value": 57,
+      "name": "Color Preset 15"
+    },
+    {
+      "value": 61,
+      "name": "Color Preset 16"
+    },
+    {
+      "value": 65,
+      "name": "Color Preset 17"
+    },
+    {
+      "value": 69,
+      "name": "Color Preset 18"
+    },
+    {
+      "value": 73,
+      "name": "Color Preset 19"
+    },
+    {
+      "value": 77,
+      "name": "Color Preset 20"
+    },
+    {
+      "value": 81,
+      "name": "Color Preset 21"
+    },
+    {
+      "value": 85,
+      "name": "Color Preset 22"
+    },
+    {
+      "value": 89,
+      "name": "Color Preset 23"
+    },
+    {
+      "value": 93,
+      "name": "Color Preset 24"
+    },
+    {
+      "value": 97,
+      "name": "Color Preset 25"
+    },
+    {
+      "value": 101,
+      "name": "Color Preset 26"
+    },
+    {
+      "value": 105,
+      "name": "Color Preset 27"
+    },
+    {
+      "value": 109,
+      "name": "Color Preset 28"
+    },
+    {
+      "value": 113,
+      "name": "Color Preset 29"
+    }
+  ],
+  "values": {
+    "shutter_open": 224,
+    "strobe_slow": 64,
+    "strobe_fast": 223
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

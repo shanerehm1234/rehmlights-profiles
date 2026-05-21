@@ -837,14 +837,63 @@ class CHeaderWriter:
 import re
 
 class JsonWriter:
-    """Emits per-fixture JSON files matching the legacy FixtureProfile schema,
-    suitable for the online rehmlights-profiles catalog. The device fetcher
-    runs vibe_profile_from_legacy() at consume time to cook into vibe_profile_t.
+    """Emits per-fixture JSON in the cooked vibe_profile_t shape that
+    components/vibe_repo on the device consumes directly. The Python
+    dataclass mirrors the legacy FixtureProfile, so this writer essentially
+    re-implements vibe_profile_from_legacy() in Python — channel fields
+    become an array of {role, offset, default}, wheel arrays go flat.
 
     File layout: sources/<manufacturer-slug>/<model-mode-slug>.json
     """
 
-    SCHEMA_VERSION = "rehmlights-profile/legacy-v1.2"
+    SCHEMA_VERSION = "vibe-profile/1"
+
+    # Legacy dataclass field -> cooked role enum string. Order shapes the
+    # channels[] array order on disk; keep it close to physical channel order
+    # for readability (movement, intensity, color, beam, mechanical).
+    FIELD_TO_ROLE = [
+        ("panChannel",          "PAN"),
+        ("panFineChannel",      "PAN_FINE"),
+        ("tiltChannel",         "TILT"),
+        ("tiltFineChannel",     "TILT_FINE"),
+        ("speedChannel",        "PAN_TILT_SPEED"),
+        ("dimmerChannel",       "DIMMER"),
+        ("dimmerFineChannel",   "DIMMER_FINE"),
+        ("shutterChannel",      "SHUTTER"),
+        # Subtractive + additive color mix
+        ("redChannel",          "RED"),
+        ("greenChannel",        "GREEN"),
+        ("blueChannel",         "BLUE"),
+        ("whiteChannel",        "WHITE"),
+        ("amberChannel",        "AMBER"),
+        ("uvChannel",           "UV"),
+        ("cyanCh",              "CYAN"),
+        ("magentaCh",           "MAGENTA"),
+        ("yellowCh",            "YELLOW"),
+        ("ctoCh",               "CTO"),
+        ("ctbCh",               "CTB"),
+        # Wheels
+        ("colorChannel",        "COLOR_WHEEL"),
+        ("color2Channel",       "COLOR_WHEEL_2"),
+        ("goboChannel",         "GOBO_WHEEL"),
+        ("gobo2Channel",        "GOBO_WHEEL_2"),
+        ("goboRotationChannel", "GOBO_ROT"),
+        ("gobo2RotationCh",     "GOBO_ROT_2"),
+        # Beam
+        ("focusChannel",        "FOCUS"),
+        ("frostCh",             "FROST"),
+        ("zoomChannel",         "ZOOM"),
+        ("irisChannel",         "IRIS"),
+        ("prismChannel",        "PRISM"),
+        ("prismRotationChannel","PRISM_ROT"),
+        ("prism2Ch",            "PRISM_2"),
+        ("prism2RotationCh",    "PRISM_ROT_2"),
+        ("animationChannel",    "ANIMATION"),
+        ("effectsCh",           "EFFECTS"),
+        # Control
+        ("lampControlChannel",  "LAMP"),
+        ("resetChannel",        "RESET"),
+    ]
 
     @staticmethod
     def slug(s):
@@ -881,69 +930,74 @@ class JsonWriter:
         return written
 
     def _profile_to_dict(self, p, pid):
-        """Convert a VectrProfile dataclass into the catalog JSON shape.
+        """Convert a VectrProfile dataclass into the cooked catalog JSON.
 
-        Schema mirrors the legacy FixtureProfile struct, with the union's
-        active arm picked by fixture_type. Empty/zero fields are omitted to
-        keep the file compact and human-readable.
+        Channels: array of {role, offset, default} entries, one per non-zero
+        legacy channel field. Wheels: top-level arrays of {value, name} slots.
+        Values: shutter / strobe / dimmer / lamp constants.
         """
+        # Build channels[] — only fields with a non-zero offset land here.
+        channels = []
+        for field, role in self.FIELD_TO_ROLE:
+            off = getattr(p, field, 0) or 0
+            if not off:
+                continue
+            entry = {"role": role, "offset": off}
+            # Per-role default values where it matters. Engine treats
+            # absent default as 0.
+            if role in ("PAN", "TILT"):
+                entry["default"] = 127            # centre on power-up
+            elif role == "DIMMER":
+                # Use the dimmer_default_value if the GDTF gave us one;
+                # most LED fixtures want a non-zero static dimmer or you
+                # see nothing on first power-up. Falls back to 0 (off).
+                entry["default"] = p.dimmer_default_value or 0
+            elif role == "SHUTTER":
+                entry["default"] = p.shutter_open_value or 0
+            channels.append(entry)
+
+        # Compute footprint — highest DMX offset referenced by any channel.
+        footprint = max((c["offset"] for c in channels), default=0)
+
         out = {
-            "schema": self.SCHEMA_VERSION,
-            "id": pid,
-            "name": p.name,
+            "schema":       self.SCHEMA_VERSION,
+            "id":           pid,
+            "name":         p.name,
             "manufacturer": p.manufacturer,
-            "mode": p.mode_name,
+            "mode":         p.mode_name,
             "fixture_type": p.fixture_type,
-            "channels": {
-                # Only emit non-zero channel assignments. 1-based DMX offsets.
-                **self._nz("pan", p.panChannel),
-                **self._nz("pan_fine", p.panFineChannel),
-                **self._nz("tilt", p.tiltChannel),
-                **self._nz("tilt_fine", p.tiltFineChannel),
-                **self._nz("speed", p.speedChannel),
-                **self._nz("dimmer", p.dimmerChannel),
-                **self._nz("dimmer_fine", p.dimmerFineChannel),
-                **self._nz("reset", p.resetChannel),
-            },
+            "footprint":    footprint,
+            "channels":     channels,
         }
 
-        if p.fixture_type == "FIXTURE_TYPE_HID":
-            out["lamp"] = {
-                "channel": p.lampControlChannel,
-                "on_value": p.lampOnValue,
-                "off_value": p.lampOffValue,
-            }
-            out.update(self._wheel_section(p))
-        elif p.fixture_type == "FIXTURE_TYPE_LED_WHEEL":
-            out.update(self._wheel_section(p))
-        elif p.fixture_type == "FIXTURE_TYPE_RGBX":
-            out["rgb"] = {
-                **self._nz("red", p.redChannel),
-                **self._nz("green", p.greenChannel),
-                **self._nz("blue", p.blueChannel),
-                **self._nz("white", p.whiteChannel),
-                **self._nz("amber", p.amberChannel),
-                **self._nz("uv", p.uvChannel),
-                **self._nz("shutter", p.shutterChannel),
-                **self._nz("cyan", p.cyanCh),
-                **self._nz("magenta", p.magentaCh),
-                **self._nz("yellow", p.yellowCh),
-                **self._nz("cto", p.ctoCh),
-            }
+        # Wheel slots as top-level arrays (matches vibe_repo_fetch_profile()).
+        if p.colorCount:
+            out["color_wheel"]   = self._slots(p.colorNames, p.colorValues, p.colorCount)
+        if p.color2Count:
+            out["color_wheel_2"] = self._slots(p.color2Names, p.color2Values, p.color2Count)
+        if p.goboCount:
+            out["gobo_wheel"]    = self._slots(p.goboNames, p.goboValues, p.goboCount)
+        if p.gobo2Count:
+            out["gobo_wheel_2"]  = self._slots(p.gobo2Names, p.gobo2Values, p.gobo2Count)
 
-        # Shared values (shutter open / strobe / dimmer default).
+        # Shared values map. Only emit what the GDTF actually provided —
+        # device fills in sane defaults for missing keys.
         vals = {}
-        if p.shutter_open_value:    vals["shutter_open"] = p.shutter_open_value
+        if p.shutter_open_value:    vals["shutter_open"]  = p.shutter_open_value
         if p.shutter_closed_value:  vals["shutter_close"] = p.shutter_closed_value
-        if p.strobe_start_value:    vals["strobe_slow"] = p.strobe_start_value
-        if p.strobe_end_value:      vals["strobe_fast"] = p.strobe_end_value
-        if p.dimmer_default_value:  vals["dimmer_default"] = p.dimmer_default_value
+        if p.strobe_start_value:    vals["strobe_slow"]   = p.strobe_start_value
+        if p.strobe_end_value:      vals["strobe_fast"]   = p.strobe_end_value
+        if p.lampOnValue:           vals["lamp_on"]       = p.lampOnValue
+        if p.lampOffValue:          vals["lamp_off"]      = p.lampOffValue
+        # dimmer_max defaults to 255 on device; only emit if the GDTF disagreed.
+        if p.dimmer_default_value and p.dimmer_default_value != 255:
+            vals["dimmer_max"] = p.dimmer_default_value
         if vals:
             out["values"] = vals
 
-        # Physical ranges for inspect / docs (not used by engine).
+        # Physical ranges — informational only (not consumed by engine).
         meta = {}
-        if p.pan_degrees:   meta["pan_degrees"] = round(p.pan_degrees, 1)
+        if p.pan_degrees:   meta["pan_degrees"]  = round(p.pan_degrees, 1)
         if p.tilt_degrees:  meta["tilt_degrees"] = round(p.tilt_degrees, 1)
         if meta:
             out["meta"] = meta
@@ -951,51 +1005,17 @@ class JsonWriter:
         return out
 
     @staticmethod
-    def _nz(key, val):
-        """Return {key: val} if val is truthy, else {} — keeps JSON compact."""
-        return {key: val} if val else {}
-
-    def _wheel_section(self, p):
-        """Build the wheel/optics block for HID + LED_WHEEL types."""
-        section = {"optics": {
-            **self._nz("color_wheel", p.colorChannel),
-            **self._nz("color_wheel_2", p.color2Channel),
-            **self._nz("gobo_wheel", p.goboChannel),
-            **self._nz("gobo_wheel_2", p.gobo2Channel),
-            **self._nz("gobo_rot", p.goboRotationChannel),
-            **self._nz("gobo_rot_2", p.gobo2RotationCh),
-            **self._nz("prism", p.prismChannel),
-            **self._nz("prism_rot", p.prismRotationChannel),
-            **self._nz("prism_2", p.prism2Ch),
-            **self._nz("prism_2_rot", p.prism2RotationCh),
-            **self._nz("shutter", p.shutterChannel),
-            **self._nz("focus", p.focusChannel),
-            **self._nz("frost", p.frostCh),
-            **self._nz("zoom", p.zoomChannel),
-            **self._nz("iris", p.irisChannel),
-            **self._nz("animation", p.animationChannel),
-            **self._nz("cyan", p.cyanCh),
-            **self._nz("magenta", p.magentaCh),
-            **self._nz("yellow", p.yellowCh),
-            **self._nz("cto", p.ctoCh),
-            **self._nz("effects", p.effectsCh),
-        }}
-        if p.colorCount:
-            section["color_wheel_slots"] = self._slots(p.colorNames, p.colorValues, p.colorCount)
-        if p.gobo2Count:
-            section["gobo_wheel_2_slots"] = self._slots(p.gobo2Names, p.gobo2Values, p.gobo2Count)
-        if p.color2Count:
-            section["color_wheel_2_slots"] = self._slots(p.color2Names, p.color2Values, p.color2Count)
-        if p.goboCount:
-            section["gobo_wheel_slots"] = self._slots(p.goboNames, p.goboValues, p.goboCount)
-        return section
-
-    @staticmethod
     def _slots(names, values, count):
-        """Zip name+value into a list of slot dicts."""
-        return [{"name": names[i] if i < len(names) else "",
-                 "value": values[i] if i < len(values) else 0}
-                for i in range(count)]
+        """Zip name+value into a list of slot dicts. Skips empty-name slots
+        which the device-side parser would reject anyway."""
+        slots = []
+        for i in range(count):
+            name = names[i] if i < len(names) else ""
+            if not name:
+                continue
+            slots.append({"value": values[i] if i < len(values) else 0,
+                          "name":  name})
+        return slots
 
 
 # =============================================================================

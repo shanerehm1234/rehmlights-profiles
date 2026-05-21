@@ -1,0 +1,302 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "chauvet-professional/maverick-storm-1-flex-26ch-mode",
+  "name": "Maverick Storm 1 Flex",
+  "manufacturer": "Chauvet Professional",
+  "mode": "26Ch Mode",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 26,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 6,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 7,
+      "default": 4
+    },
+    {
+      "role": "CTO",
+      "offset": 12
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 13
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 14
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 16
+    },
+    {
+      "role": "GOBO_ROT",
+      "offset": 15
+    },
+    {
+      "role": "FOCUS",
+      "offset": 19
+    },
+    {
+      "role": "FROST",
+      "offset": 25
+    },
+    {
+      "role": "ZOOM",
+      "offset": 20
+    },
+    {
+      "role": "PRISM",
+      "offset": 21
+    },
+    {
+      "role": "PRISM_ROT",
+      "offset": 22
+    },
+    {
+      "role": "PRISM_2",
+      "offset": 23
+    },
+    {
+      "role": "PRISM_ROT_2",
+      "offset": 24
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 17
+    },
+    {
+      "role": "RESET",
+      "offset": 26
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "White"
+    },
+    {
+      "value": 7,
+      "name": "Red"
+    },
+    {
+      "value": 14,
+      "name": "Orange"
+    },
+    {
+      "value": 21,
+      "name": "Green"
+    },
+    {
+      "value": 28,
+      "name": "Magenta"
+    },
+    {
+      "value": 35,
+      "name": "UV"
+    },
+    {
+      "value": 42,
+      "name": "CRI"
+    },
+    {
+      "value": 49,
+      "name": "CTB"
+    },
+    {
+      "value": 56,
+      "name": "White"
+    },
+    {
+      "value": 61,
+      "name": "White"
+    },
+    {
+      "value": 62,
+      "name": "White/Red"
+    },
+    {
+      "value": 78,
+      "name": "Red"
+    },
+    {
+      "value": 79,
+      "name": "Red/Orange"
+    },
+    {
+      "value": 95,
+      "name": "Orange"
+    },
+    {
+      "value": 96,
+      "name": "Orange/Green"
+    },
+    {
+      "value": 112,
+      "name": "Green"
+    },
+    {
+      "value": 113,
+      "name": "Green/Magenta"
+    },
+    {
+      "value": 129,
+      "name": "Magenta"
+    },
+    {
+      "value": 130,
+      "name": "Magenta/UV"
+    },
+    {
+      "value": 146,
+      "name": "UV"
+    },
+    {
+      "value": 147,
+      "name": "UV/CRI"
+    },
+    {
+      "value": 163,
+      "name": "CRI"
+    },
+    {
+      "value": 164,
+      "name": "CRI/CTB"
+    },
+    {
+      "value": 180,
+      "name": "CTB"
+    },
+    {
+      "value": 181,
+      "name": "CTB/White"
+    },
+    {
+      "value": 187,
+      "name": "White"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 8,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 16,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 24,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 32,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 40,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 48,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 56,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 120,
+      "name": "Open"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 5,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 10,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 15,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 20,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 25,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 30,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 35,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 40,
+      "name": "Gobo 8"
+    },
+    {
+      "value": 45,
+      "name": "Gobo 9"
+    },
+    {
+      "value": 50,
+      "name": "Gobo 10"
+    },
+    {
+      "value": 114,
+      "name": "Open"
+    }
+  ],
+  "values": {
+    "shutter_open": 4,
+    "strobe_slow": 8,
+    "strobe_fast": 255
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "martin-professional/mac-axiom-hybrid-basic",
+  "name": "MAC Axiom Hybrid",
+  "manufacturer": "Martin Professional",
+  "mode": "Basic",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 23,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 19,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 20
+    },
+    {
+      "role": "TILT",
+      "offset": 21,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 22
+    },
+    {
+      "role": "DIMMER",
+      "offset": 2,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 1,
+      "default": 201
+    },
+    {
+      "role": "CTO",
+      "offset": 6
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 7
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 8
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 11
+    },
+    {
+      "role": "FOCUS",
+      "offset": 17
+    },
+    {
+      "role": "FROST",
+      "offset": 12
+    },
+    {
+      "role": "ZOOM",
+      "offset": 16
+    },
+    {
+      "role": "PRISM",
+      "offset": 13
+    },
+    {
+      "role": "PRISM_ROT",
+      "offset": 14
+    },
+    {
+      "role": "RESET",
+      "offset": 23
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 5,
+      "name": "Blue"
+    },
+    {
+      "value": 14,
+      "name": "Light Green"
+    },
+    {
+      "value": 23,
+      "name": "Half CTB"
+    },
+    {
+      "value": 32,
+      "name": "Orange"
+    },
+    {
+      "value": 41,
+      "name": "Deep Magenta"
+    },
+    {
+      "value": 50,
+      "name": "Full CTB"
+    },
+    {
+      "value": 59,
+      "name": "Pale Yellow"
+    },
+    {
+      "value": 68,
+      "name": "Light Blue"
+    },
+    {
+      "value": 77,
+      "name": "Light Red"
+    },
+    {
+      "value": 86,
+      "name": "Lavender"
+    },
+    {
+      "value": 95,
+      "name": "Dark Green"
+    },
+    {
+      "value": 104,
+      "name": "Purple"
+    },
+    {
+      "value": 113,
+      "name": "Pink"
+    },
+    {
+      "value": 122,
+      "name": "Dark Yellow"
+    },
+    {
+      "value": 131,
+      "name": "Dark Blue"
+    },
+    {
+      "value": 140,
+      "name": "Dark Red"
+    },
+    {
+      "value": 149,
+      "name": "Open"
+    },
+    {
+      "value": 163,
+      "name": "Blue"
+    },
+    {
+      "value": 164,
+      "name": "Light Green"
+    },
+    {
+      "value": 165,
+      "name": "Half CTB"
+    },
+    {
+      "value": 166,
+      "name": "Orange"
+    },
+    {
+      "value": 167,
+      "name": "Deep Magenta"
+    },
+    {
+      "value": 168,
+      "name": "Full CTB"
+    },
+    {
+      "value": 169,
+      "name": "Pale Yellow"
+    },
+    {
+      "value": 170,
+      "name": "Light Blue"
+    },
+    {
+      "value": 171,
+      "name": "Light Red"
+    },
+    {
+      "value": 172,
+      "name": "Lavender"
+    },
+    {
+      "value": 173,
+      "name": "Dark Green"
+    },
+    {
+      "value": 174,
+      "name": "Purple"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 3,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 7,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 11,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 15,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 20,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 24,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 28,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 32,
+      "name": "Gobo 8"
+    },
+    {
+      "value": 36,
+      "name": "Gobo 9"
+    },
+    {
+      "value": 41,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 45,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 49,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 53,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 57,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 61,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 65,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 69,
+      "name": "Gobo 8"
+    },
+    {
+      "value": 72,
+      "name": "Gobo 9"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 21,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 31,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 41,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 51,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 61,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 71,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 81,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 91,
+      "name": "Gobo 8"
+    },
+    {
+      "value": 101,
+      "name": "Gobo 9"
+    },
+    {
+      "value": 111,
+      "name": "Gobo 10"
+    },
+    {
+      "value": 121,
+      "name": "Gobo 11"
+    },
+    {
+      "value": 131,
+      "name": "Gobo 12"
+    },
+    {
+      "value": 141,
+      "name": "Gobo 13"
+    },
+    {
+      "value": 151,
+      "name": "Gobo 14"
+    },
+    {
+      "value": 161,
+      "name": "Gobo 15"
+    },
+    {
+      "value": 171,
+      "name": "Gobo 16"
+    },
+    {
+      "value": 181,
+      "name": "Gobo 17"
+    },
+    {
+      "value": 191,
+      "name": "Indexed Pos 1"
+    },
+    {
+      "value": 192,
+      "name": "Indexed Pos 2"
+    },
+    {
+      "value": 193,
+      "name": "Indexed Pos 3"
+    },
+    {
+      "value": 194,
+      "name": "Indexed Pos 4"
+    },
+    {
+      "value": 195,
+      "name": "Indexed Pos 5"
+    },
+    {
+      "value": 196,
+      "name": "Indexed Pos 6"
+    },
+    {
+      "value": 197,
+      "name": "Indexed Pos 7"
+    },
+    {
+      "value": 198,
+      "name": "Indexed Pos 8"
+    },
+    {
+      "value": 199,
+      "name": "Indexed Pos 9"
+    },
+    {
+      "value": 200,
+      "name": "Indexed Pos 10"
+    },
+    {
+      "value": 201,
+      "name": "Bounce Slow"
+    },
+    {
+      "value": 202,
+      "name": "Bounce Medium"
+    }
+  ],
+  "values": {
+    "shutter_open": 201,
+    "strobe_slow": 50,
+    "strobe_fast": 255
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 260.0
+  }
+}

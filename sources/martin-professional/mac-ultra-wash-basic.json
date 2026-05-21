@@ -1,0 +1,146 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "martin-professional/mac-ultra-wash-basic",
+  "name": "MAC Ultra Wash",
+  "manufacturer": "Martin Professional",
+  "mode": "Basic",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 25,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 19,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 20
+    },
+    {
+      "role": "TILT",
+      "offset": 21,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 22
+    },
+    {
+      "role": "DIMMER",
+      "offset": 2,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 3
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 1,
+      "default": 201
+    },
+    {
+      "role": "CTO",
+      "offset": 10
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 12
+    },
+    {
+      "role": "FOCUS",
+      "offset": 17
+    },
+    {
+      "role": "FROST",
+      "offset": 13
+    },
+    {
+      "role": "ZOOM",
+      "offset": 15
+    },
+    {
+      "role": "IRIS",
+      "offset": 14
+    },
+    {
+      "role": "EFFECTS",
+      "offset": 25
+    },
+    {
+      "role": "RESET",
+      "offset": 23
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 8,
+      "name": "Spectral Enhancement"
+    },
+    {
+      "value": 23,
+      "name": "Blue"
+    },
+    {
+      "value": 38,
+      "name": "Deep Green"
+    },
+    {
+      "value": 53,
+      "name": "Orange"
+    },
+    {
+      "value": 68,
+      "name": "Navy Blue"
+    },
+    {
+      "value": 83,
+      "name": "Deep Red"
+    },
+    {
+      "value": 98,
+      "name": "Open"
+    },
+    {
+      "value": 161,
+      "name": "Spectral Enhancement"
+    },
+    {
+      "value": 164,
+      "name": "Blue"
+    },
+    {
+      "value": 167,
+      "name": "Deep Green"
+    },
+    {
+      "value": 170,
+      "name": "Orange"
+    },
+    {
+      "value": 173,
+      "name": "Navy Blue"
+    },
+    {
+      "value": 176,
+      "name": "Deep Red"
+    },
+    {
+      "value": 179,
+      "name": "Open"
+    }
+  ],
+  "values": {
+    "shutter_open": 201,
+    "strobe_slow": 50,
+    "strobe_fast": 255
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 268.0
+  }
+}

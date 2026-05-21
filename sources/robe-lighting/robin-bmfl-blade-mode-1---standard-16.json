@@ -1,0 +1,312 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "robe-lighting/robin-bmfl-blade-mode-1---standard-16",
+  "name": "Robin BMFL Blade",
+  "manufacturer": "Robe Lighting",
+  "mode": "Mode 1 - Standard 16 ",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 49,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 48,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 49
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 47,
+      "default": 224
+    },
+    {
+      "role": "CTO",
+      "offset": 14
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 7
+    },
+    {
+      "role": "COLOR_WHEEL_2",
+      "offset": 9
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 22
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 23
+    },
+    {
+      "role": "FOCUS",
+      "offset": 33
+    },
+    {
+      "role": "FROST",
+      "offset": 28
+    },
+    {
+      "role": "ZOOM",
+      "offset": 31
+    },
+    {
+      "role": "IRIS",
+      "offset": 29
+    },
+    {
+      "role": "PRISM",
+      "offset": 26
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 19
+    },
+    {
+      "role": "RESET",
+      "offset": 6
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open/white - continua"
+    },
+    {
+      "value": 8,
+      "name": "Deep red - continual"
+    },
+    {
+      "value": 27,
+      "name": "Deep blue - continual"
+    },
+    {
+      "value": 46,
+      "name": "Orange - continual"
+    },
+    {
+      "value": 63,
+      "name": "Green - continual"
+    },
+    {
+      "value": 82,
+      "name": "Magenta - continual"
+    },
+    {
+      "value": 99,
+      "name": "Congo blue (UV) - con"
+    },
+    {
+      "value": 120,
+      "name": "White - continual"
+    },
+    {
+      "value": 130,
+      "name": "Deep red - step"
+    },
+    {
+      "value": 140,
+      "name": "Deep blue - step"
+    },
+    {
+      "value": 150,
+      "name": "Orange - step"
+    },
+    {
+      "value": 160,
+      "name": "Green - step"
+    },
+    {
+      "value": 170,
+      "name": "Magenta - step"
+    },
+    {
+      "value": 180,
+      "name": "Congo blue - step"
+    }
+  ],
+  "color_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open/white - continua"
+    },
+    {
+      "value": 8,
+      "name": "Pink - continual"
+    },
+    {
+      "value": 27,
+      "name": "Lavender - continual"
+    },
+    {
+      "value": 46,
+      "name": "Laser green - continu"
+    },
+    {
+      "value": 63,
+      "name": "CTB - continual"
+    },
+    {
+      "value": 82,
+      "name": "Minus green - continu"
+    },
+    {
+      "value": 99,
+      "name": "Minus 1/2 green - con"
+    },
+    {
+      "value": 120,
+      "name": "White - continual"
+    },
+    {
+      "value": 130,
+      "name": "Pink - step"
+    },
+    {
+      "value": 140,
+      "name": "Lavender - step"
+    },
+    {
+      "value": 150,
+      "name": "Laser green - step"
+    },
+    {
+      "value": 160,
+      "name": "CTB - step"
+    },
+    {
+      "value": 170,
+      "name": "Minus green - step"
+    },
+    {
+      "value": 180,
+      "name": "Minus 1/2 green - ste"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 8,
+      "name": "G01 (Dot Breakup)"
+    },
+    {
+      "value": 20,
+      "name": "G02 ( Pick Up Sticks "
+    },
+    {
+      "value": 32,
+      "name": "G03 (Snail Trails)"
+    },
+    {
+      "value": 44,
+      "name": "G04 (Tiger Print)"
+    },
+    {
+      "value": 56,
+      "name": "G05 (Summer Branches)"
+    },
+    {
+      "value": 68,
+      "name": "G06 (Leaf Breakup)"
+    },
+    {
+      "value": 80,
+      "name": "G07 (Radial Dashes 18"
+    },
+    {
+      "value": 92,
+      "name": "G08 (Dots 8)"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 5,
+      "name": "G01 Index (New Raylin"
+    },
+    {
+      "value": 9,
+      "name": "G02 Index (Moon Scape"
+    },
+    {
+      "value": 14,
+      "name": "G03 Index (Leaf Break"
+    },
+    {
+      "value": 18,
+      "name": "G04 Index (Rotating D"
+    },
+    {
+      "value": 23,
+      "name": "G05 Index (Leaves)"
+    },
+    {
+      "value": 27,
+      "name": "G06 Index (Organic)"
+    },
+    {
+      "value": 32,
+      "name": "G01 Rotation (New Ray"
+    },
+    {
+      "value": 36,
+      "name": "G02 Rotation (Moon Sc"
+    },
+    {
+      "value": 41,
+      "name": "G03 Rotation (Leaf Br"
+    },
+    {
+      "value": 45,
+      "name": "G04 Rotation (Rotatin"
+    },
+    {
+      "value": 50,
+      "name": "G05 Rotation (Leaves)"
+    },
+    {
+      "value": 55,
+      "name": "G06 Rotation (Organic"
+    }
+  ],
+  "values": {
+    "shutter_open": 224,
+    "strobe_slow": 64,
+    "strobe_fast": 223
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

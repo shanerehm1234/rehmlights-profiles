@@ -1,0 +1,306 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "chauvet-professional/rogue-outcast-1-beamw-30ch",
+  "name": "Rogue Outcast 1 BeamW",
+  "manufacturer": "Chauvet Professional",
+  "mode": "30ch",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 29,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 17,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 18
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 20,
+      "default": 245
+    },
+    {
+      "role": "RED",
+      "offset": 23
+    },
+    {
+      "role": "GREEN",
+      "offset": 25
+    },
+    {
+      "role": "BLUE",
+      "offset": 27
+    },
+    {
+      "role": "WHITE",
+      "offset": 29
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 8
+    },
+    {
+      "role": "COLOR_WHEEL_2",
+      "offset": 13
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 9
+    },
+    {
+      "role": "ZOOM",
+      "offset": 21
+    },
+    {
+      "role": "EFFECTS",
+      "offset": 10
+    },
+    {
+      "role": "RESET",
+      "offset": 22
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "No function"
+    },
+    {
+      "value": 5,
+      "name": "Color 1"
+    },
+    {
+      "value": 10,
+      "name": "Color 2"
+    },
+    {
+      "value": 15,
+      "name": "Color 3"
+    },
+    {
+      "value": 20,
+      "name": "Color 4"
+    },
+    {
+      "value": 25,
+      "name": "Color 5"
+    },
+    {
+      "value": 30,
+      "name": "Color 6"
+    },
+    {
+      "value": 35,
+      "name": "Color 7"
+    },
+    {
+      "value": 40,
+      "name": "Color 8"
+    },
+    {
+      "value": 45,
+      "name": "Color 9"
+    },
+    {
+      "value": 50,
+      "name": "Color 10"
+    },
+    {
+      "value": 55,
+      "name": "Color 11"
+    },
+    {
+      "value": 60,
+      "name": "Color 12"
+    },
+    {
+      "value": 65,
+      "name": "Color 13"
+    },
+    {
+      "value": 70,
+      "name": "Color 14"
+    },
+    {
+      "value": 75,
+      "name": "Color 15"
+    },
+    {
+      "value": 80,
+      "name": "Color 16"
+    },
+    {
+      "value": 85,
+      "name": "Color 17"
+    },
+    {
+      "value": 90,
+      "name": "Color 18"
+    },
+    {
+      "value": 95,
+      "name": "Color 19"
+    },
+    {
+      "value": 100,
+      "name": "Color 20"
+    },
+    {
+      "value": 105,
+      "name": "Color 21"
+    },
+    {
+      "value": 110,
+      "name": "Color 22"
+    },
+    {
+      "value": 115,
+      "name": "Color 23"
+    },
+    {
+      "value": 120,
+      "name": "Color 24"
+    },
+    {
+      "value": 125,
+      "name": "Color 25"
+    },
+    {
+      "value": 130,
+      "name": "Color 26"
+    },
+    {
+      "value": 135,
+      "name": "Color 27"
+    },
+    {
+      "value": 140,
+      "name": "Color 28"
+    },
+    {
+      "value": 145,
+      "name": "Color 29"
+    }
+  ],
+  "color_wheel_2": [
+    {
+      "value": 0,
+      "name": "No function"
+    },
+    {
+      "value": 1,
+      "name": "2700K"
+    },
+    {
+      "value": 3,
+      "name": "3200K"
+    },
+    {
+      "value": 5,
+      "name": "4200K"
+    },
+    {
+      "value": 7,
+      "name": "5600K"
+    },
+    {
+      "value": 9,
+      "name": "8000K"
+    },
+    {
+      "value": 11,
+      "name": "Blue"
+    },
+    {
+      "value": 12,
+      "name": "Blue to cyan"
+    },
+    {
+      "value": 49,
+      "name": "Cyan"
+    },
+    {
+      "value": 50,
+      "name": "Cyan to green"
+    },
+    {
+      "value": 87,
+      "name": "Green"
+    },
+    {
+      "value": 88,
+      "name": "Green to yellow"
+    },
+    {
+      "value": 125,
+      "name": "Yellow"
+    },
+    {
+      "value": 126,
+      "name": "Yellow to red"
+    },
+    {
+      "value": 163,
+      "name": "Red"
+    },
+    {
+      "value": 164,
+      "name": "Red to magenta"
+    },
+    {
+      "value": 201,
+      "name": "Magenta"
+    },
+    {
+      "value": 202,
+      "name": "Magenta to blue"
+    },
+    {
+      "value": 239,
+      "name": "Blue"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "No function"
+    },
+    {
+      "value": 1,
+      "name": "Gobos (indexed)"
+    }
+  ],
+  "values": {
+    "shutter_open": 245,
+    "strobe_slow": 25,
+    "strobe_fast": 244
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 260.0
+  }
+}

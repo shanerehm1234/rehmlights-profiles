@@ -1,0 +1,270 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "martin-professional/mac-viper-airfx-basic",
+  "name": "MAC Viper AirFX",
+  "manufacturer": "Martin Professional",
+  "mode": "Basic",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 20,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 16,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 17
+    },
+    {
+      "role": "TILT",
+      "offset": 18,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 19
+    },
+    {
+      "role": "DIMMER",
+      "offset": 2,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 1,
+      "default": 201
+    },
+    {
+      "role": "CTO",
+      "offset": 6
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 7
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 8
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 11
+    },
+    {
+      "role": "FOCUS",
+      "offset": 15
+    },
+    {
+      "role": "FROST",
+      "offset": 12
+    },
+    {
+      "role": "ZOOM",
+      "offset": 14
+    },
+    {
+      "role": "IRIS",
+      "offset": 13
+    },
+    {
+      "role": "RESET",
+      "offset": 20
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 8,
+      "name": "Blue"
+    },
+    {
+      "value": 23,
+      "name": "Green"
+    },
+    {
+      "value": 38,
+      "name": "Orange"
+    },
+    {
+      "value": 53,
+      "name": "Minus Green"
+    },
+    {
+      "value": 68,
+      "name": "Deep Magenta"
+    },
+    {
+      "value": 83,
+      "name": "Deep Blue"
+    },
+    {
+      "value": 98,
+      "name": "Red"
+    },
+    {
+      "value": 113,
+      "name": "Open"
+    },
+    {
+      "value": 121,
+      "name": "Blue"
+    },
+    {
+      "value": 126,
+      "name": "Green"
+    },
+    {
+      "value": 131,
+      "name": "Orange"
+    },
+    {
+      "value": 136,
+      "name": "Minus Green"
+    },
+    {
+      "value": 141,
+      "name": "Deep Magenta"
+    },
+    {
+      "value": 146,
+      "name": "Deep Blue"
+    },
+    {
+      "value": 151,
+      "name": "Red"
+    },
+    {
+      "value": 156,
+      "name": "Open"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 10,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 15,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 20,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 25,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 30,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 35,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 40,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 45,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 50,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 55,
+      "name": "Gobo 5"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 8,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 23,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 38,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 53,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 68,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 83,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 98,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 113,
+      "name": "Open"
+    },
+    {
+      "value": 121,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 126,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 131,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 136,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 141,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 146,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 151,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 156,
+      "name": "Open"
+    }
+  ],
+  "values": {
+    "shutter_open": 201,
+    "strobe_slow": 50,
+    "strobe_fast": 255
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 268.0
+  }
+}

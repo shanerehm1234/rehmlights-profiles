@@ -1,0 +1,62 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "shehds/led-beam-12x12w-rgbw-16-channel-mode",
+  "name": "LED Beam 12x12W RGBW ",
+  "manufacturer": "SHEHDS",
+  "mode": "16 Channel Mode",
+  "fixture_type": "FIXTURE_TYPE_RGBX",
+  "footprint": 14,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 14
+    },
+    {
+      "role": "TILT",
+      "offset": 2,
+      "default": 127
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 9
+    },
+    {
+      "role": "DIMMER",
+      "offset": 3,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 8,
+      "default": 0
+    },
+    {
+      "role": "RED",
+      "offset": 4
+    },
+    {
+      "role": "GREEN",
+      "offset": 5
+    },
+    {
+      "role": "BLUE",
+      "offset": 6
+    },
+    {
+      "role": "WHITE",
+      "offset": 7
+    }
+  ],
+  "values": {
+    "strobe_fast": 255
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 220.0
+  }
+}

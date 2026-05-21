@@ -1,0 +1,238 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "elation/elation-smarty-hybrid-extended-34chan",
+  "name": "ELATION Smarty Hybrid",
+  "manufacturer": "Elation",
+  "mode": "Extended (34Chan)",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 33,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 33
+    },
+    {
+      "role": "DIMMER",
+      "offset": 28,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 29
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 27,
+      "default": 224
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 11
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 13
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 16
+    },
+    {
+      "role": "FOCUS",
+      "offset": 21
+    },
+    {
+      "role": "FROST",
+      "offset": 30
+    },
+    {
+      "role": "ZOOM",
+      "offset": 23
+    },
+    {
+      "role": "PRISM",
+      "offset": 18
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open / White"
+    },
+    {
+      "value": 11,
+      "name": "Red"
+    },
+    {
+      "value": 20,
+      "name": "Green"
+    },
+    {
+      "value": 29,
+      "name": "Yellow"
+    },
+    {
+      "value": 38,
+      "name": "Magenta"
+    },
+    {
+      "value": 47,
+      "name": "Orange"
+    },
+    {
+      "value": 56,
+      "name": "Aqua"
+    },
+    {
+      "value": 65,
+      "name": "Pink"
+    },
+    {
+      "value": 74,
+      "name": "Cyan"
+    },
+    {
+      "value": 83,
+      "name": "RGBY"
+    },
+    {
+      "value": 92,
+      "name": "CTB"
+    },
+    {
+      "value": 101,
+      "name": "UV"
+    },
+    {
+      "value": 110,
+      "name": "CTO"
+    },
+    {
+      "value": 119,
+      "name": "Blue"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "G1-00 (Beam Open)"
+    },
+    {
+      "value": 11,
+      "name": "G1-00 (Spot Open)"
+    },
+    {
+      "value": 22,
+      "name": "G1-01 (Sinus)"
+    },
+    {
+      "value": 32,
+      "name": "G1-02 (Triangle)"
+    },
+    {
+      "value": 42,
+      "name": "G1-03 (small Dots)"
+    },
+    {
+      "value": 52,
+      "name": "G1-04 (Scrible)"
+    },
+    {
+      "value": 62,
+      "name": "G1-05 (Circles)"
+    },
+    {
+      "value": 72,
+      "name": "G1-06 (Florales)"
+    },
+    {
+      "value": 82,
+      "name": "G1-07 (Shattered Glas"
+    },
+    {
+      "value": 92,
+      "name": "G1-08 (Efflux)"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 10,
+      "name": "G2-01 (Beam-Reducer T"
+    },
+    {
+      "value": 18,
+      "name": "G2-02 (Beam-Reducer L"
+    },
+    {
+      "value": 26,
+      "name": "G2-03 (Beam-Reducer S"
+    },
+    {
+      "value": 34,
+      "name": "G2-04 (Beam-Reducer)"
+    },
+    {
+      "value": 42,
+      "name": "G2-05 (Circle-Ovals)"
+    },
+    {
+      "value": 50,
+      "name": "G2-06 (Bars)"
+    },
+    {
+      "value": 58,
+      "name": "G2-08 (Round Star)"
+    },
+    {
+      "value": 66,
+      "name": "G2-09 (4-Holes)"
+    },
+    {
+      "value": 74,
+      "name": "G2-10 (Plus)"
+    },
+    {
+      "value": 82,
+      "name": "G2-11 (4-Dots)"
+    },
+    {
+      "value": 90,
+      "name": "G2-12 (Minus)"
+    },
+    {
+      "value": 98,
+      "name": "G2-13 (Fan)"
+    }
+  ],
+  "values": {
+    "shutter_open": 224,
+    "strobe_slow": 64,
+    "strobe_fast": 223
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}

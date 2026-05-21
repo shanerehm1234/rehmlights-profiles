@@ -1,0 +1,40 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "shehds/mini-led-beam-spider3-mode-16ch",
+  "name": "Mini LED Beam Spider3",
+  "manufacturer": "SHEHDS",
+  "mode": "Mode 16CH",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 16,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "DIMMER",
+      "offset": 7,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 8,
+      "default": 0
+    },
+    {
+      "role": "WHITE",
+      "offset": 15
+    },
+    {
+      "role": "RESET",
+      "offset": 16
+    }
+  ],
+  "values": {
+    "strobe_fast": 255
+  },
+  "meta": {
+    "pan_degrees": 1.0
+  }
+}

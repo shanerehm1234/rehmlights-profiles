@@ -1,0 +1,284 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "fine-art/fine-120ls-beam-ip-stnd",
+  "name": "FINE 120LS BEAM IP",
+  "manufacturer": "Fine Art",
+  "mode": "stnd",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 15,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 4,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 5
+    },
+    {
+      "role": "TILT",
+      "offset": 6,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 7
+    },
+    {
+      "role": "DIMMER",
+      "offset": 2,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 3
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 1,
+      "default": 254
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 9
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 8
+    },
+    {
+      "role": "FOCUS",
+      "offset": 13
+    },
+    {
+      "role": "FROST",
+      "offset": 14
+    },
+    {
+      "role": "PRISM",
+      "offset": 11
+    },
+    {
+      "role": "RESET",
+      "offset": 15
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "linear"
+    },
+    {
+      "value": 111,
+      "name": "color 1"
+    },
+    {
+      "value": 113,
+      "name": "color 2"
+    },
+    {
+      "value": 115,
+      "name": "color 3"
+    },
+    {
+      "value": 117,
+      "name": "color 4"
+    },
+    {
+      "value": 119,
+      "name": "color 5"
+    },
+    {
+      "value": 121,
+      "name": "color 6"
+    },
+    {
+      "value": 123,
+      "name": "color 7"
+    },
+    {
+      "value": 125,
+      "name": "color 8"
+    },
+    {
+      "value": 127,
+      "name": "color 9"
+    },
+    {
+      "value": 129,
+      "name": "color 10"
+    },
+    {
+      "value": 131,
+      "name": "color 11"
+    },
+    {
+      "value": 133,
+      "name": "color 12"
+    },
+    {
+      "value": 135,
+      "name": "color 13"
+    },
+    {
+      "value": 137,
+      "name": "color 14"
+    },
+    {
+      "value": 139,
+      "name": "color 15"
+    },
+    {
+      "value": 141,
+      "name": "color 16"
+    },
+    {
+      "value": 143,
+      "name": "color 17"
+    },
+    {
+      "value": 145,
+      "name": "color 18"
+    },
+    {
+      "value": 147,
+      "name": "color 19"
+    },
+    {
+      "value": 149,
+      "name": "color 20"
+    },
+    {
+      "value": 151,
+      "name": "color 21"
+    },
+    {
+      "value": 153,
+      "name": "color 22"
+    },
+    {
+      "value": 155,
+      "name": "color 23"
+    },
+    {
+      "value": 157,
+      "name": "color 24"
+    },
+    {
+      "value": 159,
+      "name": "open"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 15,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 19,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 23,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 27,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 30,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 33,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 36,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 39,
+      "name": "Gobo 8"
+    },
+    {
+      "value": 42,
+      "name": "Gobo 9"
+    },
+    {
+      "value": 45,
+      "name": "Gobo 10"
+    },
+    {
+      "value": 48,
+      "name": "Gobo 11"
+    },
+    {
+      "value": 51,
+      "name": "Gobo 12"
+    },
+    {
+      "value": 54,
+      "name": "Gobo 13"
+    },
+    {
+      "value": 57,
+      "name": "Gobo 14"
+    },
+    {
+      "value": 60,
+      "name": "Gobo 15"
+    },
+    {
+      "value": 63,
+      "name": "Gobo 16"
+    },
+    {
+      "value": 66,
+      "name": "Gobo 17"
+    },
+    {
+      "value": 69,
+      "name": "Gobo 18"
+    },
+    {
+      "value": 72,
+      "name": "Gobo 19"
+    },
+    {
+      "value": 75,
+      "name": "Gobo 20"
+    },
+    {
+      "value": 78,
+      "name": "Gobo 21"
+    },
+    {
+      "value": 81,
+      "name": "Gobo 22"
+    },
+    {
+      "value": 84,
+      "name": "Gobo 23"
+    },
+    {
+      "value": 87,
+      "name": "Gobo 24"
+    }
+  ],
+  "values": {
+    "shutter_open": 254,
+    "strobe_slow": 11,
+    "strobe_fast": 253
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 252.0
+  }
+}

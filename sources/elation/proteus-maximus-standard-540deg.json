@@ -1,0 +1,222 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "elation/proteus-maximus-standard-540deg",
+  "name": "Proteus Maximus",
+  "manufacturer": "Elation",
+  "mode": "Standard 540deg",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 37,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "DIMMER",
+      "offset": 21,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 22
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 20,
+      "default": 224
+    },
+    {
+      "role": "CTO",
+      "offset": 8
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 9
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 10
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 13
+    },
+    {
+      "role": "GOBO_ROT",
+      "offset": 11
+    },
+    {
+      "role": "FOCUS",
+      "offset": 16
+    },
+    {
+      "role": "FROST",
+      "offset": 25
+    },
+    {
+      "role": "ZOOM",
+      "offset": 18
+    },
+    {
+      "role": "IRIS",
+      "offset": 24
+    },
+    {
+      "role": "PRISM",
+      "offset": 14
+    },
+    {
+      "role": "PRISM_ROT",
+      "offset": 15
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 26
+    },
+    {
+      "role": "RESET",
+      "offset": 37
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 20,
+      "name": "Red"
+    },
+    {
+      "value": 38,
+      "name": "Green"
+    },
+    {
+      "value": 56,
+      "name": "UV"
+    },
+    {
+      "value": 74,
+      "name": "High CRI"
+    },
+    {
+      "value": 92,
+      "name": "Orange"
+    },
+    {
+      "value": 110,
+      "name": "Medium Blue"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 10,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 20,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 30,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 40,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 50,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 60,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 70,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 90,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 110,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 130,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 150,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 170,
+      "name": "Gobo 6"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 10,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 20,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 30,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 40,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 50,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 60,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 70,
+      "name": "Gobo 7"
+    }
+  ],
+  "values": {
+    "shutter_open": 224,
+    "strobe_slow": 64,
+    "strobe_fast": 223
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0
+  }
+}
