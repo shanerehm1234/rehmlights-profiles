@@ -39,6 +39,10 @@ def main():
         footprint = obj.get("footprint") or _footprint(obj)
 
         rel = os.path.relpath(p, REPO_ROOT).replace(os.sep, "/")
+        # Leading slash so the device can do base_url + url without injecting
+        # a separator. e.g. "/sources/glp/jdc1.json" appends cleanly to
+        # "https://raw.githubusercontent.com/.../main".
+        url = "/" + rel
         entries.append({
             "id": obj.get("id") or rel,
             "name": obj.get("name", ""),
@@ -46,7 +50,7 @@ def main():
             "mode": obj.get("mode", ""),
             "fixture_type": obj.get("fixture_type", ""),
             "footprint": footprint,
-            "url": rel,                              # repo-relative path
+            "url": url,
         })
 
     # Sort: manufacturer, then name, then mode — gives the device UI a stable order.

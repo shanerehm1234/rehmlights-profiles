@@ -1,6 +1,6 @@
 {
   "schema": "rehmlights-index/1",
-  "generated": "2026-05-21T05:49:08Z",
+  "generated": "2026-05-21T05:54:29Z",
   "count": 235,
   "fixtures": [
     {
@@ -10,7 +10,7 @@
       "mode": "Default",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 5,
-      "url": "sources/adj/comscan-led-default.json"
+      "url": "/sources/adj/comscan-led-default.json"
     },
     {
       "id": "adj/focus-spot-2x-16-ch",
@@ -19,7 +19,7 @@
       "mode": "16 CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 15,
-      "url": "sources/adj/focus-spot-2x-16-ch.json"
+      "url": "/sources/adj/focus-spot-2x-16-ch.json"
     },
     {
       "id": "adj/focus-spot-2x-18-ch",
@@ -28,7 +28,7 @@
       "mode": "18 CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 17,
-      "url": "sources/adj/focus-spot-2x-18-ch.json"
+      "url": "/sources/adj/focus-spot-2x-18-ch.json"
     },
     {
       "id": "adj/focus-spot-4z-basic-mode-pan540",
@@ -37,7 +37,7 @@
       "mode": "Basic Mode Pan540",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 13,
-      "url": "sources/adj/focus-spot-4z-basic-mode-pan540.json"
+      "url": "/sources/adj/focus-spot-4z-basic-mode-pan540.json"
     },
     {
       "id": "adj/focus-spot-4z-extended-mode-pan630",
@@ -46,7 +46,7 @@
       "mode": "Extended Mode Pan630",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 18,
-      "url": "sources/adj/focus-spot-4z-extended-mode-pan630.json"
+      "url": "/sources/adj/focus-spot-4z-extended-mode-pan630.json"
     },
     {
       "id": "adj/focus-spot-6z-basic",
@@ -55,7 +55,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 21,
-      "url": "sources/adj/focus-spot-6z-basic.json"
+      "url": "/sources/adj/focus-spot-6z-basic.json"
     },
     {
       "id": "adj/focus-spot-6z-ext",
@@ -64,7 +64,7 @@
       "mode": "EXT",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 29,
-      "url": "sources/adj/focus-spot-6z-ext.json"
+      "url": "/sources/adj/focus-spot-6z-ext.json"
     },
     {
       "id": "adj/focus-spot-7z-basic-30-pan540",
@@ -73,7 +73,7 @@
       "mode": "Basic (30) Pan540",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 30,
-      "url": "sources/adj/focus-spot-7z-basic-30-pan540.json"
+      "url": "/sources/adj/focus-spot-7z-basic-30-pan540.json"
     },
     {
       "id": "adj/focus-spot-7z-extended-45-pan540",
@@ -82,7 +82,7 @@
       "mode": "Extended (45) Pan540",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 45,
-      "url": "sources/adj/focus-spot-7z-extended-45-pan540.json"
+      "url": "/sources/adj/focus-spot-7z-extended-45-pan540.json"
     },
     {
       "id": "adj/focus-wash-basic",
@@ -91,7 +91,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 16,
-      "url": "sources/adj/focus-wash-basic.json"
+      "url": "/sources/adj/focus-wash-basic.json"
     },
     {
       "id": "adj/focus-wash-ext-cmy",
@@ -100,7 +100,7 @@
       "mode": "Ext CMY ",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 23,
-      "url": "sources/adj/focus-wash-ext-cmy.json"
+      "url": "/sources/adj/focus-wash-ext-cmy.json"
     },
     {
       "id": "adj/inno-color-beam-z7-14ch",
@@ -109,7 +109,7 @@
       "mode": "14CH",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 13,
-      "url": "sources/adj/inno-color-beam-z7-14ch.json"
+      "url": "/sources/adj/inno-color-beam-z7-14ch.json"
     },
     {
       "id": "adj/inno-pocket-spot-11ch",
@@ -118,7 +118,7 @@
       "mode": "11CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 9,
-      "url": "sources/adj/inno-pocket-spot-11ch.json"
+      "url": "/sources/adj/inno-pocket-spot-11ch.json"
     },
     {
       "id": "adj/inno-pocket-spot-9ch",
@@ -127,7 +127,7 @@
       "mode": "9CH ",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 7,
-      "url": "sources/adj/inno-pocket-spot-9ch.json"
+      "url": "/sources/adj/inno-pocket-spot-9ch.json"
     },
     {
       "id": "adj/pocket-pro-11-ch",
@@ -136,7 +136,7 @@
       "mode": "11 CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 10,
-      "url": "sources/adj/pocket-pro-11-ch.json"
+      "url": "/sources/adj/pocket-pro-11-ch.json"
     },
     {
       "id": "adj/pocket-pro-13-ch",
@@ -145,7 +145,7 @@
       "mode": "13 CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 12,
-      "url": "sources/adj/pocket-pro-13-ch.json"
+      "url": "/sources/adj/pocket-pro-13-ch.json"
     },
     {
       "id": "adj/vizi-beam-12rx-13-ch",
@@ -154,7 +154,7 @@
       "mode": "13 CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 12,
-      "url": "sources/adj/vizi-beam-12rx-13-ch.json"
+      "url": "/sources/adj/vizi-beam-12rx-13-ch.json"
     },
     {
       "id": "adj/vizi-beam-12rx-17-ch",
@@ -163,7 +163,7 @@
       "mode": "17 CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 16,
-      "url": "sources/adj/vizi-beam-12rx-17-ch.json"
+      "url": "/sources/adj/vizi-beam-12rx-17-ch.json"
     },
     {
       "id": "adj/vizi-beam-5rx-19-ch",
@@ -172,7 +172,7 @@
       "mode": "19 CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 18,
-      "url": "sources/adj/vizi-beam-5rx-19-ch.json"
+      "url": "/sources/adj/vizi-beam-5rx-19-ch.json"
     },
     {
       "id": "adj/vizi-beam-rx2-16-ch",
@@ -181,7 +181,7 @@
       "mode": "16 CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 15,
-      "url": "sources/adj/vizi-beam-rx2-16-ch.json"
+      "url": "/sources/adj/vizi-beam-rx2-16-ch.json"
     },
     {
       "id": "adj/vizi-beam-rx2-20-ch",
@@ -190,7 +190,7 @@
       "mode": "20 CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 19,
-      "url": "sources/adj/vizi-beam-rx2-20-ch.json"
+      "url": "/sources/adj/vizi-beam-rx2-20-ch.json"
     },
     {
       "id": "adj/vizi-cmy300-24-ch",
@@ -199,7 +199,7 @@
       "mode": "24 CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 19,
-      "url": "sources/adj/vizi-cmy300-24-ch.json"
+      "url": "/sources/adj/vizi-cmy300-24-ch.json"
     },
     {
       "id": "adj/vizi-cmy300-38-ch",
@@ -208,7 +208,7 @@
       "mode": "38 CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 33,
-      "url": "sources/adj/vizi-cmy300-38-ch.json"
+      "url": "/sources/adj/vizi-cmy300-38-ch.json"
     },
     {
       "id": "adj/vizi-hybrid-16rx-19ch",
@@ -217,7 +217,7 @@
       "mode": "19CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 18,
-      "url": "sources/adj/vizi-hybrid-16rx-19ch.json"
+      "url": "/sources/adj/vizi-hybrid-16rx-19ch.json"
     },
     {
       "id": "ayrton/diablo-basic-540-s",
@@ -226,7 +226,7 @@
       "mode": "Basic_540_S",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 34,
-      "url": "sources/ayrton/diablo-basic-540-s.json"
+      "url": "/sources/ayrton/diablo-basic-540-s.json"
     },
     {
       "id": "ayrton/diablo-extended-540-s",
@@ -235,7 +235,7 @@
       "mode": "Extended_540_S",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 56,
-      "url": "sources/ayrton/diablo-extended-540-s.json"
+      "url": "/sources/ayrton/diablo-extended-540-s.json"
     },
     {
       "id": "betopper/lm70sr-7x8w-14-channel",
@@ -244,7 +244,7 @@
       "mode": "14 Channel",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 10,
-      "url": "sources/betopper/lm70sr-7x8w-14-channel.json"
+      "url": "/sources/betopper/lm70sr-7x8w-14-channel.json"
     },
     {
       "id": "blizzard-lighting-llc/basic-led-par-11ch-mode",
@@ -253,7 +253,7 @@
       "mode": "11ch mode",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 8,
-      "url": "sources/blizzard-lighting-llc/basic-led-par-11ch-mode.json"
+      "url": "/sources/blizzard-lighting-llc/basic-led-par-11ch-mode.json"
     },
     {
       "id": "chauvet-dj/chauvet-dj-intimidato-15-channel",
@@ -262,7 +262,7 @@
       "mode": "15 Channel",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 15,
-      "url": "sources/chauvet-dj/chauvet-dj-intimidato-15-channel.json"
+      "url": "/sources/chauvet-dj/chauvet-dj-intimidato-15-channel.json"
     },
     {
       "id": "chauvet-dj/chauvet-dj-intimidato-30-channel",
@@ -271,7 +271,7 @@
       "mode": "30 channel",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 30,
-      "url": "sources/chauvet-dj/chauvet-dj-intimidato-30-channel.json"
+      "url": "/sources/chauvet-dj/chauvet-dj-intimidato-30-channel.json"
     },
     {
       "id": "chauvet-dj/intimidator-hybrid-14-19-ch-mode",
@@ -280,7 +280,7 @@
       "mode": "19 Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 18,
-      "url": "sources/chauvet-dj/intimidator-hybrid-14-19-ch-mode.json"
+      "url": "/sources/chauvet-dj/intimidator-hybrid-14-19-ch-mode.json"
     },
     {
       "id": "chauvet-dj/intimidator-spot-260-08-channel",
@@ -289,7 +289,7 @@
       "mode": "08 channel",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 8,
-      "url": "sources/chauvet-dj/intimidator-spot-260-08-channel.json"
+      "url": "/sources/chauvet-dj/intimidator-spot-260-08-channel.json"
     },
     {
       "id": "chauvet-dj/intimidator-spot-260-14-channel",
@@ -298,7 +298,7 @@
       "mode": "14 channel",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 13,
-      "url": "sources/chauvet-dj/intimidator-spot-260-14-channel.json"
+      "url": "/sources/chauvet-dj/intimidator-spot-260-14-channel.json"
     },
     {
       "id": "chauvet-dj/intimidator-spot-260x-08-channel",
@@ -307,7 +307,7 @@
       "mode": "08 channel",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 8,
-      "url": "sources/chauvet-dj/intimidator-spot-260x-08-channel.json"
+      "url": "/sources/chauvet-dj/intimidator-spot-260x-08-channel.json"
     },
     {
       "id": "chauvet-dj/intimidator-spot-260x-14-channel",
@@ -316,7 +316,7 @@
       "mode": "14 channel",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 13,
-      "url": "sources/chauvet-dj/intimidator-spot-260x-14-channel.json"
+      "url": "/sources/chauvet-dj/intimidator-spot-260x-14-channel.json"
     },
     {
       "id": "chauvet-dj/intimidator-spot-360x-14ch-mode",
@@ -325,7 +325,7 @@
       "mode": "14Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 14,
-      "url": "sources/chauvet-dj/intimidator-spot-360x-14ch-mode.json"
+      "url": "/sources/chauvet-dj/intimidator-spot-360x-14ch-mode.json"
     },
     {
       "id": "chauvet-dj/intimidator-spot-360x-8ch-mode",
@@ -334,7 +334,7 @@
       "mode": "8Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 8,
-      "url": "sources/chauvet-dj/intimidator-spot-360x-8ch-mode.json"
+      "url": "/sources/chauvet-dj/intimidator-spot-360x-8ch-mode.json"
     },
     {
       "id": "chauvet-dj/intimidator-spot-375z-15ch-mode",
@@ -343,7 +343,7 @@
       "mode": "15Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 15,
-      "url": "sources/chauvet-dj/intimidator-spot-375z-15ch-mode.json"
+      "url": "/sources/chauvet-dj/intimidator-spot-375z-15ch-mode.json"
     },
     {
       "id": "chauvet-dj/intimidator-spot-375z-9ch-mode",
@@ -352,7 +352,7 @@
       "mode": "9Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 9,
-      "url": "sources/chauvet-dj/intimidator-spot-375z-9ch-mode.json"
+      "url": "/sources/chauvet-dj/intimidator-spot-375z-9ch-mode.json"
     },
     {
       "id": "chauvet-dj/intimidator-spot-475z-10ch-mode",
@@ -361,7 +361,7 @@
       "mode": "10Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 10,
-      "url": "sources/chauvet-dj/intimidator-spot-475z-10ch-mode.json"
+      "url": "/sources/chauvet-dj/intimidator-spot-475z-10ch-mode.json"
     },
     {
       "id": "chauvet-dj/intimidator-spot-475z-16ch-mode",
@@ -370,7 +370,7 @@
       "mode": "16Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 16,
-      "url": "sources/chauvet-dj/intimidator-spot-475z-16ch-mode.json"
+      "url": "/sources/chauvet-dj/intimidator-spot-475z-16ch-mode.json"
     },
     {
       "id": "chauvet-dj/intimidator-wash-zoom-mode1-29ch",
@@ -379,7 +379,7 @@
       "mode": "Mode1 29Ch",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 28,
-      "url": "sources/chauvet-dj/intimidator-wash-zoom-mode1-29ch.json"
+      "url": "/sources/chauvet-dj/intimidator-wash-zoom-mode1-29ch.json"
     },
     {
       "id": "chauvet-dj/intimidator-wash-zoom-mode2-14ch",
@@ -388,7 +388,7 @@
       "mode": "Mode2 14Ch",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 13,
-      "url": "sources/chauvet-dj/intimidator-wash-zoom-mode2-14ch.json"
+      "url": "/sources/chauvet-dj/intimidator-wash-zoom-mode2-14ch.json"
     },
     {
       "id": "chauvet-professional/maverick-force-1-spot-25ch",
@@ -397,7 +397,7 @@
       "mode": "25ch",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 25,
-      "url": "sources/chauvet-professional/maverick-force-1-spot-25ch.json"
+      "url": "/sources/chauvet-professional/maverick-force-1-spot-25ch.json"
     },
     {
       "id": "chauvet-professional/maverick-force-1-spot-32ch",
@@ -406,7 +406,7 @@
       "mode": "32ch",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 32,
-      "url": "sources/chauvet-professional/maverick-force-1-spot-32ch.json"
+      "url": "/sources/chauvet-professional/maverick-force-1-spot-32ch.json"
     },
     {
       "id": "chauvet-professional/maverick-force-2-prof-33ch-mode",
@@ -415,7 +415,7 @@
       "mode": "33Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 33,
-      "url": "sources/chauvet-professional/maverick-force-2-prof-33ch-mode.json"
+      "url": "/sources/chauvet-professional/maverick-force-2-prof-33ch-mode.json"
     },
     {
       "id": "chauvet-professional/maverick-force-2-prof-50ch-mode",
@@ -424,7 +424,7 @@
       "mode": "50Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 50,
-      "url": "sources/chauvet-professional/maverick-force-2-prof-50ch-mode.json"
+      "url": "/sources/chauvet-professional/maverick-force-2-prof-50ch-mode.json"
     },
     {
       "id": "chauvet-professional/maverick-force-3-prof-37ch-mode",
@@ -433,7 +433,7 @@
       "mode": "37Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 37,
-      "url": "sources/chauvet-professional/maverick-force-3-prof-37ch-mode.json"
+      "url": "/sources/chauvet-professional/maverick-force-3-prof-37ch-mode.json"
     },
     {
       "id": "chauvet-professional/maverick-force-3-prof-53ch-mode",
@@ -442,7 +442,7 @@
       "mode": "53Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 53,
-      "url": "sources/chauvet-professional/maverick-force-3-prof-53ch-mode.json"
+      "url": "/sources/chauvet-professional/maverick-force-3-prof-53ch-mode.json"
     },
     {
       "id": "chauvet-professional/maverick-force-s-spot-22ch-mode",
@@ -451,7 +451,7 @@
       "mode": "22Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 22,
-      "url": "sources/chauvet-professional/maverick-force-s-spot-22ch-mode.json"
+      "url": "/sources/chauvet-professional/maverick-force-s-spot-22ch-mode.json"
     },
     {
       "id": "chauvet-professional/maverick-force-s-spot-29ch-mode",
@@ -460,7 +460,7 @@
       "mode": "29Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 29,
-      "url": "sources/chauvet-professional/maverick-force-s-spot-29ch-mode.json"
+      "url": "/sources/chauvet-professional/maverick-force-s-spot-29ch-mode.json"
     },
     {
       "id": "chauvet-professional/maverick-mk2-spot-mode1-32ch",
@@ -469,7 +469,7 @@
       "mode": "Mode1 32Ch",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 32,
-      "url": "sources/chauvet-professional/maverick-mk2-spot-mode1-32ch.json"
+      "url": "/sources/chauvet-professional/maverick-mk2-spot-mode1-32ch.json"
     },
     {
       "id": "chauvet-professional/maverick-mk2-spot-mode2-24ch",
@@ -478,7 +478,7 @@
       "mode": "Mode2 24Ch",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 24,
-      "url": "sources/chauvet-professional/maverick-mk2-spot-mode2-24ch.json"
+      "url": "/sources/chauvet-professional/maverick-mk2-spot-mode2-24ch.json"
     },
     {
       "id": "chauvet-professional/maverick-mk3-wash-dual-mode-movement-b",
@@ -487,7 +487,7 @@
       "mode": "Dual Mode-Movement: B",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 9,
-      "url": "sources/chauvet-professional/maverick-mk3-wash-dual-mode-movement-b.json"
+      "url": "/sources/chauvet-professional/maverick-mk3-wash-dual-mode-movement-b.json"
     },
     {
       "id": "chauvet-professional/maverick-mk3-wash-single-mode-tour-297",
@@ -496,7 +496,7 @@
       "mode": "Single Mode: Tour 297",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 296,
-      "url": "sources/chauvet-professional/maverick-mk3-wash-single-mode-tour-297.json"
+      "url": "/sources/chauvet-professional/maverick-mk3-wash-single-mode-tour-297.json"
     },
     {
       "id": "chauvet-professional/maverick-silens-2x-pr-32ch-mode",
@@ -505,7 +505,7 @@
       "mode": "32Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 32,
-      "url": "sources/chauvet-professional/maverick-silens-2x-pr-32ch-mode.json"
+      "url": "/sources/chauvet-professional/maverick-silens-2x-pr-32ch-mode.json"
     },
     {
       "id": "chauvet-professional/maverick-silens-2x-pr-42ch-mode",
@@ -514,7 +514,7 @@
       "mode": "42Ch Mode ",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 42,
-      "url": "sources/chauvet-professional/maverick-silens-2x-pr-42ch-mode.json"
+      "url": "/sources/chauvet-professional/maverick-silens-2x-pr-42ch-mode.json"
     },
     {
       "id": "chauvet-professional/maverick-storm-1-flex-26ch-mode",
@@ -523,7 +523,7 @@
       "mode": "26Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 26,
-      "url": "sources/chauvet-professional/maverick-storm-1-flex-26ch-mode.json"
+      "url": "/sources/chauvet-professional/maverick-storm-1-flex-26ch-mode.json"
     },
     {
       "id": "chauvet-professional/maverick-storm-1-flex-33ch-mode",
@@ -532,7 +532,7 @@
       "mode": "33Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 33,
-      "url": "sources/chauvet-professional/maverick-storm-1-flex-33ch-mode.json"
+      "url": "/sources/chauvet-professional/maverick-storm-1-flex-33ch-mode.json"
     },
     {
       "id": "chauvet-professional/maverick-storm-2-beam-45-channels-movement",
@@ -541,7 +541,7 @@
       "mode": "45 channels Movement:",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 44,
-      "url": "sources/chauvet-professional/maverick-storm-2-beam-45-channels-movement.json"
+      "url": "/sources/chauvet-professional/maverick-storm-2-beam-45-channels-movement.json"
     },
     {
       "id": "chauvet-professional/rogue-outcast-1-beamw-30ch",
@@ -550,7 +550,7 @@
       "mode": "30ch",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 29,
-      "url": "sources/chauvet-professional/rogue-outcast-1-beamw-30ch.json"
+      "url": "/sources/chauvet-professional/rogue-outcast-1-beamw-30ch.json"
     },
     {
       "id": "chauvet-professional/rogue-outcast-1-beamw-64ch",
@@ -559,7 +559,7 @@
       "mode": "64ch",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 64,
-      "url": "sources/chauvet-professional/rogue-outcast-1-beamw-64ch.json"
+      "url": "/sources/chauvet-professional/rogue-outcast-1-beamw-64ch.json"
     },
     {
       "id": "chauvet-professional/rogue-outcast-2x-wash-15ch-mode",
@@ -568,7 +568,7 @@
       "mode": "15Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 15,
-      "url": "sources/chauvet-professional/rogue-outcast-2x-wash-15ch-mode.json"
+      "url": "/sources/chauvet-professional/rogue-outcast-2x-wash-15ch-mode.json"
     },
     {
       "id": "chauvet-professional/rogue-outcast-2x-wash-56ch-mode",
@@ -577,7 +577,7 @@
       "mode": "56Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 56,
-      "url": "sources/chauvet-professional/rogue-outcast-2x-wash-56ch-mode.json"
+      "url": "/sources/chauvet-professional/rogue-outcast-2x-wash-56ch-mode.json"
     },
     {
       "id": "chauvet-professional/rogue-outcast-3-spot-20ch-mode",
@@ -586,7 +586,7 @@
       "mode": "20Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 20,
-      "url": "sources/chauvet-professional/rogue-outcast-3-spot-20ch-mode.json"
+      "url": "/sources/chauvet-professional/rogue-outcast-3-spot-20ch-mode.json"
     },
     {
       "id": "chauvet-professional/rogue-outcast-3-spot-25ch-mode",
@@ -595,7 +595,7 @@
       "mode": "25Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 25,
-      "url": "sources/chauvet-professional/rogue-outcast-3-spot-25ch-mode.json"
+      "url": "/sources/chauvet-professional/rogue-outcast-3-spot-25ch-mode.json"
     },
     {
       "id": "chauvet-professional/rogue-r1-beamwash-14ch-mode",
@@ -604,7 +604,7 @@
       "mode": "14Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 14,
-      "url": "sources/chauvet-professional/rogue-r1-beamwash-14ch-mode.json"
+      "url": "/sources/chauvet-professional/rogue-r1-beamwash-14ch-mode.json"
     },
     {
       "id": "chauvet-professional/rogue-r1-beamwash-21ch-mode",
@@ -613,7 +613,7 @@
       "mode": "21Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 21,
-      "url": "sources/chauvet-professional/rogue-r1-beamwash-21ch-mode.json"
+      "url": "/sources/chauvet-professional/rogue-r1-beamwash-21ch-mode.json"
     },
     {
       "id": "chauvet-professional/rogue-r1x-spot-16ch-mode",
@@ -622,7 +622,7 @@
       "mode": "16Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 16,
-      "url": "sources/chauvet-professional/rogue-r1x-spot-16ch-mode.json"
+      "url": "/sources/chauvet-professional/rogue-r1x-spot-16ch-mode.json"
     },
     {
       "id": "chauvet-professional/rogue-r1x-spot-19ch-mode",
@@ -631,7 +631,7 @@
       "mode": "19Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 19,
-      "url": "sources/chauvet-professional/rogue-r1x-spot-19ch-mode.json"
+      "url": "/sources/chauvet-professional/rogue-r1x-spot-19ch-mode.json"
     },
     {
       "id": "chauvet-professional/rogue-r1x-wash-14ch-mode",
@@ -640,7 +640,7 @@
       "mode": "14Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 14,
-      "url": "sources/chauvet-professional/rogue-r1x-wash-14ch-mode.json"
+      "url": "/sources/chauvet-professional/rogue-r1x-wash-14ch-mode.json"
     },
     {
       "id": "chauvet-professional/rogue-r1x-wash-21ch-mode",
@@ -649,7 +649,7 @@
       "mode": "21Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 21,
-      "url": "sources/chauvet-professional/rogue-r1x-wash-21ch-mode.json"
+      "url": "/sources/chauvet-professional/rogue-r1x-wash-21ch-mode.json"
     },
     {
       "id": "chauvet-professional/rogue-r2x-beam-16ch-mode",
@@ -658,7 +658,7 @@
       "mode": "16Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 16,
-      "url": "sources/chauvet-professional/rogue-r2x-beam-16ch-mode.json"
+      "url": "/sources/chauvet-professional/rogue-r2x-beam-16ch-mode.json"
     },
     {
       "id": "chauvet-professional/rogue-r2x-beam-19ch-mode",
@@ -667,7 +667,7 @@
       "mode": "19Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 19,
-      "url": "sources/chauvet-professional/rogue-r2x-beam-19ch-mode.json"
+      "url": "/sources/chauvet-professional/rogue-r2x-beam-19ch-mode.json"
     },
     {
       "id": "chauvet-professional/rogue-r2x-spot-18ch-mode",
@@ -676,7 +676,7 @@
       "mode": "18Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 18,
-      "url": "sources/chauvet-professional/rogue-r2x-spot-18ch-mode.json"
+      "url": "/sources/chauvet-professional/rogue-r2x-spot-18ch-mode.json"
     },
     {
       "id": "chauvet-professional/rogue-r2x-spot-21ch-mode",
@@ -685,7 +685,7 @@
       "mode": "21Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 21,
-      "url": "sources/chauvet-professional/rogue-r2x-spot-21ch-mode.json"
+      "url": "/sources/chauvet-professional/rogue-r2x-spot-21ch-mode.json"
     },
     {
       "id": "chauvet-professional/rogue-r2x-wash-vw-15ch-mode",
@@ -694,7 +694,7 @@
       "mode": "15Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 15,
-      "url": "sources/chauvet-professional/rogue-r2x-wash-vw-15ch-mode.json"
+      "url": "/sources/chauvet-professional/rogue-r2x-wash-vw-15ch-mode.json"
     },
     {
       "id": "chauvet-professional/rogue-r2x-wash-vw-36ch-mode",
@@ -703,7 +703,7 @@
       "mode": "36Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 56,
-      "url": "sources/chauvet-professional/rogue-r2x-wash-vw-36ch-mode.json"
+      "url": "/sources/chauvet-professional/rogue-r2x-wash-vw-36ch-mode.json"
     },
     {
       "id": "chauvet-professional/rogue-r3-spot-19ch-mode",
@@ -712,7 +712,7 @@
       "mode": "19Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 19,
-      "url": "sources/chauvet-professional/rogue-r3-spot-19ch-mode.json"
+      "url": "/sources/chauvet-professional/rogue-r3-spot-19ch-mode.json"
     },
     {
       "id": "chauvet-professional/rogue-r3-spot-25ch-mode",
@@ -721,7 +721,7 @@
       "mode": "25Ch Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 25,
-      "url": "sources/chauvet-professional/rogue-r3-spot-25ch-mode.json"
+      "url": "/sources/chauvet-professional/rogue-r3-spot-25ch-mode.json"
     },
     {
       "id": "clay-paky/aleda-b-eye-k20-pixels-rgbw",
@@ -730,7 +730,7 @@
       "mode": "Pixels RGBW",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 148,
-      "url": "sources/clay-paky/aleda-b-eye-k20-pixels-rgbw.json"
+      "url": "/sources/clay-paky/aleda-b-eye-k20-pixels-rgbw.json"
     },
     {
       "id": "clay-paky/aleda-b-eye-k20-standard",
@@ -739,7 +739,7 @@
       "mode": "Standard",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 20,
-      "url": "sources/clay-paky/aleda-b-eye-k20-standard.json"
+      "url": "/sources/clay-paky/aleda-b-eye-k20-standard.json"
     },
     {
       "id": "clay-paky/arolla-aqua-wash-hc-standard",
@@ -748,7 +748,7 @@
       "mode": "Standard",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 29,
-      "url": "sources/clay-paky/arolla-aqua-wash-hc-standard.json"
+      "url": "/sources/clay-paky/arolla-aqua-wash-hc-standard.json"
     },
     {
       "id": "clay-paky/arolla-profile-mp-standard",
@@ -757,7 +757,7 @@
       "mode": "Standard ",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 36,
-      "url": "sources/clay-paky/arolla-profile-mp-standard.json"
+      "url": "/sources/clay-paky/arolla-profile-mp-standard.json"
     },
     {
       "id": "clay-paky/axcor-profile-600-st-standard",
@@ -766,7 +766,7 @@
       "mode": "Standard",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 37,
-      "url": "sources/clay-paky/axcor-profile-600-st-standard.json"
+      "url": "/sources/clay-paky/axcor-profile-600-st-standard.json"
     },
     {
       "id": "clay-paky/scenius-profile-standard",
@@ -775,7 +775,7 @@
       "mode": "Standard",
       "fixture_type": "FIXTURE_TYPE_HID",
       "footprint": 38,
-      "url": "sources/clay-paky/scenius-profile-standard.json"
+      "url": "/sources/clay-paky/scenius-profile-standard.json"
     },
     {
       "id": "clay-paky/scenius-profile-vector",
@@ -784,7 +784,7 @@
       "mode": "Vector",
       "fixture_type": "FIXTURE_TYPE_HID",
       "footprint": 38,
-      "url": "sources/clay-paky/scenius-profile-vector.json"
+      "url": "/sources/clay-paky/scenius-profile-vector.json"
     },
     {
       "id": "clay-paky/sharpy-plus-standard",
@@ -793,7 +793,7 @@
       "mode": "Standard ",
       "fixture_type": "FIXTURE_TYPE_HID",
       "footprint": 31,
-      "url": "sources/clay-paky/sharpy-plus-standard.json"
+      "url": "/sources/clay-paky/sharpy-plus-standard.json"
     },
     {
       "id": "clay-paky/sharpy-x-frame-standard",
@@ -802,7 +802,7 @@
       "mode": "Standard",
       "fixture_type": "FIXTURE_TYPE_HID",
       "footprint": 43,
-      "url": "sources/clay-paky/sharpy-x-frame-standard.json"
+      "url": "/sources/clay-paky/sharpy-x-frame-standard.json"
     },
     {
       "id": "clay-paky/ultimo-sharpy-sharpy",
@@ -811,7 +811,7 @@
       "mode": "Sharpy",
       "fixture_type": "FIXTURE_TYPE_HID",
       "footprint": 16,
-      "url": "sources/clay-paky/ultimo-sharpy-sharpy.json"
+      "url": "/sources/clay-paky/ultimo-sharpy-sharpy.json"
     },
     {
       "id": "clay-paky/ultimo-sharpy-sharpy-extended",
@@ -820,7 +820,7 @@
       "mode": "Sharpy Extended",
       "fixture_type": "FIXTURE_TYPE_HID",
       "footprint": 27,
-      "url": "sources/clay-paky/ultimo-sharpy-sharpy-extended.json"
+      "url": "/sources/clay-paky/ultimo-sharpy-sharpy-extended.json"
     },
     {
       "id": "clay-paky/xtylos-aqua-standard",
@@ -829,7 +829,7 @@
       "mode": "Standard ",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 28,
-      "url": "sources/clay-paky/xtylos-aqua-standard.json"
+      "url": "/sources/clay-paky/xtylos-aqua-standard.json"
     },
     {
       "id": "dominar/dominar-lempa-lamp-ba-16ch",
@@ -838,7 +838,7 @@
       "mode": "16CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 16,
-      "url": "sources/dominar/dominar-lempa-lamp-ba-16ch.json"
+      "url": "/sources/dominar/dominar-lempa-lamp-ba-16ch.json"
     },
     {
       "id": "dominar/dominar-lempa-lamp-ba-20ch",
@@ -847,7 +847,7 @@
       "mode": "20CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 16,
-      "url": "sources/dominar/dominar-lempa-lamp-ba-20ch.json"
+      "url": "/sources/dominar/dominar-lempa-lamp-ba-20ch.json"
     },
     {
       "id": "dominar/dominar-xl-ip66-led-b-16ch",
@@ -856,7 +856,7 @@
       "mode": "16CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 16,
-      "url": "sources/dominar/dominar-xl-ip66-led-b-16ch.json"
+      "url": "/sources/dominar/dominar-xl-ip66-led-b-16ch.json"
     },
     {
       "id": "dominar/dominar-xl-ip66-led-b-21ch",
@@ -865,7 +865,7 @@
       "mode": "21CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 21,
-      "url": "sources/dominar/dominar-xl-ip66-led-b-21ch.json"
+      "url": "/sources/dominar/dominar-xl-ip66-led-b-21ch.json"
     },
     {
       "id": "elation/artiste-davinci-basic-pan540",
@@ -874,7 +874,7 @@
       "mode": "Basic Pan540",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 25,
-      "url": "sources/elation/artiste-davinci-basic-pan540.json"
+      "url": "/sources/elation/artiste-davinci-basic-pan540.json"
     },
     {
       "id": "elation/artiste-davinci-extended-pan630",
@@ -883,7 +883,7 @@
       "mode": "Extended Pan630",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 39,
-      "url": "sources/elation/artiste-davinci-extended-pan630.json"
+      "url": "/sources/elation/artiste-davinci-extended-pan630.json"
     },
     {
       "id": "elation/artiste-monet-extended",
@@ -892,7 +892,7 @@
       "mode": "Extended",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 66,
-      "url": "sources/elation/artiste-monet-extended.json"
+      "url": "/sources/elation/artiste-monet-extended.json"
     },
     {
       "id": "elation/artiste-monet-standard",
@@ -901,7 +901,7 @@
       "mode": "Standard",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 29,
-      "url": "sources/elation/artiste-monet-standard.json"
+      "url": "/sources/elation/artiste-monet-standard.json"
     },
     {
       "id": "elation/artiste-picasso-extended-pan630",
@@ -910,7 +910,7 @@
       "mode": "Extended Pan630",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 61,
-      "url": "sources/elation/artiste-picasso-extended-pan630.json"
+      "url": "/sources/elation/artiste-picasso-extended-pan630.json"
     },
     {
       "id": "elation/artiste-picasso-standard-pan540",
@@ -919,7 +919,7 @@
       "mode": "Standard Pan540",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 26,
-      "url": "sources/elation/artiste-picasso-standard-pan540.json"
+      "url": "/sources/elation/artiste-picasso-standard-pan540.json"
     },
     {
       "id": "elation/artiste-rembrandt-extended-pan630",
@@ -928,7 +928,7 @@
       "mode": "Extended Pan630",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 58,
-      "url": "sources/elation/artiste-rembrandt-extended-pan630.json"
+      "url": "/sources/elation/artiste-rembrandt-extended-pan630.json"
     },
     {
       "id": "elation/artiste-rembrandt-standard-pan630",
@@ -937,7 +937,7 @@
       "mode": "Standard Pan630",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 22,
-      "url": "sources/elation/artiste-rembrandt-standard-pan630.json"
+      "url": "/sources/elation/artiste-rembrandt-standard-pan630.json"
     },
     {
       "id": "elation/artiste-van-gogh-extended-pan630",
@@ -946,7 +946,7 @@
       "mode": "Extended Pan630",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 35,
-      "url": "sources/elation/artiste-van-gogh-extended-pan630.json"
+      "url": "/sources/elation/artiste-van-gogh-extended-pan630.json"
     },
     {
       "id": "elation/artiste-van-gogh-standard-pan540",
@@ -955,7 +955,7 @@
       "mode": "Standard Pan540",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 16,
-      "url": "sources/elation/artiste-van-gogh-standard-pan540.json"
+      "url": "/sources/elation/artiste-van-gogh-standard-pan540.json"
     },
     {
       "id": "elation/dartz-360-basic-pan540",
@@ -964,7 +964,7 @@
       "mode": "Basic Pan540",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 19,
-      "url": "sources/elation/dartz-360-basic-pan540.json"
+      "url": "/sources/elation/dartz-360-basic-pan540.json"
     },
     {
       "id": "elation/dartz-360-extend-pan630",
@@ -973,7 +973,7 @@
       "mode": "Extend Pan630",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 25,
-      "url": "sources/elation/dartz-360-extend-pan630.json"
+      "url": "/sources/elation/dartz-360-extend-pan630.json"
     },
     {
       "id": "elation/elation-smarty-hybrid-extended-34chan",
@@ -982,7 +982,7 @@
       "mode": "Extended (34Chan)",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 33,
-      "url": "sources/elation/elation-smarty-hybrid-extended-34chan.json"
+      "url": "/sources/elation/elation-smarty-hybrid-extended-34chan.json"
     },
     {
       "id": "elation/elation-smarty-hybrid-standart-20chan",
@@ -991,7 +991,7 @@
       "mode": "Standart (20Chan)",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 19,
-      "url": "sources/elation/elation-smarty-hybrid-standart-20chan.json"
+      "url": "/sources/elation/elation-smarty-hybrid-standart-20chan.json"
     },
     {
       "id": "elation/fuze-max-profile-cmy-pan540",
@@ -1000,7 +1000,7 @@
       "mode": "CMY Pan540",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 27,
-      "url": "sources/elation/fuze-max-profile-cmy-pan540.json"
+      "url": "/sources/elation/fuze-max-profile-cmy-pan540.json"
     },
     {
       "id": "elation/fuze-max-profile-extended-pan630",
@@ -1009,7 +1009,7 @@
       "mode": "Extended Pan630",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 60,
-      "url": "sources/elation/fuze-max-profile-extended-pan630.json"
+      "url": "/sources/elation/fuze-max-profile-extended-pan630.json"
     },
     {
       "id": "elation/fuze-profile-cmy-pan540",
@@ -1018,7 +1018,7 @@
       "mode": "CMY Pan540",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 36,
-      "url": "sources/elation/fuze-profile-cmy-pan540.json"
+      "url": "/sources/elation/fuze-profile-cmy-pan540.json"
     },
     {
       "id": "elation/fuze-profile-extended-pan630",
@@ -1027,7 +1027,7 @@
       "mode": "Extended Pan630",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 59,
-      "url": "sources/elation/fuze-profile-extended-pan630.json"
+      "url": "/sources/elation/fuze-profile-extended-pan630.json"
     },
     {
       "id": "elation/fuze-sfx-standard-pan540",
@@ -1036,7 +1036,7 @@
       "mode": "Standard Pan540",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 30,
-      "url": "sources/elation/fuze-sfx-standard-pan540.json"
+      "url": "/sources/elation/fuze-sfx-standard-pan540.json"
     },
     {
       "id": "elation/fuze-sfx-standard-pan630",
@@ -1045,7 +1045,7 @@
       "mode": "Standard Pan630",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 30,
-      "url": "sources/elation/fuze-sfx-standard-pan630.json"
+      "url": "/sources/elation/fuze-sfx-standard-pan630.json"
     },
     {
       "id": "elation/fuze-spot-cmy-pan540",
@@ -1054,7 +1054,7 @@
       "mode": "CMY Pan540 ",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 29,
-      "url": "sources/elation/fuze-spot-cmy-pan540.json"
+      "url": "/sources/elation/fuze-spot-cmy-pan540.json"
     },
     {
       "id": "elation/fuze-spot-extended-pan630",
@@ -1063,7 +1063,7 @@
       "mode": "Extended Pan630",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 41,
-      "url": "sources/elation/fuze-spot-extended-pan630.json"
+      "url": "/sources/elation/fuze-spot-extended-pan630.json"
     },
     {
       "id": "elation/fuze-teatro-ext-pan630",
@@ -1072,7 +1072,7 @@
       "mode": "Ext Pan630",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 60,
-      "url": "sources/elation/fuze-teatro-ext-pan630.json"
+      "url": "/sources/elation/fuze-teatro-ext-pan630.json"
     },
     {
       "id": "elation/fuze-teatro-rgb-pan540",
@@ -1081,7 +1081,7 @@
       "mode": "RGB Pan540",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 29,
-      "url": "sources/elation/fuze-teatro-rgb-pan540.json"
+      "url": "/sources/elation/fuze-teatro-rgb-pan540.json"
     },
     {
       "id": "elation/fuze-wash-250-extended",
@@ -1090,7 +1090,7 @@
       "mode": "Extended",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 24,
-      "url": "sources/elation/fuze-wash-250-extended.json"
+      "url": "/sources/elation/fuze-wash-250-extended.json"
     },
     {
       "id": "elation/fuze-wash-250-rgb",
@@ -1099,7 +1099,7 @@
       "mode": "RGB",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 13,
-      "url": "sources/elation/fuze-wash-250-rgb.json"
+      "url": "/sources/elation/fuze-wash-250-rgb.json"
     },
     {
       "id": "elation/fuze-wash-500-barndoo-cmy-pan540",
@@ -1108,7 +1108,7 @@
       "mode": "CMY Pan540",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 13,
-      "url": "sources/elation/fuze-wash-500-barndoo-cmy-pan540.json"
+      "url": "/sources/elation/fuze-wash-500-barndoo-cmy-pan540.json"
     },
     {
       "id": "elation/fuze-wash-500-barndoo-extended-pan630",
@@ -1117,7 +1117,7 @@
       "mode": "Extended Pan630",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 30,
-      "url": "sources/elation/fuze-wash-500-barndoo-extended-pan630.json"
+      "url": "/sources/elation/fuze-wash-500-barndoo-extended-pan630.json"
     },
     {
       "id": "elation/fuze-wash-z120-16-hsi",
@@ -1126,7 +1126,7 @@
       "mode": "16 HSI ",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 11,
-      "url": "sources/elation/fuze-wash-z120-16-hsi.json"
+      "url": "/sources/elation/fuze-wash-z120-16-hsi.json"
     },
     {
       "id": "elation/fuze-wash-z120-19-rgbw",
@@ -1135,7 +1135,7 @@
       "mode": "19 RGBW ",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 14,
-      "url": "sources/elation/fuze-wash-z120-19-rgbw.json"
+      "url": "/sources/elation/fuze-wash-z120-19-rgbw.json"
     },
     {
       "id": "elation/fuze-wash-z350-16-hsi-pan540",
@@ -1144,7 +1144,7 @@
       "mode": "16 HSI Pan540",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 11,
-      "url": "sources/elation/fuze-wash-z350-16-hsi-pan540.json"
+      "url": "/sources/elation/fuze-wash-z350-16-hsi-pan540.json"
     },
     {
       "id": "elation/fuze-wash-z350-19-rgbw-pan630",
@@ -1153,7 +1153,7 @@
       "mode": "19 RGBW Pan630",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 14,
-      "url": "sources/elation/fuze-wash-z350-19-rgbw-pan630.json"
+      "url": "/sources/elation/fuze-wash-z350-19-rgbw-pan630.json"
     },
     {
       "id": "elation/platinum-beam-5r-extr-basic",
@@ -1162,7 +1162,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 11,
-      "url": "sources/elation/platinum-beam-5r-extr-basic.json"
+      "url": "/sources/elation/platinum-beam-5r-extr-basic.json"
     },
     {
       "id": "elation/platinum-beam-5r-extr-extend",
@@ -1171,7 +1171,7 @@
       "mode": "Extend",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 17,
-      "url": "sources/elation/platinum-beam-5r-extr-extend.json"
+      "url": "/sources/elation/platinum-beam-5r-extr-extend.json"
     },
     {
       "id": "elation/proteus-maximus-extended-630deg",
@@ -1180,7 +1180,7 @@
       "mode": "Extended 630deg",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 61,
-      "url": "sources/elation/proteus-maximus-extended-630deg.json"
+      "url": "/sources/elation/proteus-maximus-extended-630deg.json"
     },
     {
       "id": "elation/proteus-maximus-standard-540deg",
@@ -1189,7 +1189,7 @@
       "mode": "Standard 540deg",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 37,
-      "url": "sources/elation/proteus-maximus-standard-540deg.json"
+      "url": "/sources/elation/proteus-maximus-standard-540deg.json"
     },
     {
       "id": "elation/proteus-rayzor-1960-pixels-pan540tilt270",
@@ -1198,7 +1198,7 @@
       "mode": "Pixels Pan540/Tilt270",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 100,
-      "url": "sources/elation/proteus-rayzor-1960-pixels-pan540tilt270.json"
+      "url": "/sources/elation/proteus-rayzor-1960-pixels-pan540tilt270.json"
     },
     {
       "id": "elation/proteus-rayzor-1960-standard-pan540tilt2",
@@ -1207,7 +1207,7 @@
       "mode": "Standard Pan540/Tilt2",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 23,
-      "url": "sources/elation/proteus-rayzor-1960-standard-pan540tilt2.json"
+      "url": "/sources/elation/proteus-rayzor-1960-standard-pan540tilt2.json"
     },
     {
       "id": "elation/proteus-rayzor-760-op-pixels-540pan270tilt",
@@ -1216,7 +1216,7 @@
       "mode": "Pixels 540Pan/270Tilt",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 52,
-      "url": "sources/elation/proteus-rayzor-760-op-pixels-540pan270tilt.json"
+      "url": "/sources/elation/proteus-rayzor-760-op-pixels-540pan270tilt.json"
     },
     {
       "id": "elation/proteus-rayzor-760-op-sparkled",
@@ -1225,7 +1225,7 @@
       "mode": "SparkLED",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 1,
-      "url": "sources/elation/proteus-rayzor-760-op-sparkled.json"
+      "url": "/sources/elation/proteus-rayzor-760-op-sparkled.json"
     },
     {
       "id": "fine-art/fine-120ls-beam-ip-extn",
@@ -1234,7 +1234,7 @@
       "mode": "EXTN",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 18,
-      "url": "sources/fine-art/fine-120ls-beam-ip-extn.json"
+      "url": "/sources/fine-art/fine-120ls-beam-ip-extn.json"
     },
     {
       "id": "fine-art/fine-120ls-beam-ip-stnd",
@@ -1243,7 +1243,7 @@
       "mode": "stnd",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 15,
-      "url": "sources/fine-art/fine-120ls-beam-ip-stnd.json"
+      "url": "/sources/fine-art/fine-120ls-beam-ip-stnd.json"
     },
     {
       "id": "flash/led-moving-bar-10x40w-24ch",
@@ -1252,7 +1252,7 @@
       "mode": "24ch",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 24,
-      "url": "sources/flash/led-moving-bar-10x40w-24ch.json"
+      "url": "/sources/flash/led-moving-bar-10x40w-24ch.json"
     },
     {
       "id": "flash/led-moving-bar-10x40w-60ch",
@@ -1261,7 +1261,7 @@
       "mode": "60ch",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 60,
-      "url": "sources/flash/led-moving-bar-10x40w-60ch.json"
+      "url": "/sources/flash/led-moving-bar-10x40w-60ch.json"
     },
     {
       "id": "generic/mini-beam-50n-9-ch",
@@ -1270,7 +1270,7 @@
       "mode": "9 Ch",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 8,
-      "url": "sources/generic/mini-beam-50n-9-ch.json"
+      "url": "/sources/generic/mini-beam-50n-9-ch.json"
     },
     {
       "id": "glp/impression-x4-l-compressed",
@@ -1279,7 +1279,7 @@
       "mode": "Compressed",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 17,
-      "url": "sources/glp/impression-x4-l-compressed.json"
+      "url": "/sources/glp/impression-x4-l-compressed.json"
     },
     {
       "id": "glp/impression-x4-l-high-resolution",
@@ -1288,7 +1288,7 @@
       "mode": "High Resolution",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 27,
-      "url": "sources/glp/impression-x4-l-high-resolution.json"
+      "url": "/sources/glp/impression-x4-l-high-resolution.json"
     },
     {
       "id": "glp/jdc1-progress-0512-mode-1-compressed",
@@ -1297,7 +1297,7 @@
       "mode": "Mode 1 (Compressed)",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 14,
-      "url": "sources/glp/jdc1-progress-0512-mode-1-compressed.json"
+      "url": "/sources/glp/jdc1-progress-0512-mode-1-compressed.json"
     },
     {
       "id": "glp/jdc1-progress-0512-mode-3-spix",
@@ -1306,7 +1306,7 @@
       "mode": "Mode 3 (SPix)",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 68,
-      "url": "sources/glp/jdc1-progress-0512-mode-3-spix.json"
+      "url": "/sources/glp/jdc1-progress-0512-mode-3-spix.json"
     },
     {
       "id": "high-end-systems/hyperstar-standard",
@@ -1315,7 +1315,7 @@
       "mode": "Standard",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 36,
-      "url": "sources/high-end-systems/hyperstar-standard.json"
+      "url": "/sources/high-end-systems/hyperstar-standard.json"
     },
     {
       "id": "high-end-systems/hyperstar-trifusion",
@@ -1324,7 +1324,7 @@
       "mode": "Trifusion",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 36,
-      "url": "sources/high-end-systems/hyperstar-trifusion.json"
+      "url": "/sources/high-end-systems/hyperstar-trifusion.json"
     },
     {
       "id": "high-end-systems/solaframe-1500-standard",
@@ -1333,7 +1333,7 @@
       "mode": "Standard",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 48,
-      "url": "sources/high-end-systems/solaframe-1500-standard.json"
+      "url": "/sources/high-end-systems/solaframe-1500-standard.json"
     },
     {
       "id": "martin-professional/era-150-wash-basic",
@@ -1342,7 +1342,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 18,
-      "url": "sources/martin-professional/era-150-wash-basic.json"
+      "url": "/sources/martin-professional/era-150-wash-basic.json"
     },
     {
       "id": "martin-professional/era-300-profile-basic",
@@ -1351,7 +1351,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 21,
-      "url": "sources/martin-professional/era-300-profile-basic.json"
+      "url": "/sources/martin-professional/era-300-profile-basic.json"
     },
     {
       "id": "martin-professional/era-400-performance-c-basic",
@@ -1360,7 +1360,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 30,
-      "url": "sources/martin-professional/era-400-performance-c-basic.json"
+      "url": "/sources/martin-professional/era-400-performance-c-basic.json"
     },
     {
       "id": "martin-professional/era-400-performance-c-extended",
@@ -1369,7 +1369,7 @@
       "mode": "Extended",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 32,
-      "url": "sources/martin-professional/era-400-performance-c-extended.json"
+      "url": "/sources/martin-professional/era-400-performance-c-extended.json"
     },
     {
       "id": "martin-professional/era-600-performance-basic",
@@ -1378,7 +1378,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 41,
-      "url": "sources/martin-professional/era-600-performance-basic.json"
+      "url": "/sources/martin-professional/era-600-performance-basic.json"
     },
     {
       "id": "martin-professional/era-700-performance-i-basic",
@@ -1387,7 +1387,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 41,
-      "url": "sources/martin-professional/era-700-performance-i-basic.json"
+      "url": "/sources/martin-professional/era-700-performance-i-basic.json"
     },
     {
       "id": "martin-professional/era-700-performance-i-extended",
@@ -1396,7 +1396,7 @@
       "mode": "Extended",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 53,
-      "url": "sources/martin-professional/era-700-performance-i-extended.json"
+      "url": "/sources/martin-professional/era-700-performance-i-extended.json"
     },
     {
       "id": "martin-professional/era-800-performance-basic",
@@ -1405,7 +1405,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 42,
-      "url": "sources/martin-professional/era-800-performance-basic.json"
+      "url": "/sources/martin-professional/era-800-performance-basic.json"
     },
     {
       "id": "martin-professional/mac-101-rgb-basic",
@@ -1414,7 +1414,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 8,
-      "url": "sources/martin-professional/mac-101-rgb-basic.json"
+      "url": "/sources/martin-professional/mac-101-rgb-basic.json"
     },
     {
       "id": "martin-professional/mac-101-rgb-rgbraw",
@@ -1423,7 +1423,7 @@
       "mode": "RGB/RAW",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 11,
-      "url": "sources/martin-professional/mac-101-rgb-rgbraw.json"
+      "url": "/sources/martin-professional/mac-101-rgb-rgbraw.json"
     },
     {
       "id": "martin-professional/mac-aura-pxl-compact",
@@ -1432,7 +1432,7 @@
       "mode": "Compact",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 17,
-      "url": "sources/martin-professional/mac-aura-pxl-compact.json"
+      "url": "/sources/martin-professional/mac-aura-pxl-compact.json"
     },
     {
       "id": "martin-professional/mac-aura-pxl-ludicrous",
@@ -1441,7 +1441,7 @@
       "mode": "Ludicrous",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 31,
-      "url": "sources/martin-professional/mac-aura-pxl-ludicrous.json"
+      "url": "/sources/martin-professional/mac-aura-pxl-ludicrous.json"
     },
     {
       "id": "martin-professional/mac-aura-raven-xip-compact",
@@ -1450,7 +1450,7 @@
       "mode": "Compact",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 21,
-      "url": "sources/martin-professional/mac-aura-raven-xip-compact.json"
+      "url": "/sources/martin-professional/mac-aura-raven-xip-compact.json"
     },
     {
       "id": "martin-professional/mac-aura-raven-xip-plaid",
@@ -1459,7 +1459,7 @@
       "mode": "Plaid",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 37,
-      "url": "sources/martin-professional/mac-aura-raven-xip-plaid.json"
+      "url": "/sources/martin-professional/mac-aura-raven-xip-plaid.json"
     },
     {
       "id": "martin-professional/mac-aura-xb-extended",
@@ -1468,7 +1468,7 @@
       "mode": "Extended",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 25,
-      "url": "sources/martin-professional/mac-aura-xb-extended.json"
+      "url": "/sources/martin-professional/mac-aura-xb-extended.json"
     },
     {
       "id": "martin-professional/mac-aura-xb-standard",
@@ -1477,7 +1477,7 @@
       "mode": "Standard",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 13,
-      "url": "sources/martin-professional/mac-aura-xb-standard.json"
+      "url": "/sources/martin-professional/mac-aura-xb-standard.json"
     },
     {
       "id": "martin-professional/mac-aura-xip-compact",
@@ -1486,7 +1486,7 @@
       "mode": "Compact",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 19,
-      "url": "sources/martin-professional/mac-aura-xip-compact.json"
+      "url": "/sources/martin-professional/mac-aura-xip-compact.json"
     },
     {
       "id": "martin-professional/mac-aura-xip-ludicrous",
@@ -1495,7 +1495,7 @@
       "mode": "Ludicrous",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 35,
-      "url": "sources/martin-professional/mac-aura-xip-ludicrous.json"
+      "url": "/sources/martin-professional/mac-aura-xip-ludicrous.json"
     },
     {
       "id": "martin-professional/mac-axiom-hybrid-basic",
@@ -1504,7 +1504,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 23,
-      "url": "sources/martin-professional/mac-axiom-hybrid-basic.json"
+      "url": "/sources/martin-professional/mac-axiom-hybrid-basic.json"
     },
     {
       "id": "martin-professional/mac-encore-two-basic",
@@ -1513,7 +1513,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 48,
-      "url": "sources/martin-professional/mac-encore-two-basic.json"
+      "url": "/sources/martin-professional/mac-encore-two-basic.json"
     },
     {
       "id": "martin-professional/mac-encore-two-ludicrous",
@@ -1522,7 +1522,7 @@
       "mode": "Ludicrous",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 68,
-      "url": "sources/martin-professional/mac-encore-two-ludicrous.json"
+      "url": "/sources/martin-professional/mac-encore-two-ludicrous.json"
     },
     {
       "id": "martin-professional/mac-one-beam-compact",
@@ -1531,7 +1531,7 @@
       "mode": "Compact",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 17,
-      "url": "sources/martin-professional/mac-one-beam-compact.json"
+      "url": "/sources/martin-professional/mac-one-beam-compact.json"
     },
     {
       "id": "martin-professional/mac-one-beam-ludicrous",
@@ -1540,7 +1540,7 @@
       "mode": "Ludicrous",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 34,
-      "url": "sources/martin-professional/mac-one-beam-ludicrous.json"
+      "url": "/sources/martin-professional/mac-one-beam-ludicrous.json"
     },
     {
       "id": "martin-professional/mac-quantum-profile-basic",
@@ -1549,7 +1549,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 19,
-      "url": "sources/martin-professional/mac-quantum-profile-basic.json"
+      "url": "/sources/martin-professional/mac-quantum-profile-basic.json"
     },
     {
       "id": "martin-professional/mac-quantum-profile-extended",
@@ -1558,7 +1558,7 @@
       "mode": "Extended",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 23,
-      "url": "sources/martin-professional/mac-quantum-profile-extended.json"
+      "url": "/sources/martin-professional/mac-quantum-profile-extended.json"
     },
     {
       "id": "martin-professional/mac-quantum-wash-basic",
@@ -1567,7 +1567,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 17,
-      "url": "sources/martin-professional/mac-quantum-wash-basic.json"
+      "url": "/sources/martin-professional/mac-quantum-wash-basic.json"
     },
     {
       "id": "martin-professional/mac-quantum-wash-extended",
@@ -1576,7 +1576,7 @@
       "mode": "Extended",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 33,
-      "url": "sources/martin-professional/mac-quantum-wash-extended.json"
+      "url": "/sources/martin-professional/mac-quantum-wash-extended.json"
     },
     {
       "id": "martin-professional/mac-ultra-performance-basic",
@@ -1585,7 +1585,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 44,
-      "url": "sources/martin-professional/mac-ultra-performance-basic.json"
+      "url": "/sources/martin-professional/mac-ultra-performance-basic.json"
     },
     {
       "id": "martin-professional/mac-ultra-performance-extended",
@@ -1594,7 +1594,7 @@
       "mode": "Extended",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 54,
-      "url": "sources/martin-professional/mac-ultra-performance-extended.json"
+      "url": "/sources/martin-professional/mac-ultra-performance-extended.json"
     },
     {
       "id": "martin-professional/mac-ultra-wash-basic",
@@ -1603,7 +1603,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 25,
-      "url": "sources/martin-professional/mac-ultra-wash-basic.json"
+      "url": "/sources/martin-professional/mac-ultra-wash-basic.json"
     },
     {
       "id": "martin-professional/mac-viper-airfx-basic",
@@ -1612,7 +1612,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 20,
-      "url": "sources/martin-professional/mac-viper-airfx-basic.json"
+      "url": "/sources/martin-professional/mac-viper-airfx-basic.json"
     },
     {
       "id": "martin-professional/mac-viper-airfx-extended",
@@ -1621,7 +1621,7 @@
       "mode": "Extended",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 23,
-      "url": "sources/martin-professional/mac-viper-airfx-extended.json"
+      "url": "/sources/martin-professional/mac-viper-airfx-extended.json"
     },
     {
       "id": "martin-professional/mac-viper-performance-basic",
@@ -1630,7 +1630,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 32,
-      "url": "sources/martin-professional/mac-viper-performance-basic.json"
+      "url": "/sources/martin-professional/mac-viper-performance-basic.json"
     },
     {
       "id": "martin-professional/mac-viper-performance-extended",
@@ -1639,7 +1639,7 @@
       "mode": "Extended",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 35,
-      "url": "sources/martin-professional/mac-viper-performance-extended.json"
+      "url": "/sources/martin-professional/mac-viper-performance-extended.json"
     },
     {
       "id": "martin-professional/mac-viper-profile-basic",
@@ -1648,7 +1648,7 @@
       "mode": "Basic",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 26,
-      "url": "sources/martin-professional/mac-viper-profile-basic.json"
+      "url": "/sources/martin-professional/mac-viper-profile-basic.json"
     },
     {
       "id": "martin-professional/mac-viper-profile-extended",
@@ -1657,7 +1657,7 @@
       "mode": "Extended",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 29,
-      "url": "sources/martin-professional/mac-viper-profile-extended.json"
+      "url": "/sources/martin-professional/mac-viper-profile-extended.json"
     },
     {
       "id": "mattos-designs/mattos-designs-phoeni-14ch",
@@ -1666,7 +1666,7 @@
       "mode": "14CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 14,
-      "url": "sources/mattos-designs/mattos-designs-phoeni-14ch.json"
+      "url": "/sources/mattos-designs/mattos-designs-phoeni-14ch.json"
     },
     {
       "id": "moka-sfx/19x15w-led-rgbw-wash-16ch-standard",
@@ -1675,7 +1675,7 @@
       "mode": "16Ch Standard",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 16,
-      "url": "sources/moka-sfx/19x15w-led-rgbw-wash-16ch-standard.json"
+      "url": "/sources/moka-sfx/19x15w-led-rgbw-wash-16ch-standard.json"
     },
     {
       "id": "moka-sfx/19x15w-led-rgbw-wash-24ch-extended",
@@ -1684,7 +1684,7 @@
       "mode": "24Ch Extended",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 24,
-      "url": "sources/moka-sfx/19x15w-led-rgbw-wash-24ch-extended.json"
+      "url": "/sources/moka-sfx/19x15w-led-rgbw-wash-24ch-extended.json"
     },
     {
       "id": "ogson-fixtures/adj-vizi-spot-5r-11-ch",
@@ -1693,7 +1693,7 @@
       "mode": "11 ch",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 11,
-      "url": "sources/ogson-fixtures/adj-vizi-spot-5r-11-ch.json"
+      "url": "/sources/ogson-fixtures/adj-vizi-spot-5r-11-ch.json"
     },
     {
       "id": "ogson-fixtures/adj-vizi-spot-5r-13-ch",
@@ -1702,7 +1702,7 @@
       "mode": "13 ch",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 13,
-      "url": "sources/ogson-fixtures/adj-vizi-spot-5r-13-ch.json"
+      "url": "/sources/ogson-fixtures/adj-vizi-spot-5r-13-ch.json"
     },
     {
       "id": "robe-lighting/robin-bmfl-blade-mode-1---standard-16",
@@ -1711,7 +1711,7 @@
       "mode": "Mode 1 - Standard 16 ",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 49,
-      "url": "sources/robe-lighting/robin-bmfl-blade-mode-1---standard-16.json"
+      "url": "/sources/robe-lighting/robin-bmfl-blade-mode-1---standard-16.json"
     },
     {
       "id": "robe-lighting/robin-bmfl-blade-mode-2---standard-8-b",
@@ -1720,7 +1720,7 @@
       "mode": "Mode 2 - Standard 8 b",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 42,
-      "url": "sources/robe-lighting/robin-bmfl-blade-mode-2---standard-8-b.json"
+      "url": "/sources/robe-lighting/robin-bmfl-blade-mode-2---standard-8-b.json"
     },
     {
       "id": "robe-lighting/robin-bmfl-spot-mode-1---standard-16",
@@ -1729,7 +1729,7 @@
       "mode": "Mode 1 - Standard 16 ",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 41,
-      "url": "sources/robe-lighting/robin-bmfl-spot-mode-1---standard-16.json"
+      "url": "/sources/robe-lighting/robin-bmfl-spot-mode-1---standard-16.json"
     },
     {
       "id": "robe-lighting/robin-bmfl-spot-mode-2---reduced-8-bi",
@@ -1738,7 +1738,7 @@
       "mode": "Mode 2 - Reduced 8 bi",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 33,
-      "url": "sources/robe-lighting/robin-bmfl-spot-mode-2---reduced-8-bi.json"
+      "url": "/sources/robe-lighting/robin-bmfl-spot-mode-2---reduced-8-bi.json"
     },
     {
       "id": "robe-lighting/robin-dlx-spot-mode-1-cmy",
@@ -1747,7 +1747,7 @@
       "mode": "Mode 1 CMY",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 35,
-      "url": "sources/robe-lighting/robin-dlx-spot-mode-1-cmy.json"
+      "url": "/sources/robe-lighting/robin-dlx-spot-mode-1-cmy.json"
     },
     {
       "id": "robe-lighting/robin-dlx-spot-mode-3-rgbw-minimal",
@@ -1756,7 +1756,7 @@
       "mode": "Mode 3 RGBW Minimal",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 23,
-      "url": "sources/robe-lighting/robin-dlx-spot-mode-3-rgbw-minimal.json"
+      "url": "/sources/robe-lighting/robin-dlx-spot-mode-3-rgbw-minimal.json"
     },
     {
       "id": "robe-lighting/robin-gigapointe-mode-1---megapointe",
@@ -1765,7 +1765,7 @@
       "mode": "Mode 1 - MegaPointe",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 39,
-      "url": "sources/robe-lighting/robin-gigapointe-mode-1---megapointe.json"
+      "url": "/sources/robe-lighting/robin-gigapointe-mode-1---megapointe.json"
     },
     {
       "id": "robe-lighting/robin-gigapointe-mode-2---advanced",
@@ -1774,7 +1774,7 @@
       "mode": "Mode 2 - Advanced",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 41,
-      "url": "sources/robe-lighting/robin-gigapointe-mode-2---advanced.json"
+      "url": "/sources/robe-lighting/robin-gigapointe-mode-2---advanced.json"
     },
     {
       "id": "robe-lighting/robin-ibeam-250-mode-2---reduced-8",
@@ -1783,7 +1783,7 @@
       "mode": "Mode 2 - Reduced 8 - ",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 16,
-      "url": "sources/robe-lighting/robin-ibeam-250-mode-2---reduced-8.json"
+      "url": "/sources/robe-lighting/robin-ibeam-250-mode-2---reduced-8.json"
     },
     {
       "id": "robe-lighting/robin-ibeam-250-mode-3---cpulse-mode",
@@ -1792,7 +1792,7 @@
       "mode": "Mode 3 - Cpulse mode",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 24,
-      "url": "sources/robe-lighting/robin-ibeam-250-mode-3---cpulse-mode.json"
+      "url": "/sources/robe-lighting/robin-ibeam-250-mode-3---cpulse-mode.json"
     },
     {
       "id": "robe-lighting/robin-iesprite-ltl-fs-mode-1---standard-16b",
@@ -1801,7 +1801,7 @@
       "mode": "Mode 1 - Standard 16b",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 53,
-      "url": "sources/robe-lighting/robin-iesprite-ltl-fs-mode-1---standard-16b.json"
+      "url": "/sources/robe-lighting/robin-iesprite-ltl-fs-mode-1---standard-16b.json"
     },
     {
       "id": "robe-lighting/robin-iforte-ltx-fs-mode-1---standard-16",
@@ -1810,7 +1810,7 @@
       "mode": "Mode 1 - Standard 16 ",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 54,
-      "url": "sources/robe-lighting/robin-iforte-ltx-fs-mode-1---standard-16.json"
+      "url": "/sources/robe-lighting/robin-iforte-ltx-fs-mode-1---standard-16.json"
     },
     {
       "id": "robe-lighting/robin-ispiiderx-mode-10---pattern-ful",
@@ -1819,7 +1819,7 @@
       "mode": "Mode 10 - Pattern ful",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 79,
-      "url": "sources/robe-lighting/robin-ispiiderx-mode-10---pattern-ful.json"
+      "url": "/sources/robe-lighting/robin-ispiiderx-mode-10---pattern-ful.json"
     },
     {
       "id": "robe-lighting/robin-ispiiderx-mode-5---wash",
@@ -1828,7 +1828,7 @@
       "mode": "Mode 5 - Wash",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 27,
-      "url": "sources/robe-lighting/robin-ispiiderx-mode-5---wash.json"
+      "url": "/sources/robe-lighting/robin-ispiiderx-mode-5---wash.json"
     },
     {
       "id": "robe-lighting/robin-megapointe-mode-1---standard-16",
@@ -1837,7 +1837,7 @@
       "mode": "Mode 1 - Standard 16 ",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 39,
-      "url": "sources/robe-lighting/robin-megapointe-mode-1---standard-16.json"
+      "url": "/sources/robe-lighting/robin-megapointe-mode-1---standard-16.json"
     },
     {
       "id": "robe-lighting/robin-megapointe-mode-2---reduced-8",
@@ -1846,7 +1846,7 @@
       "mode": "Mode 2 - Reduced 8 - ",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 34,
-      "url": "sources/robe-lighting/robin-megapointe-mode-2---reduced-8.json"
+      "url": "/sources/robe-lighting/robin-megapointe-mode-2---reduced-8.json"
     },
     {
       "id": "robe-lighting/robin-minipointe-mode-2---reduced-8-bi",
@@ -1855,7 +1855,7 @@
       "mode": "Mode 2 - Reduced 8 bi",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 17,
-      "url": "sources/robe-lighting/robin-minipointe-mode-2---reduced-8-bi.json"
+      "url": "/sources/robe-lighting/robin-minipointe-mode-2---reduced-8-bi.json"
     },
     {
       "id": "robe-lighting/robin-minipointe-mode-3---extended-16",
@@ -1864,7 +1864,7 @@
       "mode": "Mode 3 - Extended 16 ",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 27,
-      "url": "sources/robe-lighting/robin-minipointe-mode-3---extended-16.json"
+      "url": "/sources/robe-lighting/robin-minipointe-mode-3---extended-16.json"
     },
     {
       "id": "robe-lighting/robin-superspikie-mode-1-full",
@@ -1873,7 +1873,7 @@
       "mode": "Mode 1 Full",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 31,
-      "url": "sources/robe-lighting/robin-superspikie-mode-1-full.json"
+      "url": "/sources/robe-lighting/robin-superspikie-mode-1-full.json"
     },
     {
       "id": "robe-lighting/robin-t1-profile-mode-2---reduced-cmy",
@@ -1882,7 +1882,7 @@
       "mode": "Mode 2 - Reduced CMY",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 33,
-      "url": "sources/robe-lighting/robin-t1-profile-mode-2---reduced-cmy.json"
+      "url": "/sources/robe-lighting/robin-t1-profile-mode-2---reduced-cmy.json"
     },
     {
       "id": "robe-lighting/robin-t1-profile-mode-3---rgbal",
@@ -1891,7 +1891,7 @@
       "mode": "Mode 3 - RGBAL",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 53,
-      "url": "sources/robe-lighting/robin-t1-profile-mode-3---rgbal.json"
+      "url": "/sources/robe-lighting/robin-t1-profile-mode-3---rgbal.json"
     },
     {
       "id": "robe-lighting/robin-tarrantula-mode-1-wash",
@@ -1900,7 +1900,7 @@
       "mode": "Mode 1-Wash",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 28,
-      "url": "sources/robe-lighting/robin-tarrantula-mode-1-wash.json"
+      "url": "/sources/robe-lighting/robin-tarrantula-mode-1-wash.json"
     },
     {
       "id": "robe-lighting/robin-tarrantula-mode-6-pattern-full-r",
@@ -1909,7 +1909,7 @@
       "mode": "Mode 6-Pattern full R",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 128,
-      "url": "sources/robe-lighting/robin-tarrantula-mode-6-pattern-full-r.json"
+      "url": "/sources/robe-lighting/robin-tarrantula-mode-6-pattern-full-r.json"
     },
     {
       "id": "shehds/100w-moving-head-gobo-14ch",
@@ -1918,7 +1918,7 @@
       "mode": "14ch",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 14,
-      "url": "sources/shehds/100w-moving-head-gobo-14ch.json"
+      "url": "/sources/shehds/100w-moving-head-gobo-14ch.json"
     },
     {
       "id": "shehds/19x15w-led-rgbw-wash-16ch-standard",
@@ -1927,7 +1927,7 @@
       "mode": "16Ch Standard",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 16,
-      "url": "sources/shehds/19x15w-led-rgbw-wash-16ch-standard.json"
+      "url": "/sources/shehds/19x15w-led-rgbw-wash-16ch-standard.json"
     },
     {
       "id": "shehds/19x15w-led-rgbw-wash-24ch-extended",
@@ -1936,7 +1936,7 @@
       "mode": "24Ch Extended",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 24,
-      "url": "sources/shehds/19x15w-led-rgbw-wash-24ch-extended.json"
+      "url": "/sources/shehds/19x15w-led-rgbw-wash-24ch-extended.json"
     },
     {
       "id": "shehds/230w-beam-moving-head-standard",
@@ -1945,7 +1945,7 @@
       "mode": "Standard",
       "fixture_type": "FIXTURE_TYPE_HID",
       "footprint": 16,
-      "url": "sources/shehds/230w-beam-moving-head-standard.json"
+      "url": "/sources/shehds/230w-beam-moving-head-standard.json"
     },
     {
       "id": "shehds/led-beam-12x12w-rgbw-16-channel-mode",
@@ -1954,7 +1954,7 @@
       "mode": "16 Channel Mode",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 14,
-      "url": "sources/shehds/led-beam-12x12w-rgbw-16-channel-mode.json"
+      "url": "/sources/shehds/led-beam-12x12w-rgbw-16-channel-mode.json"
     },
     {
       "id": "shehds/led-beam-12x12w-rgbw-9-channel-mode",
@@ -1963,7 +1963,7 @@
       "mode": "9 Channel Mode",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 9,
-      "url": "sources/shehds/led-beam-12x12w-rgbw-9-channel-mode.json"
+      "url": "/sources/shehds/led-beam-12x12w-rgbw-9-channel-mode.json"
     },
     {
       "id": "shehds/ledspot90w-gdtf-default",
@@ -1972,7 +1972,7 @@
       "mode": "Default",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 16,
-      "url": "sources/shehds/ledspot90w-gdtf-default.json"
+      "url": "/sources/shehds/ledspot90w-gdtf-default.json"
     },
     {
       "id": "shehds/mini-led-beam-spider3-mode-16ch",
@@ -1981,7 +1981,7 @@
       "mode": "Mode 16CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 16,
-      "url": "sources/shehds/mini-led-beam-spider3-mode-16ch.json"
+      "url": "/sources/shehds/mini-led-beam-spider3-mode-16ch.json"
     },
     {
       "id": "shehds/shehds-mode-1",
@@ -1990,7 +1990,7 @@
       "mode": "Mode 1",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 14,
-      "url": "sources/shehds/shehds-mode-1.json"
+      "url": "/sources/shehds/shehds-mode-1.json"
     },
     {
       "id": "uking/led-mini-spot-60w-by-mode-1",
@@ -1999,7 +1999,7 @@
       "mode": "Mode 1",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 8,
-      "url": "sources/uking/led-mini-spot-60w-by-mode-1.json"
+      "url": "/sources/uking/led-mini-spot-60w-by-mode-1.json"
     },
     {
       "id": "uking/zq02341-150w-moving-h-12ch",
@@ -2008,7 +2008,7 @@
       "mode": "12Ch ",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 10,
-      "url": "sources/uking/zq02341-150w-moving-h-12ch.json"
+      "url": "/sources/uking/zq02341-150w-moving-h-12ch.json"
     },
     {
       "id": "vari-lite/vl1600-profile-16bit-enhanced",
@@ -2017,7 +2017,7 @@
       "mode": "16Bit Enhanced",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 39,
-      "url": "sources/vari-lite/vl1600-profile-16bit-enhanced.json"
+      "url": "/sources/vari-lite/vl1600-profile-16bit-enhanced.json"
     },
     {
       "id": "vari-lite/vl1600-profile-16bit-mode",
@@ -2026,7 +2026,7 @@
       "mode": "16Bit Mode",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 37,
-      "url": "sources/vari-lite/vl1600-profile-16bit-mode.json"
+      "url": "/sources/vari-lite/vl1600-profile-16bit-mode.json"
     },
     {
       "id": "vari-lite/vl2600-profile-16bit",
@@ -2035,7 +2035,7 @@
       "mode": "16Bit",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 38,
-      "url": "sources/vari-lite/vl2600-profile-16bit.json"
+      "url": "/sources/vari-lite/vl2600-profile-16bit.json"
     },
     {
       "id": "vari-lite/vl2600-profile-16bit-enhanced",
@@ -2044,7 +2044,7 @@
       "mode": "16Bit Enhanced",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 40,
-      "url": "sources/vari-lite/vl2600-profile-16bit-enhanced.json"
+      "url": "/sources/vari-lite/vl2600-profile-16bit-enhanced.json"
     },
     {
       "id": "vari-lite/vl3600-profile-ip-16-bit-49ch",
@@ -2053,7 +2053,7 @@
       "mode": "16-BIT (49ch)",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 45,
-      "url": "sources/vari-lite/vl3600-profile-ip-16-bit-49ch.json"
+      "url": "/sources/vari-lite/vl3600-profile-ip-16-bit-49ch.json"
     },
     {
       "id": "vari-lite/vl3600-profile-ip-16-bit-extended-54ch",
@@ -2062,7 +2062,7 @@
       "mode": "16-BIT EXTENDED (54ch",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 48,
-      "url": "sources/vari-lite/vl3600-profile-ip-16-bit-extended-54ch.json"
+      "url": "/sources/vari-lite/vl3600-profile-ip-16-bit-extended-54ch.json"
     },
     {
       "id": "vari-lite/vl800-eventpar-rgba-16-bit",
@@ -2071,7 +2071,7 @@
       "mode": "16-Bit",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 14,
-      "url": "sources/vari-lite/vl800-eventpar-rgba-16-bit.json"
+      "url": "/sources/vari-lite/vl800-eventpar-rgba-16-bit.json"
     },
     {
       "id": "vari-lite/vl800-eventpar-rgba-8-bit-color-mode",
@@ -2080,7 +2080,7 @@
       "mode": "8-Bit Color Mode",
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 4,
-      "url": "sources/vari-lite/vl800-eventpar-rgba-8-bit-color-mode.json"
+      "url": "/sources/vari-lite/vl800-eventpar-rgba-8-bit-color-mode.json"
     },
     {
       "id": "wallys-lights/wallys-lights-megabea-16ch",
@@ -2089,7 +2089,7 @@
       "mode": "16CH",
       "fixture_type": "FIXTURE_TYPE_HID",
       "footprint": 16,
-      "url": "sources/wallys-lights/wallys-lights-megabea-16ch.json"
+      "url": "/sources/wallys-lights/wallys-lights-megabea-16ch.json"
     },
     {
       "id": "your-pixel-store/350w380w-outdoor-mov-16ch",
@@ -2098,7 +2098,7 @@
       "mode": "16CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 16,
-      "url": "sources/your-pixel-store/350w380w-outdoor-mov-16ch.json"
+      "url": "/sources/your-pixel-store/350w380w-outdoor-mov-16ch.json"
     },
     {
       "id": "your-pixel-store/yps-150w-moving-head-mode-1",
@@ -2107,7 +2107,7 @@
       "mode": "Mode 1",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 12,
-      "url": "sources/your-pixel-store/yps-150w-moving-head-mode-1.json"
+      "url": "/sources/your-pixel-store/yps-150w-moving-head-mode-1.json"
     },
     {
       "id": "your-pixel-store/yps-starlight-mini-mo-16ch",
@@ -2116,7 +2116,7 @@
       "mode": "16CH",
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 15,
-      "url": "sources/your-pixel-store/yps-starlight-mini-mo-16ch.json"
+      "url": "/sources/your-pixel-store/yps-starlight-mini-mo-16ch.json"
     }
   ]
 }
