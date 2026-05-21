@@ -1,0 +1,25 @@
+{
+  "schema": "rehmlights-index/1",
+  "generated": "2026-05-21T05:32:28Z",
+  "count": 2,
+  "fixtures": [
+    {
+      "id": "glp/jdc1-progress-0512-mode-1-compressed",
+      "name": "JDC1 progress 0512",
+      "manufacturer": "GLP",
+      "mode": "Mode 1 (Compressed)",
+      "fixture_type": "FIXTURE_TYPE_RGBX",
+      "footprint": 14,
+      "url": "sources/glp/jdc1-progress-0512-mode-1-compressed.json"
+    },
+    {
+      "id": "glp/jdc1-progress-0512-mode-3-spix",
+      "name": "JDC1 progress 0512",
+      "manufacturer": "GLP",
+      "mode": "Mode 3 (SPix)",
+      "fixture_type": "FIXTURE_TYPE_RGBX",
+      "footprint": 68,
+      "url": "sources/glp/jdc1-progress-0512-mode-3-spix.json"
+    }
+  ]
+}

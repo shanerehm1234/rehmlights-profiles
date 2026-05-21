@@ -1,0 +1,24 @@
+{
+  "schema": "rehmlights-profile/legacy-v1.2",
+  "id": "glp/jdc1-progress-0512-mode-1-compressed",
+  "name": "JDC1 progress 0512",
+  "manufacturer": "GLP",
+  "mode": "Mode 1 (Compressed)",
+  "fixture_type": "FIXTURE_TYPE_RGBX",
+  "channels": {
+    "tilt": 1,
+    "tilt_fine": 2,
+    "dimmer": 8
+  },
+  "rgb": {
+    "red": 12,
+    "green": 13,
+    "blue": 14
+  },
+  "values": {
+    "dimmer_default": 255
+  },
+  "meta": {
+    "tilt_degrees": 185.0
+  }
+}

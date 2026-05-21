@@ -1,0 +1,24 @@
+{
+  "schema": "rehmlights-profile/legacy-v1.2",
+  "id": "glp/jdc1-progress-0512-mode-3-spix",
+  "name": "JDC1 progress 0512",
+  "manufacturer": "GLP",
+  "mode": "Mode 3 (SPix)",
+  "fixture_type": "FIXTURE_TYPE_RGBX",
+  "channels": {
+    "tilt": 1,
+    "tilt_fine": 2,
+    "dimmer": 68
+  },
+  "rgb": {
+    "red": 54,
+    "green": 55,
+    "blue": 56
+  },
+  "values": {
+    "dimmer_default": 255
+  },
+  "meta": {
+    "tilt_degrees": 185.0
+  }
+}

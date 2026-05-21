@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# GDTF working files (cache + raw downloads — never commit binaries)
+*.gdtf
+gdtf_cache/
+
+# Local credentials for GDTF Share API
+.env
+
+# Editor cruft
+.vscode/
+.idea/
+*.swp
+.DS_Store
