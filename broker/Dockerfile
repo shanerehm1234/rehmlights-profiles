@@ -2,7 +2,8 @@ FROM python:3.12-slim
 
 # git is needed to commit + push approved profiles to the catalog.
 RUN apt-get update && apt-get install -y --no-install-recommends git \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && git config --system --add safe.directory '*'
 
 # The broker code + the cooker come from the mounted catalog repo at /catalog;
 # we only bake the Python deps into the image so it stays tiny and the code
