@@ -1,7 +1,7 @@
 {
   "schema": "rehmlights-index/1",
-  "generated": "2026-05-21T05:54:29Z",
-  "count": 235,
+  "generated": "2026-06-05T06:36:57Z",
+  "count": 236,
   "fixtures": [
     {
       "id": "adj/comscan-led-default",
@@ -1262,6 +1262,15 @@
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 60,
       "url": "/sources/flash/led-moving-bar-10x40w-60ch.json"
+    },
+    {
+      "id": "generic/generic-15wx4-mini-mo-11ch",
+      "name": "Generic 15Wx4 Mini Mo",
+      "manufacturer": "Generic",
+      "mode": "11CH",
+      "fixture_type": "FIXTURE_TYPE_RGBX",
+      "footprint": 11,
+      "url": "/sources/generic/generic-15wx4-mini-mo-11ch.json"
     },
     {
       "id": "generic/mini-beam-50n-9-ch",
