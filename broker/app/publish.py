@@ -44,22 +44,24 @@ def reject(pid):
 
 
 def _run(cmd, cwd):
-    return subprocess.run(cmd, cwd=cwd, check=True,
-                          capture_output=True, text=True)
+    """Run a git/tool command, raising a clean (token-scrubbed) error with the
+    real stderr so failures are diagnosable instead of an opaque exit code."""
+    r = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True)
+    if r.returncode != 0:
+        err = (r.stderr or r.stdout or "").strip()
+        if config.GITHUB_TOKEN:
+            err = err.replace(config.GITHUB_TOKEN, "***")
+        raise RuntimeError(f"`{' '.join(cmd[:3])}` failed: {err[:400]}")
+    return r
 
 
-def _git_push():
-    """Commit sources/ + index.json and push.
-
-    The token goes into a git credential STORE on the private data volume — it
-    never appears in a git argv (so it can't end up in an error message), and
-    git references the remote only as `origin`.
-    """
-    repo = config.CATALOG_DIR
+def _git_sync_clean(repo):
+    """Token-free origin + credential store, then HARD-sync the working tree to
+    the latest origin/main. This discards any local drift (stray commits, dirty
+    files) so the upcoming commit fast-forwards cleanly — robust to the checkout
+    having moved out of sync with the catalog."""
     _run(["git", "config", "user.name", config.GIT_AUTHOR], repo)
     _run(["git", "config", "user.email", config.GIT_EMAIL], repo)
-
-    # Plain (token-free) remote URL + a credential helper file holding the PAT.
     _run(["git", "remote", "set-url", "origin",
           f"https://github.com/{config.GITHUB_REPO}.git"], repo)
     cred = os.path.join(config.DATA_DIR, ".git-credentials")
@@ -67,16 +69,20 @@ def _git_push():
         f.write(f"https://x-access-token:{config.GITHUB_TOKEN}@github.com\n")
     os.chmod(cred, 0o600)
     _run(["git", "config", "credential.helper", f"store --file={cred}"], repo)
+    # Unshallow if needed (original checkout may be a --depth 1 clone).
+    if os.path.exists(os.path.join(repo, ".git", "shallow")):
+        subprocess.run(["git", "fetch", "--unshallow", "origin", "main"], cwd=repo,
+                       capture_output=True, text=True)  # best-effort
+    _run(["git", "fetch", "origin", "main"], repo)
+    _run(["git", "reset", "--hard", "origin/main"], repo)
+    _run(["git", "clean", "-fd"], repo)
 
+
+def _git_commit_push(repo):
     _run(["git", "add", "sources", "index.json"], repo)
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=repo).returncode == 0:
         return "nothing to commit"
     _run(["git", "commit", "-m", "Add fixture profile via broker"], repo)
-
-    # The catalog may have moved since this checkout — sync before pushing so
-    # the broker's commit fast-forwards onto the latest main.
-    _run(["git", "fetch", "origin", "main"], repo)
-    _run(["git", "rebase", "origin/main"], repo)
     _run(["git", "push", "origin", "HEAD:main"], repo)
     return "pushed"
 
@@ -88,6 +94,13 @@ def approve(pid):
         raise RuntimeError("pending profile not found")
     with open(path) as f:
         d = json.load(f)
+
+    publishing = config.PUBLISH_ENABLED and config.GITHUB_TOKEN
+
+    # Sync to clean latest main FIRST, so we write + commit on top of it (the
+    # push then always fast-forwards — no rebase, no drift).
+    if publishing:
+        _git_sync_clean(config.CATALOG_DIR)
 
     rel = d["rel"]                      # sources/<mfg>/<model-mode>.json
     dest = os.path.join(config.CATALOG_DIR, rel)
@@ -101,8 +114,8 @@ def approve(pid):
          config.CATALOG_DIR)
 
     result = "staged (publish disabled)"
-    if config.PUBLISH_ENABLED and config.GITHUB_TOKEN:
-        result = _git_push()
+    if publishing:
+        result = _git_commit_push(config.CATALOG_DIR)
 
     os.remove(path)                    # clear from the pending queue
     return {"id": pid, "rel": rel, "publish": result}
