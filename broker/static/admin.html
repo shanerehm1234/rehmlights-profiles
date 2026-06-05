@@ -32,6 +32,7 @@ border-radius:9px;height:38px;padding:0 14px;font-weight:600;cursor:pointer;marg
     <input id="tok" type="password" placeholder="Admin token" style="width:260px">
     <button class="btn" onclick="save()">Save &amp; load</button>
   </div>
+  <div id="toast" style="display:none;margin:10px 0;padding:10px 14px;border-radius:10px"></div>
   <div id="list"></div>
 </div>
 <script>
@@ -58,6 +59,13 @@ async function load(){
   }catch(e){$('list').innerHTML='<p class="muted">Failed to load.</p>';}
 }
 
+function toast(msg,ok){
+  const t=$('toast');t.style.display='';t.textContent=msg;
+  t.style.background=ok?'#0e2a16':'#2a0e12';
+  t.style.color=ok?'var(--ok)':'var(--bad)';
+  t.style.border='1px solid '+(ok?'#2a6':'#a23');
+  setTimeout(()=>{t.style.display='none';},8000);
+}
 async function act(which,id){
   if(which==='reject'&&!confirm('Reject '+id+'?'))return;
   try{
@@ -65,8 +73,11 @@ async function act(which,id){
       headers:{'Content-Type':'application/json','X-Admin-Token':tok()},
       body:JSON.stringify({id})});
     const j=await r.json();
-    if(j.error)alert(j.error);
-  }catch(e){alert('Action failed');}
+    if(j.error){toast('Error: '+j.error,false);}
+    else if(which==='approve'){
+      toast('✓ Approved & '+(j.publish==='pushed'?'published to the catalog':j.publish)+' — '+id,true);
+    }else{toast('✗ Rejected — '+id,true);}
+  }catch(e){toast('Action failed',false);}
   load();
 }
 if(tok())load();

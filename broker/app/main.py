@@ -16,10 +16,10 @@ Owner only (X-Admin-Token):
 import os
 
 from fastapi import FastAPI, HTTPException, Header, Body
-from fastapi.responses import JSONResponse, FileResponse
+from fastapi.responses import JSONResponse, FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 
-from . import config, cooker, publish
+from . import config, cooker, publish, mailer
 
 app = FastAPI(title="vibe-broker", version="0.1")
 
@@ -70,9 +70,36 @@ def api_submit(body: dict = Body(...)):
         raise HTTPException(400, "rid and mode are required")
     try:
         info = cooker.cook_to_pending(rid, mode, submitter)
+        # Email the owner a review alert with one-click approve/reject links.
+        mailer.notify_submission(info, submitter)
         return {"status": "pending", **info}
     except Exception as e:
         return _err(e)
+
+
+@app.get("/api/review")
+def api_review(action: str, id: str, sig: str):
+    """One-click approve/reject from an email link (HMAC-signed, no login)."""
+    if action not in ("approve", "reject") or not mailer.valid(action, id, sig):
+        return HTMLResponse(mailer.result_page("Invalid or expired link",
+            "This review link isn't valid. It may have already been used.", ok=False),
+            status_code=403)
+    try:
+        if action == "approve":
+            r = publish.approve(id)
+            pub = r.get("publish", "")
+            return HTMLResponse(mailer.result_page("Approved & published",
+                f"{id} is now in the catalog. Devices will see it on the next library refresh.",
+                ok=True))
+        else:
+            publish.reject(id)
+            return HTMLResponse(mailer.result_page("Rejected", f"{id} was discarded.", ok=True))
+    except Exception as e:
+        msg = str(e)
+        if config.GITHUB_TOKEN:
+            msg = msg.replace(config.GITHUB_TOKEN, "***")
+        return HTMLResponse(mailer.result_page("Something went wrong", msg, ok=False),
+                            status_code=400)
 
 
 # ---- owner moderation -----------------------------------------------------
@@ -111,7 +138,8 @@ def api_reject(body: dict = Body(...), x_admin_token: str = Header("")):
 @app.get("/healthz")
 def healthz():
     return {"ok": True, "gdtf_configured": bool(config.GDTF_USER),
-            "publish": config.PUBLISH_ENABLED and bool(config.GITHUB_TOKEN)}
+            "publish": config.PUBLISH_ENABLED and bool(config.GITHUB_TOKEN),
+            "email": mailer.enabled()}
 
 
 # ---- static pages ---------------------------------------------------------

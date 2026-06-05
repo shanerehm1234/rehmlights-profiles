@@ -177,4 +177,6 @@ def cook_to_pending(rid, mode_name, submitter=""):
     with open(pend_path, "w") as f:
         json.dump({"id": pid, "rel": rel, "submitter": submitter, "profile": obj},
                   f, indent=2, ensure_ascii=False)
-    return {"id": pid, "rel": rel, "footprint": obj.get("footprint", 0)}
+    return {"id": pid, "rel": rel, "footprint": obj.get("footprint", 0),
+            "manufacturer": obj.get("manufacturer", ""),
+            "name": obj.get("name", ""), "mode": obj.get("mode", "")}

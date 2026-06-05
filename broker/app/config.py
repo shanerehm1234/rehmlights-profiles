@@ -64,6 +64,21 @@ PUBLISH_ENABLED = os.environ.get("PUBLISH_ENABLED", "1") != "0"  # set 0 to dry-
 # through nginx on your LAN, but this keeps approvals owner-only.
 ADMIN_TOKEN = os.environ.get("ADMIN_TOKEN", "")
 
+# --- Email alerts + one-click review links -------------------------------
+# When a fixture is submitted, email the owner with Approve/Reject links that
+# work from anywhere (each link is HMAC-signed so only the broker's own emails
+# are valid). Leave SMTP_HOST blank to disable email.
+SMTP_HOST = os.environ.get("SMTP_HOST", "")
+SMTP_PORT = int(os.environ.get("SMTP_PORT", "587"))
+SMTP_USER = os.environ.get("SMTP_USER", "")
+SMTP_PASS = os.environ.get("SMTP_PASS", "")
+MAIL_FROM = os.environ.get("MAIL_FROM", "") or SMTP_USER
+MAIL_TO   = os.environ.get("MAIL_TO", "")
+# Public base URL the review links point at (proxied to the broker via nginx).
+PUBLIC_BASE_URL = os.environ.get("PUBLIC_BASE_URL", "https://rehmlights.com").rstrip("/")
+# Secret used to sign the one-click review links. REQUIRED for email links.
+REVIEW_SECRET = os.environ.get("REVIEW_SECRET", "")
+
 # Refresh the cached GDTF Share fixture list at most this often.
 LIST_TTL_SECONDS = int(os.environ.get("GDTF_LIST_TTL", str(24 * 3600)))
 
