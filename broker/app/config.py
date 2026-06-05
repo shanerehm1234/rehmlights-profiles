@@ -10,6 +10,33 @@ import os
 # The broker lives at <catalog>/broker/, so the catalog root is one level up.
 # That checkout is the working tree we cook into + push from.
 BROKER_DIR  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def _load_env_file():
+    """Load broker/.env into the environment, FILE WINS.
+
+    `docker run --env-file` is only read at container creation, so a plain
+    `docker restart` won't pick up edits. Reading the file ourselves at startup
+    means editing .env + `docker restart vibe-broker` always takes effect.
+    Values are taken verbatim after the first '=' (so '&' in passwords is fine).
+    """
+    path = os.path.join(BROKER_DIR, ".env")
+    if not os.path.exists(path):
+        return
+    try:
+        with open(path) as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+                k, v = line.split("=", 1)
+                os.environ[k.strip()] = v.strip()
+    except Exception:
+        pass
+
+
+_load_env_file()
+
 CATALOG_DIR = os.environ.get("CATALOG_DIR", os.path.dirname(BROKER_DIR))
 TOOLS_DIR   = os.path.join(CATALOG_DIR, "tools")
 SOURCES_DIR = os.path.join(CATALOG_DIR, "sources")
