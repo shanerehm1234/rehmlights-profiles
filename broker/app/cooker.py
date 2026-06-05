@@ -43,6 +43,14 @@ def _get_client():
         return _client
 
 
+def _reset_client():
+    """Drop the cached session so the next call logs in fresh. GDTF Share
+    sessions expire; a 401 on download means we must re-authenticate."""
+    global _client
+    with _client_lock:
+        _client = None
+
+
 def _load_disk_cache():
     if os.path.exists(config.CACHE_PATH):
         try:
@@ -125,13 +133,25 @@ def search(query, limit=80):
 def _download_and_parse(rid, force=False):
     # force=True re-downloads even if cached — fixtures get updated in place on
     # GDTF Share, and a submit must cook the LATEST file, not a stale cache.
-    path = _get_client().download_fixture(int(rid), force=force)
-    if not path or not os.path.exists(path):
-        raise RuntimeError("download failed")
-    profiles = gdtf_cooker.GdtfParser().parse(path)
-    if not profiles:
-        raise RuntimeError("no DMX modes found in this GDTF")
-    return profiles
+    # Retry once with a fresh login: GDTF Share sessions expire, so a long-lived
+    # broker hits 401 Unauthorized on download until it re-authenticates.
+    last = None
+    for attempt in range(2):
+        try:
+            path = _get_client().download_fixture(int(rid), force=force)
+            if not path or not os.path.exists(path):
+                raise RuntimeError("download failed")
+            profiles = gdtf_cooker.GdtfParser().parse(path)
+            if not profiles:
+                raise RuntimeError("no DMX modes found in this GDTF")
+            return profiles
+        except Exception as e:
+            last = e
+            if attempt == 0:
+                _reset_client()   # session likely expired — re-login + retry
+                continue
+            raise
+    raise last  # unreachable
 
 
 def modes(rid):
