@@ -1,0 +1,50 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "uking/uking-zq01011-6x10w-r-8ch",
+  "name": "UKING ZQ01011 6x10W R",
+  "manufacturer": "UKING",
+  "mode": "8CH",
+  "fixture_type": "FIXTURE_TYPE_RGBX",
+  "footprint": 8,
+  "channels": [
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 8
+    },
+    {
+      "role": "DIMMER",
+      "offset": 1,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 6,
+      "default": 0
+    },
+    {
+      "role": "RED",
+      "offset": 2
+    },
+    {
+      "role": "GREEN",
+      "offset": 3
+    },
+    {
+      "role": "BLUE",
+      "offset": 4
+    },
+    {
+      "role": "WHITE",
+      "offset": 5
+    }
+  ],
+  "values": {
+    "strobe_slow": 5,
+    "strobe_fast": 255
+  },
+  "meta": {
+    "source": "gdtf-share",
+    "gdtf_rid": 145684,
+    "submitted_by": "Butt@head.com"
+  }
+}

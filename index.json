@@ -1,7 +1,7 @@
 {
   "schema": "rehmlights-index/1",
-  "generated": "2026-06-05T06:36:57Z",
-  "count": 236,
+  "generated": "2026-06-05T19:50:16Z",
+  "count": 237,
   "fixtures": [
     {
       "id": "adj/comscan-led-default",
@@ -2009,6 +2009,15 @@
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 8,
       "url": "/sources/uking/led-mini-spot-60w-by-mode-1.json"
+    },
+    {
+      "id": "uking/uking-zq01011-6x10w-r-8ch",
+      "name": "UKING ZQ01011 6x10W R",
+      "manufacturer": "UKING",
+      "mode": "8CH",
+      "fixture_type": "FIXTURE_TYPE_RGBX",
+      "footprint": 8,
+      "url": "/sources/uking/uking-zq01011-6x10w-r-8ch.json"
     },
     {
       "id": "uking/zq02341-150w-moving-h-12ch",
