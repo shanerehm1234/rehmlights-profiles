@@ -5,12 +5,8 @@
   "manufacturer": "UKING",
   "mode": "8CH",
   "fixture_type": "FIXTURE_TYPE_RGBX",
-  "footprint": 8,
+  "footprint": 6,
   "channels": [
-    {
-      "role": "PAN_TILT_SPEED",
-      "offset": 8
-    },
     {
       "role": "DIMMER",
       "offset": 1,
@@ -19,7 +15,7 @@
     {
       "role": "SHUTTER",
       "offset": 6,
-      "default": 0
+      "default": 4
     },
     {
       "role": "RED",
@@ -39,11 +35,13 @@
     }
   ],
   "values": {
+    "shutter_open": 4,
     "strobe_slow": 5,
     "strobe_fast": 255
   },
   "meta": {
     "source": "gdtf-share",
-    "gdtf_rid": 145684
+    "gdtf_rid": 145717,
+    "submitted_by": "yo@mama.com"
   }
 }

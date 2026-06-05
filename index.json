@@ -1,6 +1,6 @@
 {
   "schema": "rehmlights-index/1",
-  "generated": "2026-06-05T21:22:42Z",
+  "generated": "2026-06-05T23:15:13Z",
   "count": 238,
   "fixtures": [
     {
@@ -2025,7 +2025,7 @@
       "manufacturer": "UKING",
       "mode": "8CH",
       "fixture_type": "FIXTURE_TYPE_RGBX",
-      "footprint": 8,
+      "footprint": 6,
       "url": "/sources/uking/uking-zq01011-6x10w-r-8ch.json"
     },
     {
