@@ -5,7 +5,7 @@
   "manufacturer": "UKING",
   "mode": "8CH",
   "fixture_type": "FIXTURE_TYPE_RGBX",
-  "footprint": 6,
+  "footprint": 8,
   "channels": [
     {
       "role": "DIMMER",
@@ -41,7 +41,6 @@
   },
   "meta": {
     "source": "gdtf-share",
-    "gdtf_rid": 145717,
-    "submitted_by": "yo@mama.com"
+    "gdtf_rid": 145717
   }
 }
