@@ -3,56 +3,82 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Add a fixture to VIBE</title>
+<title>Add a fixture to VIBE · REHMLIGHTS</title>
 <style>
-:root{--bg:#0a0e14;--panel:#131820;--panel-hi:#1b2330;--border:#2a3645;
---text:#e6eaf0;--dim:#7a8794;--accent:#00d9ff;--accent-dim:#0080a0;--ok:#44cc66}
+:root{
+  /* VIBE brand = teal */
+  --vibe-primary:#00ccaa; --vibe-secondary:#00d9ff;
+  --vibe-grad:linear-gradient(135deg,#00ccaa 0%,#00d9c0 50%,#00d9ff 100%);
+  --bg:#000; --card:#1a1a1a; --hover:#252525; --text:#fff; --dim:#a0a0a0; --border:#333;
+}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);
-font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-.wrap{max-width:760px;margin:0 auto;padding:28px 18px 60px}
-h1{font-size:22px;letter-spacing:1px;margin:0 0 4px}
-.sub{color:var(--dim);margin:0 0 22px}
-.card{background:var(--panel);border:1px solid var(--border);border-radius:14px;
-padding:18px;margin-bottom:16px}
-input[type=text]{width:100%;height:46px;padding:0 14px;border-radius:10px;
-border:1px solid var(--border);background:var(--panel-hi);color:var(--text);font-size:16px}
-.muted{color:var(--dim)}
+font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
+a{color:var(--vibe-primary);text-decoration:none}
+/* header */
+header{display:flex;align-items:center;justify-content:space-between;
+padding:14px 22px;border-bottom:1px solid var(--border);background:#0a0a0a;position:sticky;top:0;z-index:5}
+header .logo img{height:30px;display:block}
+header .back{font-size:14px;font-weight:600;color:var(--dim)}
+header .back:hover{color:var(--vibe-primary)}
+.wrap{max-width:780px;margin:0 auto;padding:30px 18px 70px}
+.hero{text-align:center;margin-bottom:26px}
+.hero h1{font-size:30px;margin:0 0 6px;
+background:var(--vibe-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:var(--dim);margin:0;font-size:15px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;margin-bottom:16px}
+.step{font-size:11px;letter-spacing:2px;color:var(--vibe-primary);text-transform:uppercase;font-weight:700;margin:0 0 12px}
+input[type=text]{width:100%;height:48px;padding:0 16px;border-radius:11px;
+border:1px solid var(--border);background:#0e0e0e;color:var(--text);font-size:16px}
+input[type=text]:focus{outline:none;border-color:var(--vibe-primary)}
+.muted{color:var(--dim);font-size:14px}
 .row{display:flex;justify-content:space-between;align-items:center;gap:12px;
-padding:11px 12px;border:1px solid var(--border);border-radius:10px;margin:8px 0;
-background:var(--panel-hi);cursor:pointer}
-.row:hover{border-color:var(--accent)}
+padding:12px 14px;border:1px solid var(--border);border-radius:11px;margin:8px 0;background:#101010;cursor:pointer;transition:border-color .15s,background .15s}
+.row:hover{border-color:var(--vibe-primary);background:var(--hover)}
 .row .name{font-weight:600}
-.row .mfg{color:var(--dim);font-size:13px}
-.btn{background:linear-gradient(180deg,#1b2330,#131820);border:1px solid var(--border);
-color:var(--text);border-radius:10px;height:42px;padding:0 18px;font-weight:600;cursor:pointer}
-.btn.go{border-color:var(--accent-dim);color:var(--accent)}
-.chip{font-size:12px;color:var(--accent);border:1px solid var(--accent-dim);
-border-radius:20px;padding:2px 10px}
-.ok{color:var(--ok)}
+.row .mfg{color:var(--dim);font-size:13px;margin-top:2px}
+.chip{font-size:12px;font-weight:600;color:var(--vibe-primary);white-space:nowrap}
+.gbtn{display:inline-block;border:none;cursor:pointer;color:#fff;font-weight:700;font-size:15px;
+padding:12px 22px;border-radius:11px;background:var(--vibe-grad)}
+.linkbtn{background:none;border:none;color:var(--vibe-primary);font-weight:600;cursor:pointer;font-size:13px;padding:0}
+.ok{color:#3ddc84}
 .hide{display:none}
-.step{font-size:12px;letter-spacing:2px;color:var(--dim);margin:0 0 10px;text-transform:uppercase}
+/* spinner + progress */
+.spin{display:inline-block;width:16px;height:16px;border:2px solid rgba(0,204,170,.25);
+border-top-color:var(--vibe-primary);border-radius:50%;animation:sp .7s linear infinite;vertical-align:-3px;margin-right:8px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.busy{display:flex;align-items:center;gap:4px;color:var(--dim);font-size:14px;padding:6px 2px}
+.bar{height:4px;border-radius:3px;background:#222;overflow:hidden;margin-top:10px}
+.bar>div{height:100%;width:30%;border-radius:3px;background:var(--vibe-grad);
+animation:slide 1.1s ease-in-out infinite}
+@keyframes slide{0%{margin-left:-30%}100%{margin-left:100%}}
 </style>
 </head>
 <body>
+<header>
+  <a class="logo" href="vibe.html"><img src="images/rehmlights.png" alt="REHMLIGHTS"></a>
+  <a class="back" href="vibe.html">&larr; Back to VIBE</a>
+</header>
+
 <div class="wrap">
-  <h1>Add a fixture to VIBE</h1>
-  <p class="sub">Search the GDTF library, pick your fixture &amp; DMX mode, and
-  we'll prep it for your Vibe. No clunky downloads.</p>
+  <div class="hero">
+    <h1>Add a fixture to VIBE</h1>
+    <p>Search the GDTF library, pick your fixture &amp; DMX mode — we'll prep it for your VIBE. No clunky downloads.</p>
+  </div>
 
   <div class="card">
-    <p class="step">1 &middot; Find your fixture</p>
-    <input id="q" type="text" placeholder="e.g. mini moving head, Chauvet, mover…" autocomplete="off">
-    <div class="muted" style="margin-top:8px;font-size:13px">
-      Just uploaded it to GDTF Share? The list is cached &mdash;
-      <a id="refresh" href="#" style="color:var(--accent)">&#8635; refresh it</a>.
+    <p class="step">1 · Find your fixture</p>
+    <input id="q" type="text" placeholder="e.g. mini moving head, Chauvet, par…" autocomplete="off">
+    <div class="muted" style="margin-top:8px">
+      Just uploaded it to GDTF Share?
+      <button id="refresh" class="linkbtn">&#8635; refresh the library</button>
     </div>
-    <div id="results" style="margin-top:12px"></div>
+    <div id="results" style="margin-top:14px"></div>
   </div>
 
   <div id="modecard" class="card hide">
-    <p class="step">2 &middot; Pick the DMX mode</p>
-    <div id="picked" class="muted" style="margin-bottom:8px"></div>
+    <p class="step">2 · Pick the DMX mode</p>
+    <div id="picked" class="muted" style="margin-bottom:10px"></div>
     <div id="modes"></div>
     <div style="margin-top:12px">
       <input id="who" type="text" placeholder="Your name or email (optional, for credit)">
@@ -60,81 +86,82 @@ border-radius:20px;padding:2px 10px}
   </div>
 
   <div id="done" class="card hide">
-    <p class="step">3 &middot; Submitted</p>
-    <p class="ok" id="donemsg"></p>
-    <p class="muted">A quick review keeps the library clean. Once approved it'll
-    appear in your Vibe under <b>SETUP &rarr; + FROM LIBRARY</b> (tap refresh).</p>
+    <p class="step">3 · Submitted</p>
+    <p class="ok" id="donemsg" style="font-size:16px;font-weight:600"></p>
+    <p class="muted">A quick review keeps the library clean. Once approved it appears in
+    your VIBE under <b>SETUP &rarr; + FROM LIBRARY</b> (tap refresh).</p>
   </div>
 </div>
 
 <script>
 const $=id=>document.getElementById(id);
 let timer, picked=null;
-
 function debounce(fn,ms){return(...a)=>{clearTimeout(timer);timer=setTimeout(()=>fn(...a),ms)}}
+const spinner=(txt)=>`<div class=busy><span class=spin></span>${txt}</div>`;
+const progress=(txt)=>`<div class=busy><span class=spin></span>${txt}</div><div class=bar><div></div></div>`;
 
 async function search(){
   const q=$('q').value.trim();
-  if(q.length<2){$('results').innerHTML='<p class="muted">Type at least 2 letters…</p>';return;}
-  $('results').innerHTML='<p class="muted">Searching…</p>';
+  if(q.length<2){$('results').innerHTML='<p class=muted>Type at least 2 letters…</p>';return;}
+  $('results').innerHTML=spinner('Searching the GDTF library…');
   try{
     const r=await fetch('/api/profiles/search?q='+encodeURIComponent(q));
     const j=await r.json();
-    if(j.error){$('results').innerHTML='<p class="muted">'+j.error+'</p>';return;}
-    if(!j.results.length){$('results').innerHTML='<p class="muted">No matches. Try the manufacturer name.</p>';return;}
+    if(j.error){$('results').innerHTML='<p class=muted>'+j.error+'</p>';return;}
+    if(!j.results.length){$('results').innerHTML='<p class=muted>No matches. Try the manufacturer name, or refresh the library above if you just uploaded it.</p>';return;}
     $('results').innerHTML=j.results.map(f=>
-      `<div class="row" onclick='pick(${f.rid},${JSON.stringify(f.manufacturer)},${JSON.stringify(f.name)})'>
-        <div><div class="name">${f.name}</div><div class="mfg">${f.manufacturer}</div></div>
-        <span class="chip">choose &rsaquo;</span></div>`).join('');
-  }catch(e){$('results').innerHTML='<p class="muted">Search failed.</p>';}
+      `<div class=row onclick='pick(${f.rid},${JSON.stringify(f.manufacturer)},${JSON.stringify(f.name)})'>
+        <div><div class=name>${f.name}</div><div class=mfg>${f.manufacturer}</div></div>
+        <span class=chip>choose &rsaquo;</span></div>`).join('');
+  }catch(e){$('results').innerHTML='<p class=muted>Search failed.</p>';}
 }
 $('q').addEventListener('input',debounce(search,350));
 
 $('refresh').addEventListener('click',async(e)=>{
   e.preventDefault();
-  const link=$('refresh'); link.textContent='⟳ refreshing GDTF list…';
+  $('results').innerHTML=progress('Refreshing the GDTF library (~11,500 fixtures, a few seconds)…');
   try{
     const r=await fetch('/api/profiles/refresh',{method:'POST'});
     const j=await r.json();
-    link.innerHTML= j.refreshed ? `&#10003; refreshed (${j.count} fixtures)`
-      : (j.wait!==undefined ? `just refreshed — wait ${j.wait}s` : '&#8635; refresh it');
+    if(j.refreshed) $('results').innerHTML='<p class=ok>&#10003; Library refreshed — '+j.count+' fixtures. Search again.</p>';
+    else if(j.wait!==undefined) $('results').innerHTML='<p class=muted>Just refreshed — try again in '+j.wait+'s.</p>';
+    else $('results').innerHTML='<p class=muted>Refreshed.</p>';
     if($('q').value.trim().length>=2) search();
-    setTimeout(()=>{link.innerHTML='&#8635; refresh it';},6000);
-  }catch(_){link.innerHTML='&#8635; refresh it';}
+  }catch(_){$('results').innerHTML='<p class=muted>Refresh failed.</p>';}
 });
 
 async function pick(rid,mfg,name){
   picked={rid,mfg,name};
   $('modecard').classList.remove('hide');
   $('picked').textContent=mfg+' · '+name;
-  $('modes').innerHTML='<p class="muted">Reading DMX modes…</p>';
+  $('modes').innerHTML=progress('Reading DMX modes…');
   $('done').classList.add('hide');
   window.scrollTo({top:$('modecard').offsetTop-10,behavior:'smooth'});
   try{
     const r=await fetch('/api/profiles/modes?rid='+rid);
     const j=await r.json();
-    if(j.error){$('modes').innerHTML='<p class="muted">'+j.error+'</p>';return;}
+    if(j.error){$('modes').innerHTML='<p class=muted>'+j.error+'</p>';return;}
     $('modes').innerHTML=j.modes.map(m=>
-      `<div class="row" onclick='submitMode(${JSON.stringify(m.mode)})'>
-        <div><div class="name">${m.mode||'Mode'}</div>
-        <div class="mfg">${m.footprint} channels · ${m.type.replace('FIXTURE_TYPE_','')}</div></div>
-        <span class="chip">add &rsaquo;</span></div>`).join('');
-  }catch(e){$('modes').innerHTML='<p class="muted">Could not read modes.</p>';}
+      `<div class=row onclick='submitMode(${JSON.stringify(m.mode)})'>
+        <div><div class=name>${m.mode||'Mode'}</div>
+        <div class=mfg>${m.footprint} channels · ${m.type.replace('FIXTURE_TYPE_','')}</div></div>
+        <span class=chip>add &rsaquo;</span></div>`).join('');
+  }catch(e){$('modes').innerHTML='<p class=muted>Could not read modes.</p>';}
 }
 
 async function submitMode(mode){
-  $('modes').innerHTML='<p class="muted">Submitting…</p>';
+  $('modes').innerHTML=progress('Cooking '+picked.name+' ('+mode+')… downloading + parsing the GDTF.');
   try{
     const r=await fetch('/api/profiles/submit',{method:'POST',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify({rid:picked.rid,mode,submitter:$('who').value.trim()})});
     const j=await r.json();
-    if(j.error){$('modes').innerHTML='<p class="muted">'+j.error+'</p>';return;}
+    if(j.error){$('modes').innerHTML='<p class=muted>'+j.error+'</p>';return;}
     $('modecard').classList.add('hide');
     $('done').classList.remove('hide');
-    $('donemsg').textContent=`✓ ${picked.name} (${mode}) submitted for review — ${j.footprint} channels.`;
+    $('donemsg').innerHTML=`&#10003; ${picked.name} (${mode}) submitted for review — ${j.footprint} channels.`;
     window.scrollTo({top:$('done').offsetTop-10,behavior:'smooth'});
-  }catch(e){$('modes').innerHTML='<p class="muted">Submit failed.</p>';}
+  }catch(e){$('modes').innerHTML='<p class=muted>Submit failed.</p>';}
 }
 </script>
 </body>
