@@ -49,21 +49,35 @@ def _run(cmd, cwd):
 
 
 def _git_push():
-    """Commit sources/ + index.json and push using the token (never stored)."""
+    """Commit sources/ + index.json and push.
+
+    The token goes into a git credential STORE on the private data volume — it
+    never appears in a git argv (so it can't end up in an error message), and
+    git references the remote only as `origin`.
+    """
     repo = config.CATALOG_DIR
-    env = dict(os.environ)
     _run(["git", "config", "user.name", config.GIT_AUTHOR], repo)
     _run(["git", "config", "user.email", config.GIT_EMAIL], repo)
+
+    # Plain (token-free) remote URL + a credential helper file holding the PAT.
+    _run(["git", "remote", "set-url", "origin",
+          f"https://github.com/{config.GITHUB_REPO}.git"], repo)
+    cred = os.path.join(config.DATA_DIR, ".git-credentials")
+    with open(cred, "w") as f:
+        f.write(f"https://x-access-token:{config.GITHUB_TOKEN}@github.com\n")
+    os.chmod(cred, 0o600)
+    _run(["git", "config", "credential.helper", f"store --file={cred}"], repo)
+
     _run(["git", "add", "sources", "index.json"], repo)
-    # Nothing staged? then there's nothing to push.
-    diff = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=repo)
-    if diff.returncode == 0:
+    if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=repo).returncode == 0:
         return "nothing to commit"
     _run(["git", "commit", "-m", "Add fixture profile via broker"], repo)
-    remote = (f"https://x-access-token:{config.GITHUB_TOKEN}@github.com/"
-              f"{config.GITHUB_REPO}.git")
-    # Push to the token URL explicitly so the secret is never written to config.
-    _run(["git", "push", remote, "HEAD:main"], repo)
+
+    # The catalog may have moved since this checkout — sync before pushing so
+    # the broker's commit fast-forwards onto the latest main.
+    _run(["git", "fetch", "origin", "main"], repo)
+    _run(["git", "rebase", "origin/main"], repo)
+    _run(["git", "push", "origin", "HEAD:main"], repo)
     return "pushed"
 
 

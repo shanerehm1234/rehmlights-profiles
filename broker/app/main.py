@@ -27,7 +27,12 @@ STATIC = os.path.join(config.BROKER_DIR, "static")
 
 
 def _err(e):
-    return JSONResponse(status_code=400, content={"error": str(e)})
+    msg = str(e)
+    # Defence in depth: never echo the token back, even if some lower layer
+    # managed to include it in an exception string.
+    if config.GITHUB_TOKEN:
+        msg = msg.replace(config.GITHUB_TOKEN, "***")
+    return JSONResponse(status_code=400, content={"error": msg})
 
 
 # ---- public portal API ----------------------------------------------------
