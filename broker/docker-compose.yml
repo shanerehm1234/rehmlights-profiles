@@ -1,0 +1,14 @@
+# Local dev / reference compose. On Unraid you'd typically add this as a
+# container with the same mounts + env vars (see broker/README.md).
+services:
+  vibe-broker:
+    build: .
+    container_name: vibe-broker
+    restart: unless-stopped
+    volumes:
+      - ..:/catalog        # the whole rehmlights-profiles checkout (code + sources)
+      - ./data:/data       # pending queue + gdtf cache (survives restarts)
+    env_file:
+      - .env               # GDTF_SHARE_USER/PASS, GITHUB_TOKEN, ADMIN_TOKEN (gitignored)
+    ports:
+      - "8000:8000"        # behind nginx in prod; exposed here for local testing

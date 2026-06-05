@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Add a fixture to VIBE</title>
+<style>
+:root{--bg:#0a0e14;--panel:#131820;--panel-hi:#1b2330;--border:#2a3645;
+--text:#e6eaf0;--dim:#7a8794;--accent:#00d9ff;--accent-dim:#0080a0;--ok:#44cc66}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);
+font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:28px 18px 60px}
+h1{font-size:22px;letter-spacing:1px;margin:0 0 4px}
+.sub{color:var(--dim);margin:0 0 22px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:14px;
+padding:18px;margin-bottom:16px}
+input[type=text]{width:100%;height:46px;padding:0 14px;border-radius:10px;
+border:1px solid var(--border);background:var(--panel-hi);color:var(--text);font-size:16px}
+.muted{color:var(--dim)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px;
+padding:11px 12px;border:1px solid var(--border);border-radius:10px;margin:8px 0;
+background:var(--panel-hi);cursor:pointer}
+.row:hover{border-color:var(--accent)}
+.row .name{font-weight:600}
+.row .mfg{color:var(--dim);font-size:13px}
+.btn{background:linear-gradient(180deg,#1b2330,#131820);border:1px solid var(--border);
+color:var(--text);border-radius:10px;height:42px;padding:0 18px;font-weight:600;cursor:pointer}
+.btn.go{border-color:var(--accent-dim);color:var(--accent)}
+.chip{font-size:12px;color:var(--accent);border:1px solid var(--accent-dim);
+border-radius:20px;padding:2px 10px}
+.ok{color:var(--ok)}
+.hide{display:none}
+.step{font-size:12px;letter-spacing:2px;color:var(--dim);margin:0 0 10px;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Add a fixture to VIBE</h1>
+  <p class="sub">Search the GDTF library, pick your fixture &amp; DMX mode, and
+  we'll prep it for your Vibe. No clunky downloads.</p>
+
+  <div class="card">
+    <p class="step">1 &middot; Find your fixture</p>
+    <input id="q" type="text" placeholder="e.g. mini moving head, Chauvet, mover…" autocomplete="off">
+    <div id="results" style="margin-top:12px"></div>
+  </div>
+
+  <div id="modecard" class="card hide">
+    <p class="step">2 &middot; Pick the DMX mode</p>
+    <div id="picked" class="muted" style="margin-bottom:8px"></div>
+    <div id="modes"></div>
+    <div style="margin-top:12px">
+      <input id="who" type="text" placeholder="Your name or email (optional, for credit)">
+    </div>
+  </div>
+
+  <div id="done" class="card hide">
+    <p class="step">3 &middot; Submitted</p>
+    <p class="ok" id="donemsg"></p>
+    <p class="muted">A quick review keeps the library clean. Once approved it'll
+    appear in your Vibe under <b>SETUP &rarr; + FROM LIBRARY</b> (tap refresh).</p>
+  </div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+let timer, picked=null;
+
+function debounce(fn,ms){return(...a)=>{clearTimeout(timer);timer=setTimeout(()=>fn(...a),ms)}}
+
+async function search(){
+  const q=$('q').value.trim();
+  if(q.length<2){$('results').innerHTML='<p class="muted">Type at least 2 letters…</p>';return;}
+  $('results').innerHTML='<p class="muted">Searching…</p>';
+  try{
+    const r=await fetch('/api/profiles/search?q='+encodeURIComponent(q));
+    const j=await r.json();
+    if(j.error){$('results').innerHTML='<p class="muted">'+j.error+'</p>';return;}
+    if(!j.results.length){$('results').innerHTML='<p class="muted">No matches. Try the manufacturer name.</p>';return;}
+    $('results').innerHTML=j.results.map(f=>
+      `<div class="row" onclick='pick(${f.rid},${JSON.stringify(f.manufacturer)},${JSON.stringify(f.name)})'>
+        <div><div class="name">${f.name}</div><div class="mfg">${f.manufacturer}</div></div>
+        <span class="chip">choose &rsaquo;</span></div>`).join('');
+  }catch(e){$('results').innerHTML='<p class="muted">Search failed.</p>';}
+}
+$('q').addEventListener('input',debounce(search,350));
+
+async function pick(rid,mfg,name){
+  picked={rid,mfg,name};
+  $('modecard').classList.remove('hide');
+  $('picked').textContent=mfg+' · '+name;
+  $('modes').innerHTML='<p class="muted">Reading DMX modes…</p>';
+  $('done').classList.add('hide');
+  window.scrollTo({top:$('modecard').offsetTop-10,behavior:'smooth'});
+  try{
+    const r=await fetch('/api/profiles/modes?rid='+rid);
+    const j=await r.json();
+    if(j.error){$('modes').innerHTML='<p class="muted">'+j.error+'</p>';return;}
+    $('modes').innerHTML=j.modes.map(m=>
+      `<div class="row" onclick='submitMode(${JSON.stringify(m.mode)})'>
+        <div><div class="name">${m.mode||'Mode'}</div>
+        <div class="mfg">${m.footprint} channels · ${m.type.replace('FIXTURE_TYPE_','')}</div></div>
+        <span class="chip">add &rsaquo;</span></div>`).join('');
+  }catch(e){$('modes').innerHTML='<p class="muted">Could not read modes.</p>';}
+}
+
+async function submitMode(mode){
+  $('modes').innerHTML='<p class="muted">Submitting…</p>';
+  try{
+    const r=await fetch('/api/profiles/submit',{method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({rid:picked.rid,mode,submitter:$('who').value.trim()})});
+    const j=await r.json();
+    if(j.error){$('modes').innerHTML='<p class="muted">'+j.error+'</p>';return;}
+    $('modecard').classList.add('hide');
+    $('done').classList.remove('hide');
+    $('donemsg').textContent=`✓ ${picked.name} (${mode}) submitted for review — ${j.footprint} channels.`;
+    window.scrollTo({top:$('done').offsetTop-10,behavior:'smooth'});
+  }catch(e){$('modes').innerHTML='<p class="muted">Submit failed.</p>';}
+}
+</script>
+</body>
+</html>

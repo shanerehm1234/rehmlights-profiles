@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VIBE profile review</title>
+<style>
+:root{--bg:#0a0e14;--panel:#131820;--panel-hi:#1b2330;--border:#2a3645;
+--text:#e6eaf0;--dim:#7a8794;--accent:#00d9ff;--ok:#44cc66;--bad:#ff3b5c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);
+font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:28px 18px 60px}
+h1{font-size:20px;letter-spacing:1px}
+input{height:42px;padding:0 12px;border-radius:9px;border:1px solid var(--border);
+background:var(--panel-hi);color:var(--text)}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:12px;
+padding:14px 16px;margin:10px 0;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.name{font-weight:600}.mfg{color:var(--dim);font-size:13px}
+.btn{border:1px solid var(--border);background:var(--panel-hi);color:var(--text);
+border-radius:9px;height:38px;padding:0 14px;font-weight:600;cursor:pointer;margin-left:8px}
+.ok{border-color:#2a6;color:var(--ok)}.bad{border-color:#a23;color:var(--bad)}
+.muted{color:var(--dim)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>VIBE profile review</h1>
+  <p class="muted">Pending fixtures cooked from GDTF Share. Approve to publish to
+  the catalog (devices see it within minutes); reject to discard.</p>
+  <div style="margin:14px 0">
+    <input id="tok" type="password" placeholder="Admin token" style="width:260px">
+    <button class="btn" onclick="save()">Save &amp; load</button>
+  </div>
+  <div id="list"></div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+function tok(){return localStorage.getItem('vb_admin')||''}
+function save(){localStorage.setItem('vb_admin',$('tok').value.trim());load();}
+$('tok').value=tok();
+
+async function load(){
+  $('list').innerHTML='<p class="muted">Loading…</p>';
+  try{
+    const r=await fetch('/api/admin/pending',{headers:{'X-Admin-Token':tok()}});
+    if(r.status===403){$('list').innerHTML='<p class="muted">Bad token.</p>';return;}
+    const j=await r.json();
+    if(!j.pending.length){$('list').innerHTML='<p class="muted">Nothing pending. 🎉</p>';return;}
+    $('list').innerHTML=j.pending.map(p=>
+      `<div class="card"><div>
+        <div class="name">${p.manufacturer} · ${p.name}</div>
+        <div class="mfg">${p.mode||''} · ${p.footprint} ch · ${p.id}${p.submitter?(' · by '+p.submitter):''}</div>
+      </div><div style="white-space:nowrap">
+        <button class="btn ok" onclick='act("approve",${JSON.stringify(p.id)})'>Approve</button>
+        <button class="btn bad" onclick='act("reject",${JSON.stringify(p.id)})'>Reject</button>
+      </div></div>`).join('');
+  }catch(e){$('list').innerHTML='<p class="muted">Failed to load.</p>';}
+}
+
+async function act(which,id){
+  if(which==='reject'&&!confirm('Reject '+id+'?'))return;
+  try{
+    const r=await fetch('/api/admin/'+which,{method:'POST',
+      headers:{'Content-Type':'application/json','X-Admin-Token':tok()},
+      body:JSON.stringify({id})});
+    const j=await r.json();
+    if(j.error)alert(j.error);
+  }catch(e){alert('Action failed');}
+  load();
+}
+if(tok())load();
+</script>
+</body>
+</html>
