@@ -122,8 +122,10 @@ def search(query, limit=80):
     return out
 
 
-def _download_and_parse(rid):
-    path = _get_client().download_fixture(int(rid))
+def _download_and_parse(rid, force=False):
+    # force=True re-downloads even if cached — fixtures get updated in place on
+    # GDTF Share, and a submit must cook the LATEST file, not a stale cache.
+    path = _get_client().download_fixture(int(rid), force=force)
     if not path or not os.path.exists(path):
         raise RuntimeError("download failed")
     profiles = gdtf_cooker.GdtfParser().parse(path)
@@ -155,7 +157,7 @@ def modes(rid):
 
 def cook_to_pending(rid, mode_name, submitter=""):
     """Cook one mode of a fixture revision into PENDING_DIR. Returns metadata."""
-    profiles = _download_and_parse(rid)
+    profiles = _download_and_parse(rid, force=True)   # always cook the latest
     chosen = next((p for p in profiles if p.mode_name == mode_name), None)
     if chosen is None:
         raise RuntimeError(f"mode '{mode_name}' not found")
