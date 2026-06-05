@@ -43,6 +43,10 @@ border-radius:20px;padding:2px 10px}
   <div class="card">
     <p class="step">1 &middot; Find your fixture</p>
     <input id="q" type="text" placeholder="e.g. mini moving head, Chauvet, mover…" autocomplete="off">
+    <div class="muted" style="margin-top:8px;font-size:13px">
+      Just uploaded it to GDTF Share? The list is cached &mdash;
+      <a id="refresh" href="#" style="color:var(--accent)">&#8635; refresh it</a>.
+    </div>
     <div id="results" style="margin-top:12px"></div>
   </div>
 
@@ -85,6 +89,19 @@ async function search(){
   }catch(e){$('results').innerHTML='<p class="muted">Search failed.</p>';}
 }
 $('q').addEventListener('input',debounce(search,350));
+
+$('refresh').addEventListener('click',async(e)=>{
+  e.preventDefault();
+  const link=$('refresh'); link.textContent='⟳ refreshing GDTF list…';
+  try{
+    const r=await fetch('/api/profiles/refresh',{method:'POST'});
+    const j=await r.json();
+    link.innerHTML= j.refreshed ? `&#10003; refreshed (${j.count} fixtures)`
+      : (j.wait!==undefined ? `just refreshed — wait ${j.wait}s` : '&#8635; refresh it');
+    if($('q').value.trim().length>=2) search();
+    setTimeout(()=>{link.innerHTML='&#8635; refresh it';},6000);
+  }catch(_){link.innerHTML='&#8635; refresh it';}
+});
 
 async function pick(rid,mfg,name){
   picked={rid,mfg,name};

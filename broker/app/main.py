@@ -44,6 +44,15 @@ def api_search(q: str = ""):
         return _err(e)
 
 
+@app.post("/api/profiles/refresh")
+def api_refresh():
+    """Force-refresh the GDTF Share list (for just-uploaded fixtures)."""
+    try:
+        return cooker.force_refresh()
+    except Exception as e:
+        return _err(e)
+
+
 @app.get("/api/profiles/modes")
 def api_modes(rid: int):
     try:

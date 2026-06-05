@@ -80,6 +80,22 @@ def get_list(force=False):
     return _list_cache or []
 
 
+_last_force = 0.0
+
+
+def force_refresh(min_interval=60):
+    """Force a re-fetch of the GDTF Share list (bypasses the 24h cache), so a
+    just-uploaded fixture shows up. Rate-limited so it can't be hammered."""
+    global _last_force
+    now = time.time()
+    if now - _last_force < min_interval:
+        return {"refreshed": False, "count": len(get_list()),
+                "wait": int(min_interval - (now - _last_force))}
+    _last_force = now
+    lst = get_list(force=True)
+    return {"refreshed": True, "count": len(lst)}
+
+
 def _fixture_name(f):
     return f.get("fixture", f.get("name", "")) or ""
 
