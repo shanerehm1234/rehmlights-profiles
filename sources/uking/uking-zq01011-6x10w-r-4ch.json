@@ -1,0 +1,32 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "uking/uking-zq01011-6x10w-r-4ch",
+  "name": "UKING ZQ01011 6x10W R",
+  "manufacturer": "UKING",
+  "mode": "4CH",
+  "fixture_type": "FIXTURE_TYPE_RGBX",
+  "footprint": 4,
+  "channels": [
+    {
+      "role": "RED",
+      "offset": 1
+    },
+    {
+      "role": "GREEN",
+      "offset": 2
+    },
+    {
+      "role": "BLUE",
+      "offset": 3
+    },
+    {
+      "role": "WHITE",
+      "offset": 4
+    }
+  ],
+  "meta": {
+    "source": "gdtf-share",
+    "gdtf_rid": 145684,
+    "submitted_by": "email test"
+  }
+}
