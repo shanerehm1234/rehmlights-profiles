@@ -253,6 +253,11 @@ class VectrProfile:
     color2Values: list = field(default_factory=list)
     color2Names: list = field(default_factory=list)
 
+    # True DMX footprint of the mode = highest byte offset used by ANY channel,
+    # including ones we don't map to a role (e.g. Control/macro channels). The
+    # fixture still occupies those slots, so the patch must reserve them.
+    footprint: int = 0
+
     # --- Tier 3: Metadata (not in C struct yet, for future use) ---
     pan_degrees: float = 0.0
     tilt_degrees: float = 0.0
@@ -421,6 +426,11 @@ class GdtfParser:
 
         if coarse == 0:
             return  # Virtual channel, skip
+
+        # Track the true mode footprint across EVERY physical channel, even ones
+        # we don't map (Control/macro/function) — the fixture still occupies the
+        # slot, so patch addressing must account for it.
+        profile.footprint = max(profile.footprint, coarse, fine)
 
         for logical_ch in dmx_ch_el.findall('LogicalChannel'):
             attr = logical_ch.get('Attribute', '')
@@ -956,8 +966,11 @@ class JsonWriter:
                 entry["default"] = p.shutter_open_value or 0
             channels.append(entry)
 
-        # Compute footprint — highest DMX offset referenced by any channel.
-        footprint = max((c["offset"] for c in channels), default=0)
+        # Footprint = the mode's TRUE channel count (highest offset of any
+        # physical channel, mapped or not), so unmapped trailing channels
+        # (Control/macro) are still reserved in the patch. Fall back to the
+        # max mapped offset only if the parser didn't record one.
+        footprint = max(p.footprint, max((c["offset"] for c in channels), default=0))
 
         out = {
             "schema":       self.SCHEMA_VERSION,
