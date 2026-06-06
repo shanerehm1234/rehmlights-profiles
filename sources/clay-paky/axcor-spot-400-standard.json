@@ -1,0 +1,225 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "clay-paky/axcor-spot-400-standard",
+  "name": "Axcor Spot 400",
+  "manufacturer": "Clay Paky",
+  "mode": "Standard",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 28,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 23,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 24
+    },
+    {
+      "role": "TILT",
+      "offset": 25,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 26
+    },
+    {
+      "role": "DIMMER",
+      "offset": 7,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 8
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 6,
+      "default": 252
+    },
+    {
+      "role": "CTO",
+      "offset": 4
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 5
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 10
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 13
+    },
+    {
+      "role": "FOCUS",
+      "offset": 21
+    },
+    {
+      "role": "FROST",
+      "offset": 20
+    },
+    {
+      "role": "ZOOM",
+      "offset": 22
+    },
+    {
+      "role": "IRIS",
+      "offset": 9
+    },
+    {
+      "role": "PRISM",
+      "offset": 16
+    },
+    {
+      "role": "ANIMATION",
+      "offset": 18
+    },
+    {
+      "role": "RESET",
+      "offset": 27
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 10,
+      "name": "White-Red"
+    },
+    {
+      "value": 19,
+      "name": "Dark Red"
+    },
+    {
+      "value": 28,
+      "name": "Red-Blue"
+    },
+    {
+      "value": 37,
+      "name": "Brilliant Blue"
+    },
+    {
+      "value": 46,
+      "name": "Blue-Green"
+    },
+    {
+      "value": 55,
+      "name": "Green"
+    },
+    {
+      "value": 64,
+      "name": "Green-HMG"
+    },
+    {
+      "value": 73,
+      "name": "HM Green"
+    },
+    {
+      "value": 82,
+      "name": "HMG-Orange"
+    },
+    {
+      "value": 91,
+      "name": "Light Orange"
+    },
+    {
+      "value": 100,
+      "name": "Orange-Blue"
+    },
+    {
+      "value": 109,
+      "name": "Navy Blue"
+    },
+    {
+      "value": 118,
+      "name": "Blue-White"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open 1"
+    },
+    {
+      "value": 9,
+      "name": "Small Dots"
+    },
+    {
+      "value": 18,
+      "name": "Plumens"
+    },
+    {
+      "value": 27,
+      "name": "Clouds V2"
+    },
+    {
+      "value": 36,
+      "name": "Half Circle"
+    },
+    {
+      "value": 45,
+      "name": "Oak Tree"
+    },
+    {
+      "value": 54,
+      "name": "Water Lines"
+    },
+    {
+      "value": 63,
+      "name": "Broken Circle"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 9,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 18,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 27,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 36,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 45,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 54,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 63,
+      "name": "Gobo 7"
+    }
+  ],
+  "values": {
+    "shutter_open": 252,
+    "strobe_slow": 4,
+    "strobe_fast": 251
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0,
+    "source": "gdtf-share",
+    "gdtf_rid": 96152,
+    "submitted_by": "shane@rehmlights.com"
+  }
+}

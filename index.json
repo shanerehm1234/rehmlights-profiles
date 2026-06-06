@@ -1,7 +1,7 @@
 {
   "schema": "rehmlights-index/1",
-  "generated": "2026-06-06T00:22:30Z",
-  "count": 239,
+  "generated": "2026-06-06T00:28:35Z",
+  "count": 240,
   "fixtures": [
     {
       "id": "adj/comscan-led-default",
@@ -776,6 +776,15 @@
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 37,
       "url": "/sources/clay-paky/axcor-profile-600-st-standard.json"
+    },
+    {
+      "id": "clay-paky/axcor-spot-400-standard",
+      "name": "Axcor Spot 400",
+      "manufacturer": "Clay Paky",
+      "mode": "Standard",
+      "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+      "footprint": 28,
+      "url": "/sources/clay-paky/axcor-spot-400-standard.json"
     },
     {
       "id": "clay-paky/scenius-profile-standard",
