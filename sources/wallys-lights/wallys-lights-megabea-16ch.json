@@ -196,6 +196,9 @@
   },
   "meta": {
     "pan_degrees": 540.0,
-    "tilt_degrees": 210.0
+    "tilt_degrees": 210.0,
+    "source": "gdtf-share",
+    "gdtf_rid": 129045,
+    "submitted_by": "shanerehm1234@gmail.com"
   }
 }
