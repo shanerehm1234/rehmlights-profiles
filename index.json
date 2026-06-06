@@ -1,7 +1,7 @@
 {
   "schema": "rehmlights-index/1",
-  "generated": "2026-06-05T23:21:46Z",
-  "count": 238,
+  "generated": "2026-06-06T00:22:30Z",
+  "count": 239,
   "fixtures": [
     {
       "id": "adj/comscan-led-default",
@@ -317,6 +317,15 @@
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 13,
       "url": "/sources/chauvet-dj/intimidator-spot-260x-14-channel.json"
+    },
+    {
+      "id": "chauvet-dj/intimidator-spot-350-14-ch",
+      "name": "Intimidator Spot 350",
+      "manufacturer": "Chauvet DJ",
+      "mode": "14 ch",
+      "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+      "footprint": 14,
+      "url": "/sources/chauvet-dj/intimidator-spot-350-14-ch.json"
     },
     {
       "id": "chauvet-dj/intimidator-spot-360x-14ch-mode",
