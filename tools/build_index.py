@@ -48,7 +48,6 @@ def main():
             "name": obj.get("name", ""),
             "manufacturer": obj.get("manufacturer", ""),
             "mode": obj.get("mode", ""),
-            "fixture_type": obj.get("fixture_type", ""),
             "footprint": footprint,
             "url": url,
         })
@@ -66,7 +65,7 @@ def main():
     }
 
     with open(INDEX_PATH, "w") as f:
-        json.dump(index, f, indent=2, ensure_ascii=False)
+        json.dump(index, f, separators=(",", ":"), ensure_ascii=False)
         f.write("\n")
 
     print(f"Wrote {INDEX_PATH}  ({len(entries)} fixtures)")
