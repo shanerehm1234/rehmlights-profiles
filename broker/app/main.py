@@ -102,6 +102,7 @@ def api_review(action: str, id: str, sig: str):
         if action == "approve":
             r = publish.approve(id)
             pub = r.get("publish", "")
+            mailer.notify_approved(r, r.get("submitter", ""))
             return HTMLResponse(mailer.result_page("Approved & published",
                 f"{id} is now in the catalog. Devices will see it on the next library refresh.",
                 ok=True))
@@ -135,7 +136,9 @@ def api_approve(body: dict = Body(...), x_admin_token: str = Header("")):
     if not pid:
         raise HTTPException(400, "id required")
     try:
-        return publish.approve(pid)
+        r = publish.approve(pid)
+        mailer.notify_approved(r, r.get("submitter", ""))
+        return r
     except Exception as e:
         return _err(e)
 

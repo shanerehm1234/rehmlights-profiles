@@ -118,4 +118,10 @@ def approve(pid):
         result = _git_commit_push(config.CATALOG_DIR)
 
     os.remove(path)                    # clear from the pending queue
-    return {"id": pid, "rel": rel, "publish": result}
+    prof = d.get("profile", {})
+    return {"id": pid, "rel": rel, "publish": result,
+            "submitter": d.get("submitter", ""),
+            "manufacturer": prof.get("manufacturer", ""),
+            "name": prof.get("name", ""),
+            "mode": prof.get("mode", ""),
+            "footprint": prof.get("footprint", 0)}
