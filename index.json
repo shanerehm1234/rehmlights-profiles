@@ -1,7 +1,7 @@
 {
   "schema": "rehmlights-index/1",
-  "generated": "2026-06-06T00:58:31Z",
-  "count": 240,
+  "generated": "2026-06-06T06:15:52Z",
+  "count": 241,
   "fixtures": [
     {
       "id": "adj/comscan-led-default",
@@ -101,6 +101,15 @@
       "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
       "footprint": 23,
       "url": "/sources/adj/focus-wash-ext-cmy.json"
+    },
+    {
+      "id": "adj/hydro-spot-1-17-ch",
+      "name": "Hydro Spot 1",
+      "manufacturer": "ADJ",
+      "mode": "17 CH ",
+      "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+      "footprint": 17,
+      "url": "/sources/adj/hydro-spot-1-17-ch.json"
     },
     {
       "id": "adj/inno-color-beam-z7-14ch",
