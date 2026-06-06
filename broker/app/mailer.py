@@ -136,6 +136,44 @@ margin:0 auto;color:#e6eaf0;background:#0a0e14;padding:24px;border-radius:14px">
     threading.Thread(target=work, daemon=True).start()
 
 
+def notify_rejected(info, submitter):
+    """If the submitter left an email, gently let them know their request wasn't
+    added. Best-effort background thread; only sends to a real-looking address."""
+    if not config.SMTP_HOST or not _looks_like_email(submitter):
+        return
+
+    def work():
+        try:
+            e = html.escape
+            name = info.get("name", "")
+            mfg = info.get("manufacturer", "")
+            mode = info.get("mode", "")
+            body = f"""\
+<div style="font:15px system-ui,Segoe UI,Roboto,sans-serif;max-width:520px;
+margin:0 auto;color:#e6eaf0;background:#0a0e14;padding:24px;border-radius:14px">
+  <h2 style="color:#00ccaa;margin:0 0 4px">About your VIBE fixture request</h2>
+  <p style="color:#7a8794;margin:0 0 18px">Thanks for the submission — we took a look.</p>
+  <div style="background:#131820;border:1px solid #2a3645;border-radius:12px;padding:16px;margin-bottom:18px">
+    <div style="font-size:18px;font-weight:600">{e(mfg)} &middot; {e(name)}</div>
+    {f'<div style="color:#7a8794;margin-top:4px">{e(mode)}</div>' if mode else ''}
+  </div>
+  <p style="color:#cfd6df;margin:0 0 12px;line-height:1.6">
+    This one wasn't added to the library this time — usually that's a GDTF that
+    needs a fix (wrong channel count, missing functions) or a duplicate.</p>
+  <p style="color:#cfd6df;margin:0 0 18px;line-height:1.6">
+    Feel free to update the profile on GDTF Share and request it again, or reply
+    to this email if you think it should be included and we'll take another look.</p>
+  <p style="color:#4a5564;font-size:12px;margin-top:20px">
+    You're getting this because you left your email when requesting this fixture at
+    rehmlights.com. — REHMLIGHTS</p>
+</div>"""
+            _send(f"VIBE: about your {mfg} {name} request", body, to=submitter.strip())
+        except Exception:
+            pass
+
+    threading.Thread(target=work, daemon=True).start()
+
+
 def result_page(title, msg, ok=True):
     color = "#44cc66" if ok else "#ff3b5c"
     return f"""<!doctype html><meta name=viewport content="width=device-width,initial-scale=1">

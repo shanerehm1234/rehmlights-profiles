@@ -107,7 +107,9 @@ def api_review(action: str, id: str, sig: str):
                 f"{id} is now in the catalog. Devices will see it on the next library refresh.",
                 ok=True))
         else:
-            publish.reject(id)
+            r = publish.reject(id)
+            if r:
+                mailer.notify_rejected(r, r.get("submitter", ""))
             return HTMLResponse(mailer.result_page("Rejected", f"{id} was discarded.", ok=True))
     except Exception as e:
         msg = str(e)
@@ -149,7 +151,10 @@ def api_reject(body: dict = Body(...), x_admin_token: str = Header("")):
     pid = body.get("id")
     if not pid:
         raise HTTPException(400, "id required")
-    return {"rejected": publish.reject(pid)}
+    r = publish.reject(pid)
+    if r:
+        mailer.notify_rejected(r, r.get("submitter", ""))
+    return {"rejected": bool(r)}
 
 
 @app.get("/healthz")

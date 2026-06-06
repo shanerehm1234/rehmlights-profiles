@@ -372,6 +372,19 @@ class GdtfParser:
         stripped = mfg.strip()
         return self.MANUFACTURER_ALIASES.get(stripped, stripped)
 
+    def _strip_mfg_prefix(self, name: str, *mfgs: str) -> str:
+        """Many GDTFs put the manufacturer in the fixture's LongName too, so the
+        UI shows it twice ("Wallys Lights - Wallys Lights MegaBeam") and the
+        redundant copy eats the device's fixed-size name field, truncating the
+        real model. Drop a leading manufacturer (the UI shows mfg separately)."""
+        for mfg in mfgs:
+            mfg = (mfg or '').strip()
+            if mfg and name.lower().startswith(mfg.lower()):
+                trimmed = name[len(mfg):].lstrip(' -_:/|').strip()
+                if trimmed:                      # never strip down to nothing
+                    return trimmed
+        return name
+
     def parse(self, filepath: str) -> list:
         """Parse a .gdtf file and return a list of VectrProfile (one per DMX mode)."""
         tree = self._extract_xml(filepath)
@@ -384,7 +397,9 @@ class GdtfParser:
 
         fixture_name = ft.get('LongName', '') or ft.get('Name', '') or 'Unknown'
         fixture_name = fixture_name.strip()
-        manufacturer = self._normalize_manufacturer(ft.get('Manufacturer', 'Unknown'))
+        raw_mfg = ft.get('Manufacturer', 'Unknown')
+        manufacturer = self._normalize_manufacturer(raw_mfg)
+        fixture_name = self._strip_mfg_prefix(fixture_name, manufacturer, raw_mfg)
 
         profiles = []
         for dmx_mode in root.findall('.//DMXMode'):

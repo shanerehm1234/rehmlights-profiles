@@ -36,11 +36,24 @@ def list_pending():
 
 
 def reject(pid):
+    """Discard a pending submission. Returns its submitter + fixture info (read
+    before deletion) so the caller can notify the requester, or None if missing."""
     path = _pending_path(pid)
-    if os.path.exists(path):
-        os.remove(path)
-        return True
-    return False
+    if not os.path.exists(path):
+        return None
+    info = None
+    try:
+        with open(path) as f:
+            d = json.load(f)
+        prof = d.get("profile", {})
+        info = {"id": pid, "submitter": d.get("submitter", ""),
+                "manufacturer": prof.get("manufacturer", ""),
+                "name": prof.get("name", ""), "mode": prof.get("mode", ""),
+                "footprint": prof.get("footprint", 0)}
+    except Exception:
+        info = {"id": pid, "submitter": ""}
+    os.remove(path)
+    return info
 
 
 def _run(cmd, cwd):
