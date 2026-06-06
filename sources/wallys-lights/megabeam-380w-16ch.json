@@ -1,0 +1,204 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "wallys-lights/megabeam-380w-16ch",
+  "name": "MegaBeam 380W",
+  "manufacturer": "Wallys Lights",
+  "mode": "16CH",
+  "fixture_type": "FIXTURE_TYPE_HID",
+  "footprint": 16,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 10,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 11
+    },
+    {
+      "role": "TILT",
+      "offset": 12,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 13
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 14
+    },
+    {
+      "role": "DIMMER",
+      "offset": 2,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 3,
+      "default": 0
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 1
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 4
+    },
+    {
+      "role": "FOCUS",
+      "offset": 9
+    },
+    {
+      "role": "FROST",
+      "offset": 15
+    },
+    {
+      "role": "PRISM",
+      "offset": 5
+    },
+    {
+      "role": "PRISM_ROT",
+      "offset": 6
+    },
+    {
+      "role": "LAMP",
+      "offset": 16
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "White"
+    },
+    {
+      "value": 5,
+      "name": "Red"
+    },
+    {
+      "value": 10,
+      "name": "Green"
+    },
+    {
+      "value": 15,
+      "name": "Light Blue"
+    },
+    {
+      "value": 20,
+      "name": "Yellow"
+    },
+    {
+      "value": 25,
+      "name": "Orange"
+    },
+    {
+      "value": 30,
+      "name": "Fuchsia"
+    },
+    {
+      "value": 35,
+      "name": "Light Green"
+    },
+    {
+      "value": 40,
+      "name": "Blue"
+    },
+    {
+      "value": 45,
+      "name": "Light Yellow"
+    },
+    {
+      "value": 50,
+      "name": "Eggshell"
+    },
+    {
+      "value": 55,
+      "name": "Purple"
+    },
+    {
+      "value": 60,
+      "name": "Orange/Red"
+    },
+    {
+      "value": 65,
+      "name": "Clear White"
+    },
+    {
+      "value": 135,
+      "name": "White"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 10,
+      "name": "Pink Flower"
+    },
+    {
+      "value": 15,
+      "name": "Blue Snowflake"
+    },
+    {
+      "value": 22,
+      "name": "Red Saw Blade"
+    },
+    {
+      "value": 29,
+      "name": "Flower"
+    },
+    {
+      "value": 36,
+      "name": "Universe"
+    },
+    {
+      "value": 43,
+      "name": "Lifesaver"
+    },
+    {
+      "value": 50,
+      "name": "Bubbles"
+    },
+    {
+      "value": 57,
+      "name": "Lines"
+    },
+    {
+      "value": 64,
+      "name": "Tri Line"
+    },
+    {
+      "value": 71,
+      "name": "Quad Line"
+    },
+    {
+      "value": 78,
+      "name": "Spot Large"
+    },
+    {
+      "value": 87,
+      "name": "Spot Medium"
+    },
+    {
+      "value": 94,
+      "name": "Spot Small"
+    }
+  ],
+  "values": {
+    "strobe_slow": 1,
+    "strobe_fast": 255,
+    "lamp_on": 200,
+    "lamp_off": 100
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 210.0,
+    "source": "gdtf-share",
+    "gdtf_rid": 129045,
+    "submitted_by": "shanerehm1234@gmail.com"
+  }
+}

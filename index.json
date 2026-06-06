@@ -1,7 +1,7 @@
 {
   "schema": "rehmlights-index/1",
-  "generated": "2026-06-06T00:49:13Z",
-  "count": 240,
+  "generated": "2026-06-06T00:56:44Z",
+  "count": 241,
   "fixtures": [
     {
       "id": "adj/comscan-led-default",
@@ -2126,6 +2126,15 @@
       "fixture_type": "FIXTURE_TYPE_RGBX",
       "footprint": 4,
       "url": "/sources/vari-lite/vl800-eventpar-rgba-8-bit-color-mode.json"
+    },
+    {
+      "id": "wallys-lights/megabeam-380w-16ch",
+      "name": "MegaBeam 380W",
+      "manufacturer": "Wallys Lights",
+      "mode": "16CH",
+      "fixture_type": "FIXTURE_TYPE_HID",
+      "footprint": 16,
+      "url": "/sources/wallys-lights/megabeam-380w-16ch.json"
     },
     {
       "id": "wallys-lights/wallys-lights-megabea-16ch",
