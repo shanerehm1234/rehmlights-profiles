@@ -130,7 +130,7 @@ def search(query, limit=80):
     return out
 
 
-def _download_and_parse(rid, force=False):
+def _download_file(rid, force=False):
     # force=True re-downloads even if cached — fixtures get updated in place on
     # GDTF Share, and a submit must cook the LATEST file, not a stale cache.
     # Retry once with a fresh login: GDTF Share sessions expire, so a long-lived
@@ -141,10 +141,7 @@ def _download_and_parse(rid, force=False):
             path = _get_client().download_fixture(int(rid), force=force)
             if not path or not os.path.exists(path):
                 raise RuntimeError("download failed")
-            profiles = gdtf_cooker.GdtfParser().parse(path)
-            if not profiles:
-                raise RuntimeError("no DMX modes found in this GDTF")
-            return profiles
+            return path
         except Exception as e:
             last = e
             if attempt == 0:
@@ -152,6 +149,47 @@ def _download_and_parse(rid, force=False):
                 continue
             raise
     raise last  # unreachable
+
+
+def _download_and_parse(rid, force=False):
+    path = _download_file(rid, force=force)
+    profiles = gdtf_cooker.GdtfParser().parse(path)
+    if not profiles:
+        raise RuntimeError("no DMX modes found in this GDTF")
+    return profiles
+
+
+def thumbnail(rid):
+    """Extract the fixture's preview image from its GDTF (a ZIP). Returns
+    (bytes, content_type) or (None, None). GDTF stores a thumbnail named by the
+    FixtureType@Thumbnail attribute (no extension) as a .png/.svg in the ZIP."""
+    import zipfile, xml.etree.ElementTree as ET
+    path = _download_file(int(rid), force=False)
+    with zipfile.ZipFile(path) as z:
+        names = z.namelist()
+        thumb = ""
+        try:
+            with z.open("description.xml") as f:
+                root = ET.parse(f).getroot()
+            ft = root.find("FixtureType")
+            if ft is None:
+                ft = root
+            thumb = (ft.get("Thumbnail") or "").strip()
+        except Exception:
+            pass
+        candidates = []
+        if thumb:
+            candidates += [thumb + ".png", thumb + ".svg", thumb]
+        # Fallback: first PNG/SVG anywhere in the archive.
+        candidates += [n for n in names if n.lower().endswith(".png")]
+        candidates += [n for n in names if n.lower().endswith(".svg")]
+        for c in candidates:
+            if c in names:
+                data = z.read(c)
+                if data:
+                    ctype = "image/svg+xml" if c.lower().endswith(".svg") else "image/png"
+                    return data, ctype
+    return None, None
 
 
 def modes(rid):

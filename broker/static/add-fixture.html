@@ -52,6 +52,15 @@ border-top-color:var(--vibe-primary);border-radius:50%;animation:sp .7s linear i
 .bar>div{height:100%;width:30%;border-radius:3px;background:var(--vibe-grad);
 animation:slide 1.1s ease-in-out infinite}
 @keyframes slide{0%{margin-left:-30%}100%{margin-left:100%}}
+/* confirm block (box 2) */
+.fixinfo{display:flex;gap:16px;align-items:flex-start}
+.thumb{width:96px;height:96px;flex:0 0 96px;object-fit:contain;border-radius:12px;
+background:#f2f2f2;border:1px solid var(--border);padding:6px}
+.fixinfo .ftitle{font-size:19px;font-weight:700;line-height:1.2}
+.fixinfo .fmfg{color:var(--dim);font-size:14px;margin-top:3px}
+.howto{color:var(--dim);font-size:13.5px;line-height:1.55;margin:12px 0 0}
+.howto b{color:var(--text);font-weight:600}
+.field-label{font-size:12px;color:var(--dim);margin:0 0 6px;font-weight:600}
 </style>
 </head>
 <body>
@@ -77,12 +86,25 @@ animation:slide 1.1s ease-in-out infinite}
   </div>
 
   <div id="modecard" class="card hide">
-    <p class="step">2 · Pick the DMX mode</p>
-    <div id="picked" class="muted" style="margin-bottom:10px"></div>
-    <div id="modes"></div>
-    <div style="margin-top:12px">
-      <input id="who" type="text" placeholder="Your name or email (optional, for credit)">
+    <p class="step">2 · Confirm &amp; request</p>
+    <div class="fixinfo">
+      <img id="thumb" class="thumb hide" alt="">
+      <div>
+        <div id="ftitle" class="ftitle"></div>
+        <div id="fmfg" class="fmfg"></div>
+        <p class="howto">Make sure this is your light, then pick the <b>DMX mode</b> that
+        matches how it's set (check the fixture's menu or DIP switches — the channel
+        count must line up). We'll fetch the GDTF, convert it into a VIBE profile, and
+        send it for a <b>quick review</b>. Once approved it appears on your VIBE under
+        <b>SETUP &rarr; + FROM LIBRARY</b> — just tap refresh.</p>
+      </div>
     </div>
+    <div style="margin:16px 0 4px">
+      <p class="field-label">Your name or email <span style="font-weight:400">(optional — for credit &amp; to be notified when it's approved)</span></p>
+      <input id="who" type="text" placeholder="you@example.com">
+    </div>
+    <p class="step" style="margin:18px 0 10px">Pick the DMX mode</p>
+    <div id="modes"></div>
   </div>
 
   <div id="done" class="card hide">
@@ -133,7 +155,13 @@ $('refresh').addEventListener('click',async(e)=>{
 async function pick(rid,mfg,name){
   picked={rid,mfg,name};
   $('modecard').classList.remove('hide');
-  $('picked').textContent=mfg+' · '+name;
+  $('ftitle').textContent=name;
+  $('fmfg').textContent=mfg;
+  const t=$('thumb');                      // show fixture photo if the GDTF has one
+  t.classList.add('hide');
+  t.onload=()=>t.classList.remove('hide');
+  t.onerror=()=>t.classList.add('hide');
+  t.src='/api/profiles/thumb?rid='+rid;
   $('modes').innerHTML=progress('Reading DMX modes…');
   $('done').classList.add('hide');
   window.scrollTo({top:$('modecard').offsetTop-10,behavior:'smooth'});

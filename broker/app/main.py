@@ -16,7 +16,7 @@ Owner only (X-Admin-Token):
 import os
 
 from fastapi import FastAPI, HTTPException, Header, Body
-from fastapi.responses import JSONResponse, FileResponse, HTMLResponse
+from fastapi.responses import JSONResponse, FileResponse, HTMLResponse, Response
 from fastapi.staticfiles import StaticFiles
 
 from . import config, cooker, publish, mailer
@@ -59,6 +59,20 @@ def api_modes(rid: int):
         return cooker.modes(rid)
     except Exception as e:
         return _err(e)
+
+
+@app.get("/api/profiles/thumb")
+def api_thumb(rid: int):
+    """Fixture preview image pulled straight out of the GDTF archive. 404 when
+    the file carries no thumbnail (the page just hides the <img>)."""
+    try:
+        data, ctype = cooker.thumbnail(rid)
+    except Exception:
+        data = None
+    if not data:
+        return Response(status_code=404)
+    return Response(content=data, media_type=ctype,
+                    headers={"Cache-Control": "public, max-age=86400"})
 
 
 @app.post("/api/profiles/submit")
