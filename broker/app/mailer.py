@@ -46,6 +46,11 @@ def _send(subject, body_html, to=None):
     msg["Subject"] = subject
     msg["From"] = config.MAIL_FROM or config.SMTP_USER
     msg["To"] = to or config.MAIL_TO
+    # The From address (e.g. flow@rehmlights.com) is send-only, so point replies
+    # at a monitored inbox — otherwise "reply if you disagree" goes nowhere.
+    reply_to = config.MAIL_REPLYTO or config.MAIL_TO
+    if reply_to:
+        msg["Reply-To"] = reply_to
     msg.set_content("This message requires an HTML-capable email client.")
     msg.add_alternative(body_html, subtype="html")
     ctx = ssl.create_default_context()
@@ -78,7 +83,7 @@ def notify_submission(info, submitter):
             body = f"""\
 <div style="font:15px system-ui,Segoe UI,Roboto,sans-serif;max-width:520px;
 margin:0 auto;color:#e6eaf0;background:#0a0e14;padding:24px;border-radius:14px">
-  <h2 style="color:#00d9ff;margin:0 0 4px">New VIBE fixture submitted</h2>
+  <h2 style="color:#00d9ff;margin:0 0 4px">New fixture submitted (Flow Library)</h2>
   <p style="color:#7a8794;margin:0 0 18px">Review it for the catalog.</p>
   <div style="background:#131820;border:1px solid #2a3645;border-radius:12px;padding:16px;margin-bottom:18px">
     <div style="font-size:18px;font-weight:600">{e(info.get('manufacturer',''))} &middot; {e(info.get('name',''))}</div>
@@ -92,7 +97,7 @@ margin:0 auto;color:#e6eaf0;background:#0a0e14;padding:24px;border-radius:14px">
    color:#ff3b5c;text-decoration:none;padding:12px 22px;border-radius:10px;font-weight:600">✗ Reject</a>
   <p style="color:#4a5564;font-size:12px;margin-top:20px">Links are single-purpose and signed; safe to click from any device.</p>
 </div>"""
-            _send(f"VIBE: {info.get('manufacturer','')} {info.get('name','')} submitted", body)
+            _send(f"Flow Library: {info.get('manufacturer','')} {info.get('name','')} submitted", body)
         except Exception:
             pass
 
@@ -101,7 +106,7 @@ margin:0 auto;color:#e6eaf0;background:#0a0e14;padding:24px;border-radius:14px">
 
 def notify_approved(info, submitter):
     """If the submitter left an email, let them know their fixture is now live in
-    the VIBE library. Best-effort, in a background thread — never blocks approval."""
+    the Flow Library. Best-effort, in a background thread — never blocks approval."""
     if not config.SMTP_HOST or not _looks_like_email(submitter):
         return
 
@@ -115,13 +120,13 @@ def notify_approved(info, submitter):
             body = f"""\
 <div style="font:15px system-ui,Segoe UI,Roboto,sans-serif;max-width:520px;
 margin:0 auto;color:#e6eaf0;background:#0a0e14;padding:24px;border-radius:14px">
-  <h2 style="color:#00ccaa;margin:0 0 4px">Your fixture is in the VIBE library 🎉</h2>
+  <h2 style="color:#00ccaa;margin:0 0 4px">Your fixture is in the Flow Library 🎉</h2>
   <p style="color:#7a8794;margin:0 0 18px">Thanks for the submission — it's been approved.</p>
   <div style="background:#131820;border:1px solid #2a3645;border-radius:12px;padding:16px;margin-bottom:18px">
     <div style="font-size:18px;font-weight:600">{e(mfg)} &middot; {e(name)}</div>
     <div style="color:#7a8794;margin-top:4px">{e(mode)} &middot; {fp} channels</div>
   </div>
-  <p style="margin:0 0 6px">To load it on your VIBE:</p>
+  <p style="margin:0 0 6px">To load it on your VFLOW:</p>
   <p style="color:#cfd6df;margin:0 0 18px;line-height:1.6">
     Open <b>SETUP &rarr; + FROM LIBRARY</b>, tap <b>refresh</b>, then search for
     <b>{e(name)}</b>. Select it and you're patched.</p>
@@ -129,7 +134,7 @@ margin:0 auto;color:#e6eaf0;background:#0a0e14;padding:24px;border-radius:14px">
     You're getting this because you left your email when requesting this fixture at
     rehmlights.com. — REHMLIGHTS</p>
 </div>"""
-            _send(f"VIBE: {mfg} {name} is approved", body, to=submitter.strip())
+            _send(f"Flow Library: {mfg} {name} is approved", body, to=submitter.strip())
         except Exception:
             pass
 
@@ -151,7 +156,7 @@ def notify_rejected(info, submitter):
             body = f"""\
 <div style="font:15px system-ui,Segoe UI,Roboto,sans-serif;max-width:520px;
 margin:0 auto;color:#e6eaf0;background:#0a0e14;padding:24px;border-radius:14px">
-  <h2 style="color:#00ccaa;margin:0 0 4px">About your VIBE fixture request</h2>
+  <h2 style="color:#00ccaa;margin:0 0 4px">About your Flow Library request</h2>
   <p style="color:#7a8794;margin:0 0 18px">Thanks for the submission — we took a look.</p>
   <div style="background:#131820;border:1px solid #2a3645;border-radius:12px;padding:16px;margin-bottom:18px">
     <div style="font-size:18px;font-weight:600">{e(mfg)} &middot; {e(name)}</div>
@@ -167,7 +172,7 @@ margin:0 auto;color:#e6eaf0;background:#0a0e14;padding:24px;border-radius:14px">
     You're getting this because you left your email when requesting this fixture at
     rehmlights.com. — REHMLIGHTS</p>
 </div>"""
-            _send(f"VIBE: about your {mfg} {name} request", body, to=submitter.strip())
+            _send(f"Flow Library: about your {mfg} {name} request", body, to=submitter.strip())
         except Exception:
             pass
 
