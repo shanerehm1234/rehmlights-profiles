@@ -40,7 +40,12 @@ from typing import Optional
 # =============================================================================
 
 MAX_WHEEL_POSITIONS = 30
-MAX_NAME_LENGTH = 22
+# Must match the firmware's fixed name buffers (VIBE_PROFILE_NAME_LEN in
+# components/vibe_profile/include/vibe_profile.h — name/manufacturer/mode are
+# each char[24]). This is the byte budget INCLUDING the null terminator, so
+# names/modes are truncated to 23 bytes. Was 22 (a stale 21-char cap that
+# clipped names the device could actually hold, e.g. "Generic 15Wx4 Mini Mo").
+MAX_NAME_LENGTH = 24
 
 # GDTF attribute → VECTR field mapping
 # Value is tuple of (coarse_field, fine_field) or (field_only,)
