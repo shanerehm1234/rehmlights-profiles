@@ -1,0 +1,166 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "adj/jolt-bar-fxip-129ch",
+  "name": "Jolt Bar FXIP",
+  "manufacturer": "ADJ",
+  "mode": "129CH",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "footprint": 129,
+  "channels": [
+    {
+      "role": "DIMMER",
+      "offset": 123,
+      "default": 255
+    },
+    {
+      "role": "DIMMER_FINE",
+      "offset": 124
+    },
+    {
+      "role": "RED",
+      "offset": 1
+    },
+    {
+      "role": "GREEN",
+      "offset": 2
+    },
+    {
+      "role": "BLUE",
+      "offset": 3
+    },
+    {
+      "role": "CTO",
+      "offset": 97
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 99
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "Off"
+    },
+    {
+      "value": 10,
+      "name": "Color Macro 1"
+    },
+    {
+      "value": 18,
+      "name": "Color Macro 2"
+    },
+    {
+      "value": 25,
+      "name": "Color Macro 3"
+    },
+    {
+      "value": 33,
+      "name": "Color Macro 4"
+    },
+    {
+      "value": 40,
+      "name": "Color Macro 5"
+    },
+    {
+      "value": 48,
+      "name": "Color Macro 6"
+    },
+    {
+      "value": 55,
+      "name": "Color Macro 7"
+    },
+    {
+      "value": 62,
+      "name": "Color Macro 8"
+    },
+    {
+      "value": 70,
+      "name": "Color Macro 9"
+    },
+    {
+      "value": 77,
+      "name": "Color Macro 10"
+    },
+    {
+      "value": 85,
+      "name": "Color Macro 11"
+    },
+    {
+      "value": 92,
+      "name": "Color Macro 12"
+    },
+    {
+      "value": 100,
+      "name": "Color Macro 13"
+    },
+    {
+      "value": 107,
+      "name": "Color Macro 14"
+    },
+    {
+      "value": 114,
+      "name": "Color Macro 15"
+    },
+    {
+      "value": 122,
+      "name": "Color Macro 16"
+    },
+    {
+      "value": 129,
+      "name": "Color Macro 17"
+    },
+    {
+      "value": 137,
+      "name": "Color Macro 18"
+    },
+    {
+      "value": 144,
+      "name": "Color Macro 19"
+    },
+    {
+      "value": 152,
+      "name": "Color Macro 20"
+    },
+    {
+      "value": 159,
+      "name": "Color Macro 21"
+    },
+    {
+      "value": 166,
+      "name": "Color Macro 22"
+    },
+    {
+      "value": 174,
+      "name": "Color Macro 23"
+    },
+    {
+      "value": 181,
+      "name": "Color Macro 24"
+    },
+    {
+      "value": 189,
+      "name": "Color Macro 25"
+    },
+    {
+      "value": 196,
+      "name": "Color Macro 26"
+    },
+    {
+      "value": 204,
+      "name": "Color Macro 27"
+    },
+    {
+      "value": 211,
+      "name": "Color Macro 28"
+    },
+    {
+      "value": 218,
+      "name": "Color Macro 29"
+    }
+  ],
+  "meta": {
+    "source": "gdtf-share",
+    "gdtf_rid": 115929
+  }
+}
