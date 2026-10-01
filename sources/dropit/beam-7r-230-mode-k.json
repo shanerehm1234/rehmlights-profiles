@@ -1,0 +1,265 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "dropit/beam-7r-230-mode-k",
+  "name": "Beam 7R 230",
+  "manufacturer": "Dropit",
+  "mode": "Mode K",
+  "fixture_type": "FIXTURE_TYPE_HID",
+  "footprint": 16,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 10,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 11
+    },
+    {
+      "role": "TILT",
+      "offset": 12,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 13
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 7
+    },
+    {
+      "role": "DIMMER",
+      "offset": 3,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 2,
+      "default": 0
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 1
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 4
+    },
+    {
+      "role": "FOCUS",
+      "offset": 9
+    },
+    {
+      "role": "FROST",
+      "offset": 8
+    },
+    {
+      "role": "PRISM",
+      "offset": 6
+    },
+    {
+      "role": "LAMP",
+      "offset": 16
+    },
+    {
+      "role": "RESET",
+      "offset": 15
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "White"
+    },
+    {
+      "value": 7,
+      "name": "Red"
+    },
+    {
+      "value": 16,
+      "name": "Yellow"
+    },
+    {
+      "value": 24,
+      "name": "Blue"
+    },
+    {
+      "value": 32,
+      "name": "Orange"
+    },
+    {
+      "value": 40,
+      "name": "Green"
+    },
+    {
+      "value": 43,
+      "name": "Lime"
+    },
+    {
+      "value": 48,
+      "name": "Pink"
+    },
+    {
+      "value": 56,
+      "name": "Cyan"
+    },
+    {
+      "value": 66,
+      "name": "Warm White"
+    },
+    {
+      "value": 74,
+      "name": "Teal"
+    },
+    {
+      "value": 77,
+      "name": "Magenta"
+    },
+    {
+      "value": 80,
+      "name": "Lavender"
+    },
+    {
+      "value": 96,
+      "name": "Brown"
+    },
+    {
+      "value": 112,
+      "name": "Cyan Brown"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 5,
+      "name": "Wheel Slot 1"
+    },
+    {
+      "value": 10,
+      "name": "Wheel Slot 2"
+    },
+    {
+      "value": 15,
+      "name": "Wheel Slot 3"
+    },
+    {
+      "value": 20,
+      "name": "Wheel Slot 4"
+    },
+    {
+      "value": 25,
+      "name": "Wheel Slot 5"
+    },
+    {
+      "value": 30,
+      "name": "Wheel Slot 6"
+    },
+    {
+      "value": 35,
+      "name": "Wheel Slot 7"
+    },
+    {
+      "value": 40,
+      "name": "Wheel Slot 8"
+    },
+    {
+      "value": 45,
+      "name": "Wheel Slot 9"
+    },
+    {
+      "value": 50,
+      "name": "Wheel Slot 10"
+    },
+    {
+      "value": 55,
+      "name": "Wheel Slot 11"
+    },
+    {
+      "value": 60,
+      "name": "Wheel Slot 12"
+    },
+    {
+      "value": 65,
+      "name": "Wheel Slot 13"
+    },
+    {
+      "value": 70,
+      "name": "Wheel Slot 14"
+    },
+    {
+      "value": 75,
+      "name": "Wheel Slot 15"
+    },
+    {
+      "value": 80,
+      "name": "Wheel Slot 16"
+    },
+    {
+      "value": 85,
+      "name": "Wheel Slot 17"
+    },
+    {
+      "value": 90,
+      "name": "CW S-F"
+    },
+    {
+      "value": 130,
+      "name": "Stop"
+    },
+    {
+      "value": 135,
+      "name": "CCW S-F"
+    },
+    {
+      "value": 170,
+      "name": "Wheel Slot 21"
+    },
+    {
+      "value": 175,
+      "name": "Wheel Slot 22"
+    },
+    {
+      "value": 180,
+      "name": "Wheel Slot 23"
+    },
+    {
+      "value": 185,
+      "name": "Wheel Slot 24"
+    },
+    {
+      "value": 190,
+      "name": "Wheel Slot 25"
+    },
+    {
+      "value": 195,
+      "name": "Wheel Slot 26"
+    },
+    {
+      "value": 200,
+      "name": "Wheel Slot 27"
+    },
+    {
+      "value": 205,
+      "name": "Wheel Slot 28"
+    },
+    {
+      "value": 210,
+      "name": "Wheel Slot 29"
+    }
+  ],
+  "values": {
+    "lamp_on": 200,
+    "lamp_off": 10
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0,
+    "source": "gdtf-share",
+    "gdtf_rid": 60396
+  }
+}
