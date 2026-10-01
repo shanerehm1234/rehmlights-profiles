@@ -4,7 +4,7 @@
   "name": "7R 230W Beam Moving Hea",
   "manufacturer": "Generic",
   "mode": "16CH",
-  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
+  "fixture_type": "FIXTURE_TYPE_HID",
   "footprint": 16,
   "channels": [
     {
@@ -45,7 +45,7 @@
     },
     {
       "role": "GOBO_WHEEL",
-      "offset": 10
+      "offset": 9
     },
     {
       "role": "FOCUS",
@@ -62,6 +62,10 @@
     {
       "role": "PRISM_ROT",
       "offset": 14
+    },
+    {
+      "role": "LAMP",
+      "offset": 16
     }
   ],
   "color_wheel": [
@@ -125,14 +129,80 @@
   "gobo_wheel": [
     {
       "value": 0,
-      "name": "Not yet verified"
+      "name": "Open"
+    },
+    {
+      "value": 7,
+      "name": "Small Circle"
+    },
+    {
+      "value": 15,
+      "name": "Medium Circle"
+    },
+    {
+      "value": 22,
+      "name": "Big Circle"
+    },
+    {
+      "value": 33,
+      "name": "Bigger Circle"
+    },
+    {
+      "value": 41,
+      "name": "Huge Circle"
+    },
+    {
+      "value": 52,
+      "name": "Lines"
+    },
+    {
+      "value": 60,
+      "name": "Triangle"
+    },
+    {
+      "value": 64,
+      "name": "Plus"
+    },
+    {
+      "value": 70,
+      "name": "Dots"
+    },
+    {
+      "value": 79,
+      "name": "Squiggle"
+    },
+    {
+      "value": 87,
+      "name": "Sun"
+    },
+    {
+      "value": 91,
+      "name": "Bat"
+    },
+    {
+      "value": 98,
+      "name": "More Dots"
+    },
+    {
+      "value": 112,
+      "name": "Line"
+    },
+    {
+      "value": 120,
+      "name": "Other Line"
+    },
+    {
+      "value": 130,
+      "name": "Rotation"
     }
   ],
   "values": {
     "shutter_open": 253,
-    "shutter_close": 253,
+    "shutter_close": 0,
     "strobe_slow": 6,
-    "strobe_fast": 252
+    "strobe_fast": 103,
+    "lamp_on": 202,
+    "lamp_off": 101
   },
   "meta": {
     "pan_degrees": 540.0,
