@@ -83,6 +83,6 @@ PUBLIC_BASE_URL = os.environ.get("PUBLIC_BASE_URL", "https://rehmlights.com").rs
 REVIEW_SECRET = os.environ.get("REVIEW_SECRET", "")
 
 # Refresh the cached GDTF Share fixture list at most this often.
-LIST_TTL_SECONDS = int(os.environ.get("GDTF_LIST_TTL", str(24 * 3600)))
+LIST_TTL_SECONDS = int(os.environ.get("GDTF_LIST_TTL", str(15 * 60)))
 
 os.makedirs(PENDING_DIR, exist_ok=True)

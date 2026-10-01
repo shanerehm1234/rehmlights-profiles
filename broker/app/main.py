@@ -3,7 +3,7 @@ catalog profile, with owner moderation.
 
 Public (through nginx):
   GET  /                         portal page
-  GET  /api/profiles/search?q=
+  GET  /api/profiles/search?q=&mfg=&limit=
   GET  /api/profiles/modes?rid=
   POST /api/profiles/submit      {rid, mode, submitter}
 
@@ -37,9 +37,10 @@ def _err(e):
 
 # ---- public portal API ----------------------------------------------------
 @app.get("/api/profiles/search")
-def api_search(q: str = ""):
+def api_search(q: str = "", mfg: str = "", limit: int = 100):
     try:
-        return {"results": cooker.search(q)}
+        return JSONResponse(content=cooker.search(q, limit=limit, mfg=mfg or None),
+                            headers={"Cache-Control": "no-store"})
     except Exception as e:
         return _err(e)
 

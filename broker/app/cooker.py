@@ -5,6 +5,7 @@ than reimplementing any of it — the broker is just orchestration around the
 tooling that already produces the catalog.
 """
 import os
+import re
 import sys
 import time
 import json
@@ -108,26 +109,95 @@ def _fixture_name(f):
     return f.get("fixture", f.get("name", "")) or ""
 
 
-def search(query, limit=80):
-    """Return a cleaned, grouped list of fixtures matching `query`."""
-    q = (query or "").strip().lower()
+_WORD = re.compile(r"[a-z0-9]+")
+
+
+def _norm(text):
+    """Lowercase, punctuation -> spaces, so "7R-230W" and "7r 230w" compare equal."""
+    return " ".join(_WORD.findall((text or "").lower()))
+
+
+def _scan(lst, tokens, phrase):
+    """Every word of the query must appear somewhere in "manufacturer + name",
+    in ANY order (a budget fixture's GDTF name rarely matches the order someone
+    types it: "beam 230" must find "7R 230W Beam"). Returns scored matches."""
     out = []
-    for f in get_list():
+    for f in lst:
         name = _fixture_name(f)
         mfg = f.get("manufacturer", "")
-        if q and q not in name.lower() and q not in mfg.lower():
+        name_n, mfg_n = _norm(name), _norm(mfg)
+        hay = mfg_n + " " + name_n
+        if tokens and not all(t in hay for t in tokens):
             continue
-        out.append({
+        score = 0.0
+        if phrase and phrase in hay:
+            score += 6                       # the words appear together, in order
+        for t in tokens:
+            if re.search(r"\b" + re.escape(t), name_n):
+                score += 2                   # starts a word in the fixture name
+            elif t in name_n:
+                score += 1
+            if t in mfg_n:
+                score += 1
+        if tokens and all(t in name_n for t in tokens):
+            score += 3                       # about the fixture itself, not just its brand
+        score -= len(name_n) / 200.0         # prefer tidy names over novels
+        out.append((score, {
             "rid": f.get("rid"),
             "manufacturer": mfg,
             "name": name,
             "revision": f.get("revision", ""),
             "creator": f.get("creator", ""),
-        })
-        if len(out) >= limit:
-            break
-    out.sort(key=lambda x: (x["manufacturer"].lower(), x["name"].lower()))
+        }))
     return out
+
+
+def search(query, limit=100, mfg=None):
+    """Search the cached GDTF Share list.
+
+    Returns {"results": [...best `limit`, best first], "total": N matches,
+    "truncated": bool, "manufacturers": [{"name", "count"}] over ALL matches,
+    "list_age_s": seconds since the Share list was fetched}.
+
+    The old version cut the list off at the first 80 hits in Share's own order
+    and only then sorted, so a broad search silently dropped matches (and
+    "beam" never reached the fixture you wanted). Rank first, then cut, and say
+    how many were cut. A search that finds nothing re-fetches the Share list
+    once (rate-limited) in case the fixture was uploaded after the last fetch.
+    """
+    tokens = _WORD.findall((query or "").lower())
+    phrase = " ".join(tokens)
+    scored = _scan(get_list(), tokens, phrase)
+    if not scored and tokens:
+        # "beam230" / "7r230w": nothing matched as typed, so try splitting letters
+        # from digits ("beam" "230") before concluding the fixture isn't there.
+        split = [p for t in tokens for p in re.findall(r"[a-z]+|[0-9]+", t)]
+        if split != tokens:
+            scored = _scan(get_list(), split, " ".join(split))
+    if not scored and tokens:
+        r = force_refresh()
+        if r.get("refreshed"):
+            scored = _scan(get_list(), tokens, phrase)
+
+    facets = {}
+    for _, row in scored:
+        key = row["manufacturer"].strip().lower()
+        d = facets.setdefault(key, {"name": row["manufacturer"].strip(), "count": 0})
+        d["count"] += 1
+    manufacturers = sorted(facets.values(), key=lambda d: (-d["count"], d["name"].lower()))[:60]
+
+    if mfg:
+        want = mfg.strip().lower()
+        scored = [(sc, row) for sc, row in scored if row["manufacturer"].strip().lower() == want]
+    scored.sort(key=lambda t: (-t[0], t[1]["manufacturer"].lower(), t[1]["name"].lower()))
+    limit = max(1, min(int(limit or 100), 300))
+    return {
+        "results": [row for _, row in scored[:limit]],
+        "total": len(scored),
+        "truncated": len(scored) > limit,
+        "manufacturers": manufacturers,
+        "list_age_s": int(time.time() - _list_fetched_at) if _list_fetched_at else None,
+    }
 
 
 def _download_file(rid, force=False):
