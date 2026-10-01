@@ -4,7 +4,7 @@
   "name": "7R 230W Beam Moving Hea",
   "manufacturer": "Generic",
   "mode": "16CH",
-  "fixture_type": "FIXTURE_TYPE_HID",
+  "fixture_type": "FIXTURE_TYPE_LED_WHEEL",
   "footprint": 16,
   "channels": [
     {
@@ -45,7 +45,7 @@
     },
     {
       "role": "GOBO_WHEEL",
-      "offset": 9
+      "offset": 10
     },
     {
       "role": "FOCUS",
@@ -62,10 +62,6 @@
     {
       "role": "PRISM_ROT",
       "offset": 14
-    },
-    {
-      "role": "LAMP",
-      "offset": 16
     }
   ],
   "color_wheel": [
@@ -129,85 +125,20 @@
   "gobo_wheel": [
     {
       "value": 0,
-      "name": "Open"
-    },
-    {
-      "value": 7,
-      "name": "Small Circle"
-    },
-    {
-      "value": 15,
-      "name": "Medium Circle"
-    },
-    {
-      "value": 22,
-      "name": "Big Circle"
-    },
-    {
-      "value": 33,
-      "name": "Bigger Circle"
-    },
-    {
-      "value": 41,
-      "name": "Huge Circle"
-    },
-    {
-      "value": 52,
-      "name": "Lines"
-    },
-    {
-      "value": 60,
-      "name": "Triangle"
-    },
-    {
-      "value": 64,
-      "name": "Plus"
-    },
-    {
-      "value": 70,
-      "name": "Dots"
-    },
-    {
-      "value": 79,
-      "name": "Squiggle"
-    },
-    {
-      "value": 87,
-      "name": "Sun"
-    },
-    {
-      "value": 91,
-      "name": "Bat"
-    },
-    {
-      "value": 98,
-      "name": "More Dots"
-    },
-    {
-      "value": 112,
-      "name": "Line"
-    },
-    {
-      "value": 120,
-      "name": "Other Line"
-    },
-    {
-      "value": 130,
-      "name": "Rotation"
+      "name": "Not yet verified"
     }
   ],
   "values": {
     "shutter_open": 253,
-    "shutter_close": 0,
+    "shutter_close": 253,
     "strobe_slow": 6,
-    "strobe_fast": 103,
-    "lamp_on": 202,
-    "lamp_off": 101
+    "strobe_fast": 252
   },
   "meta": {
     "pan_degrees": 540.0,
     "tilt_degrees": 270.0,
     "source": "gdtf-share",
-    "gdtf_rid": 162954
+    "gdtf_rid": 162984,
+    "submitted_by": "shanerehm1234@gmail.com"
   }
 }
