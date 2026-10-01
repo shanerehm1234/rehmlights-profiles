@@ -1,0 +1,246 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "ahlights/beam-230-7r-16-channel",
+  "name": "Beam 230 7R",
+  "manufacturer": "AHLights",
+  "mode": "16 CHANNEL",
+  "fixture_type": "FIXTURE_TYPE_HID",
+  "footprint": 16,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "PAN_TILT_SPEED",
+      "offset": 5
+    },
+    {
+      "role": "DIMMER",
+      "offset": 6,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 7,
+      "default": 0
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 9
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 11
+    },
+    {
+      "role": "FOCUS",
+      "offset": 14
+    },
+    {
+      "role": "FROST",
+      "offset": 8
+    },
+    {
+      "role": "PRISM",
+      "offset": 12
+    },
+    {
+      "role": "PRISM_ROT",
+      "offset": 13
+    },
+    {
+      "role": "LAMP",
+      "offset": 15
+    },
+    {
+      "role": "RESET",
+      "offset": 16
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "OPEN"
+    },
+    {
+      "value": 1,
+      "name": "RED"
+    },
+    {
+      "value": 8,
+      "name": "BLUE "
+    },
+    {
+      "value": 16,
+      "name": "GREEN"
+    },
+    {
+      "value": 24,
+      "name": "ORANGE"
+    },
+    {
+      "value": 32,
+      "name": "MAGENTA"
+    },
+    {
+      "value": 40,
+      "name": "PINK"
+    },
+    {
+      "value": 48,
+      "name": "CYAN"
+    },
+    {
+      "value": 56,
+      "name": "YELLOW"
+    },
+    {
+      "value": 64,
+      "name": "LIGHT GREEN"
+    },
+    {
+      "value": 72,
+      "name": "ICE"
+    },
+    {
+      "value": 80,
+      "name": "UV"
+    },
+    {
+      "value": 88,
+      "name": "CTO"
+    },
+    {
+      "value": 96,
+      "name": "ICE 1"
+    },
+    {
+      "value": 104,
+      "name": "ROT >"
+    },
+    {
+      "value": 112,
+      "name": "STOP ROT"
+    },
+    {
+      "value": 128,
+      "name": "ROT <"
+    },
+    {
+      "value": 191,
+      "name": "OPEN"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "OPEN"
+    },
+    {
+      "value": 1,
+      "name": "1"
+    },
+    {
+      "value": 8,
+      "name": "2"
+    },
+    {
+      "value": 15,
+      "name": "3"
+    },
+    {
+      "value": 22,
+      "name": "4"
+    },
+    {
+      "value": 29,
+      "name": "5"
+    },
+    {
+      "value": 36,
+      "name": "6"
+    },
+    {
+      "value": 43,
+      "name": "7"
+    },
+    {
+      "value": 50,
+      "name": "8"
+    },
+    {
+      "value": 57,
+      "name": "9"
+    },
+    {
+      "value": 64,
+      "name": "10"
+    },
+    {
+      "value": 71,
+      "name": "11"
+    },
+    {
+      "value": 78,
+      "name": "12"
+    },
+    {
+      "value": 85,
+      "name": "13"
+    },
+    {
+      "value": 92,
+      "name": "14"
+    },
+    {
+      "value": 99,
+      "name": "15"
+    },
+    {
+      "value": 106,
+      "name": "16"
+    },
+    {
+      "value": 113,
+      "name": "17"
+    },
+    {
+      "value": 120,
+      "name": "18"
+    },
+    {
+      "value": 127,
+      "name": "ROT GOB >"
+    },
+    {
+      "value": 191,
+      "name": "ROT GOB <"
+    }
+  ],
+  "values": {
+    "strobe_fast": 255,
+    "lamp_on": 200,
+    "lamp_off": 100
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 220.0,
+    "source": "gdtf-share",
+    "gdtf_rid": 98294
+  }
+}
