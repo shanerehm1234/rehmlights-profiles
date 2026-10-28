@@ -1,0 +1,287 @@
+{
+  "schema": "vibe-profile/1",
+  "id": "your-pixel-store/nova-480w-3in1-waterpro-18ch",
+  "name": "Nova 480W 3in1 Waterpro",
+  "manufacturer": "Your Pixel Store",
+  "mode": "18CH",
+  "fixture_type": "FIXTURE_TYPE_HID",
+  "footprint": 18,
+  "channels": [
+    {
+      "role": "PAN",
+      "offset": 1,
+      "default": 127
+    },
+    {
+      "role": "PAN_FINE",
+      "offset": 2
+    },
+    {
+      "role": "TILT",
+      "offset": 3,
+      "default": 127
+    },
+    {
+      "role": "TILT_FINE",
+      "offset": 4
+    },
+    {
+      "role": "DIMMER",
+      "offset": 5,
+      "default": 255
+    },
+    {
+      "role": "SHUTTER",
+      "offset": 6,
+      "default": 252
+    },
+    {
+      "role": "COLOR_WHEEL",
+      "offset": 7
+    },
+    {
+      "role": "GOBO_WHEEL",
+      "offset": 8
+    },
+    {
+      "role": "GOBO_WHEEL_2",
+      "offset": 9
+    },
+    {
+      "role": "FOCUS",
+      "offset": 17
+    },
+    {
+      "role": "FROST",
+      "offset": 15
+    },
+    {
+      "role": "ZOOM",
+      "offset": 16
+    },
+    {
+      "role": "PRISM",
+      "offset": 12
+    },
+    {
+      "role": "PRISM_2",
+      "offset": 13
+    },
+    {
+      "role": "LAMP",
+      "offset": 18
+    }
+  ],
+  "color_wheel": [
+    {
+      "value": 0,
+      "name": "White"
+    },
+    {
+      "value": 10,
+      "name": "White/Colour 1"
+    },
+    {
+      "value": 15,
+      "name": "Colour 1"
+    },
+    {
+      "value": 20,
+      "name": "Colour 1/Colour 2"
+    },
+    {
+      "value": 25,
+      "name": "Colour 2"
+    },
+    {
+      "value": 30,
+      "name": "Colour 2/Colour 3"
+    },
+    {
+      "value": 35,
+      "name": "Colour 3"
+    },
+    {
+      "value": 40,
+      "name": "Colour 3/Colour 4"
+    },
+    {
+      "value": 45,
+      "name": "Colour 4"
+    },
+    {
+      "value": 50,
+      "name": "Colour 4/Colour 5"
+    },
+    {
+      "value": 55,
+      "name": "Colour 5"
+    },
+    {
+      "value": 60,
+      "name": "Colour 5/Colour 6"
+    },
+    {
+      "value": 65,
+      "name": "Colour 6"
+    },
+    {
+      "value": 70,
+      "name": "Colour 6/Colour 7"
+    },
+    {
+      "value": 75,
+      "name": "Colour 7"
+    },
+    {
+      "value": 80,
+      "name": "Colour 7/Colour 8"
+    },
+    {
+      "value": 85,
+      "name": "Colour 8"
+    },
+    {
+      "value": 90,
+      "name": "Colour 8/Colour 9"
+    },
+    {
+      "value": 95,
+      "name": "Colour 9"
+    },
+    {
+      "value": 100,
+      "name": "Colour 9/Colour 10"
+    },
+    {
+      "value": 105,
+      "name": "Colour 10"
+    },
+    {
+      "value": 110,
+      "name": "Colour 10/Colour 11"
+    },
+    {
+      "value": 115,
+      "name": "Colour 11"
+    },
+    {
+      "value": 120,
+      "name": "Colour 11/Colour 12"
+    },
+    {
+      "value": 125,
+      "name": "Colour 12"
+    },
+    {
+      "value": 130,
+      "name": "Colour 12/White"
+    }
+  ],
+  "gobo_wheel": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 5,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 10,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 15,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 20,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 25,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 30,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 35,
+      "name": "Gobo 7"
+    },
+    {
+      "value": 40,
+      "name": "Gobo 8"
+    },
+    {
+      "value": 45,
+      "name": "Gobo 9"
+    },
+    {
+      "value": 50,
+      "name": "Gobo 10"
+    },
+    {
+      "value": 55,
+      "name": "Gobo 11"
+    },
+    {
+      "value": 60,
+      "name": "Gobo 12"
+    },
+    {
+      "value": 120,
+      "name": "Open"
+    }
+  ],
+  "gobo_wheel_2": [
+    {
+      "value": 0,
+      "name": "Open"
+    },
+    {
+      "value": 10,
+      "name": "Gobo 1"
+    },
+    {
+      "value": 20,
+      "name": "Gobo 2"
+    },
+    {
+      "value": 30,
+      "name": "Gobo 3"
+    },
+    {
+      "value": 40,
+      "name": "Gobo 4"
+    },
+    {
+      "value": 50,
+      "name": "Gobo 5"
+    },
+    {
+      "value": 60,
+      "name": "Gobo 6"
+    },
+    {
+      "value": 70,
+      "name": "Gobo 7"
+    }
+  ],
+  "values": {
+    "shutter_open": 252,
+    "shutter_close": 252,
+    "strobe_slow": 4,
+    "strobe_fast": 251,
+    "lamp_on": 206,
+    "lamp_off": 100
+  },
+  "meta": {
+    "pan_degrees": 540.0,
+    "tilt_degrees": 270.0,
+    "source": "gdtf-share",
+    "gdtf_rid": 166794
+  }
+}
